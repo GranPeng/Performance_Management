@@ -3,7 +3,7 @@
 > 状态：**FROZEN**（2026-08-14 Product Owner 确认冻结；此后任何变更必须走规则 §17 变更流程，记录 Change ID / Date / Owner / Reason / Impact）
 > 版本：v1.0（T4 产出，对应 ADR-003）
 > 权威基准：V04 绩效框架（T1）、V60 预算模型（T2）、Base 审计报告（T3）、决策日志 D-001~D-008
-> 最近变更：CHG-T8B-001（§4.6）、CHG-T8C-001（§1.1 Note）、CHG-T11A-001（§5.4 豁免与提成字段，2026-08-17）
+> 最近变更：CHG-T8B-001（§4.6）、CHG-T8C-001（§1.1 Note）、CHG-T11A-001（§5.4 豁免与提成字段，2026-08-17）、CHG-D010-R2-001（§5.4 Exemption_Scope_ID / §5.5 Base_Rate / §5.6 Exemption_Scope，2026-08-17）
 
 ---
 
@@ -47,6 +47,7 @@
 | Actual | Actual_ID | ACT | ACT000001 |
 | Performance_Result | Result_ID | RST | RST000001 |
 | Commission_Tier | Commission_Tier_ID | CT | CT000001 |
+| Exemption_Scope | Exemption_Scope_ID | EXS | EXS000001 |
 | Import_Batch | Batch_ID | IB | IB000001 |
 | Validation_Rule | Rule_ID | VR | VR000001 |
 | Error_Log | Error_ID | ERR | ERR000001 |
@@ -73,9 +74,10 @@
 | 9 | Actual | 一个期间×一个指标×一组维度的一个实际值 | 事实（长表） |
 | 10 | Performance_Result | 一个期间×一名人员×一个指标的一条结果 | 结果（长表） |
 | 11 | Commission_Tier | 一个岗位某提成来源的一档梯度 | 规则定义 |
-| 12 | Import_Batch | 一次导入/计算批次 | 支撑 |
-| 13 | Validation_Rule | 一条校验规则定义 | 支撑 |
-| 14 | Error_Log | 一条错误记录 | 支撑 |
+| 12 | Exemption_Scope | 一个豁免适用范围（岗位/岗位族 × 渠道 × 豁免期阈值） | 规则定义 |
+| 13 | Import_Batch | 一次导入/计算批次 | 支撑 |
+| 14 | Validation_Rule | 一条校验规则定义 | 支撑 |
+| 15 | Error_Log | 一条错误记录 | 支撑 |
 
 关系（全部 ID 关联）：
 
@@ -88,6 +90,8 @@ Channel ──┴─< Project_Member                  │           │
               Channel ──< Target/Actual       Commission_Tier >─ Position / Metric
 Import_Batch ──< Target / Actual / Employee / Error_Log
 Project ──< Performance_Result（§5.4 Project_ID，CHG-T11A-001）
+Exemption_Scope >─ Position / Channel（§5.6，CHG-D010-R2-001）
+Performance_Result ──< Exemption_Scope（§5.4 Exemption_Scope_ID，CHG-D010-R2-001）
 ```
 
 ## 4. 主数据实体
@@ -290,6 +294,7 @@ V04 评分规则承载位置小结：分档→Scoring_Standard_Text（原文）+
 | Project_ID | TEXT→Project | 否 | 项目关联：新项目豁免判断（Q-10-01）与提成基数归属都需要结果行的项目维度 | 计算引擎（按 Project_Member 生效关系解析，默认取 Is_Primary；一人多项目归属口径待 BA） | 豁免判断、提成结算、复核 | 随计算批次写入，重算整批重出 |
 | Project_Run_Days | NUMBER（Base 侧 formula） | 否 | 项目运行天数：豁免判断的时间输入；基准日 = Period 对应自然月最后一日（不用 TODAY()，保证历史期间可回溯） | 计算引擎公式（由 Project.Start_Date 推导；Start_Date 缺失时留空，不伪造日期） | Is_Exempt、复核 | 公式派生，随 Period / Start_Date 变化 |
 | Is_Exempt | BOOL（Base 侧 formula） | 否 | 新项目豁免标志：运行天数 <90 为 true（阈值 90 天源自 V04 新项目免责期规则，QA Q-10-01） | 计算引擎公式（Project_Run_Days 推导） | 提成结算准入、HR 人工评判参考 | 公式派生；仅时间资格标记，免责提成 ×0.8 仍由 HR 人工评判走人工部分（D-009.4 / 2026-08-14） |
+| Exemption_Scope_ID | TEXT→Exemption_Scope | 否 | 豁免适用范围命中记录：结果行按岗位/岗位族 × 渠道匹配到哪条豁免配置（D-010-R2 配置化）。未命中留空 | 计算引擎（按 Exemption_Scope 配置匹配写入，CHG-D010-R2-001） | Is_Exempt 展示、审计复算、复核看板 | 随计算批次重算，整批重出 |
 | Commission_Base_Type | TEXT | 否 | 提成基数类型枚举（GSV / 个人消耗 / 个人营收，D-009 / 2026-08-17）：决定 Commission_Base 的取数口径 | 计算引擎按岗位类型写入快照（岗位→基数类型映射待 T11b BA 结构化） | 提成计算、复核 | 随计算批次写入 |
 | Commission_Base | NUMBER | 否 | 提成基数金额（Q-10-02）：提成金额 = 基数 × 比例的基数项 | 计算引擎（按 Commission_Base_Type 口径取数，T11b 落公式后启用） | 提成金额计算、复核 | 重算时整批重出 |
 | Commission_Ratio | NUMBER | 否 | 提成比例快照：留痕用，防梯度/比例改版后历史失真（同 Weight 快照语义） | 计算引擎（取自 Commission_Tier，T11b） | 提成复算、审计 | 随批次固定 |
@@ -319,6 +324,7 @@ V04 评分规则承载位置小结：分档→Scoring_Standard_Text（原文）+
 | Coefficient | NUMBER | 否 | 系数比例（L 列数值） | V04 迁移 | 提成计算 | 规则版本内稳定 |
 | Ratio_Text | TEXT | 否 | 提成比例原文（含公式文本如「=$K$12*L14」「绩效工资*80%」「0.1%/中控人数」，原样存档，不自行重排） | V04 迁移 | 解释、BA 结构化依据 | 规则版本内稳定 |
 | Ratio_Value | NUMBER | 否 | 纯数值比例的结构化值（如 0.001）；混合表达式时为空 | V04 迁移 | 提成计算 | 规则版本内稳定 |
+| Base_Rate | NUMBER | 否 | 岗位族固定提成基数比例（D-010-R2 配置化，CHG-D010-R2-001）：当前运营族=0.003（源 V04 运营 K12 / 高级主管 M12）。冗余在所属岗位族各梯度行；读取取该岗位任一 Active 梯度行。正常路径 `Ratio = Base_Rate × Coefficient`，豁免路径 `Ratio = Base_Rate`。**禁止在公式/脚本内嵌 0.003** | 规则维护（BA+PO 确认后回填/更新） | 提成计算、豁免提成、复算审计 | 改配置即生效（更新后重跑批次）；规则版本内稳定，改版走 §17 |
 | Applicable_Scope | TEXT | 否 | 适用范围结构化承载（D-006：消耗分奖金仅限抖音、视频号两平台内容制作团队；存渠道/团队范围描述，ID 化待映射确认） | V04 迁移+PO 确认 | 提成计算准入 | 口径确认后写入 |
 | Rule_Note | TEXT | 否 | 规则说明原文（人数相关口径、绩效工资比例口径等未确认项只结构化存储） | V04 迁移 | 解释、待确认跟踪 | 规则版本内稳定 |
 | Source_Sheet / Source_Cell | TEXT | 是 | V04 源工作表/单元格 | V04 迁移 | 追溯 | 不变 |
@@ -327,6 +333,27 @@ V04 评分规则承载位置小结：分档→Scoring_Standard_Text（原文）+
 | Source / Create_Time / Update_Time / Status | — | 是 | 见 §1.1 | — | — | — |
 
 梯度匹配兜底规则（D-009.5）：得分超出有上限梯度的最高分档时，按最高一档处理。该兜底语义与 Upper_Is_Open 的「不封顶」语义不同：前者针对有上限梯度被超出时的取值规则，后者针对 V04 原文即不设上限的梯度，两者不得混用。
+
+### 5.6 Exemption_Scope（豁免适用范围配置表）
+
+职责：豁免规则的可配置适用范围（D-010-R2，CHG-D010-R2-001）。一行 = 一个「岗位/岗位族 × 渠道 × 豁免期阈值」组合；引擎按结果行岗位 + 渠道匹配，命中且项目运行天数 < Max_Project_Run_Days 即豁免。**新增范围 = 新增一行，禁止在公式/脚本写死单一岗位。**
+
+| 字段 | 类型 | 必填 | 为什么需要 | 谁产生 | 谁消费 | 生命周期 |
+|---|---|---|---|---|---|---|
+| Exemption_Scope_ID | TEXT | 是 | 主键 | 规则维护 | 引擎匹配、Performance_Result.Exemption_Scope_ID 关联 | 见 §1.1 |
+| Position_ID | TEXT→Position | 条件必填 | 岗位绑定（精确匹配）；与 Position_Family 至少填一 | 规则维护 | 引擎匹配 | 规则版本内稳定 |
+| Position_Family | TEXT | 条件必填 | 岗位族绑定（运营/内容部/主播…）：支撑「其他渠道运营岗」按族扩展，不写死单一岗位；与 Position_ID 至少填一 | 规则维护 | 引擎匹配 | 规则版本内稳定 |
+| Channel_ID | TEXT→Channel | 否 | 渠道绑定（抖音=CH000001）；空 = 全部渠道 | 规则维护 | 引擎匹配 | 规则版本内稳定 |
+| Max_Project_Run_Days | NUMBER | 是 | 豁免期阈值（当前 90，V04 新项目免责期，QA Q-10-01） | 规则维护 | 引擎匹配（Is_Exempt 判定） | 规则版本内稳定 |
+| Rule_Version | TEXT | 是 | 规则版本（当前 V04） | 规则维护 | 可回溯 | 新版本新增 |
+| Note | TEXT | 否 | 说明（如「D-010-R1 当前范围：仅抖音兴趣电商运营岗」） | 规则维护 | 解释、审计 | 变更时更新 |
+| Source / Create_Time / Update_Time / Status | — | 是 | 见 §1.1（Status=Active/Inactive，停用即回滚手段，不删除记录） | — | — | — |
+
+匹配语义：命中 =（Position_ID 匹配 **或** Position_Family 匹配）**且**（Channel_ID 空 **或** 匹配结果行渠道）**且** Project_Run_Days < Max_Project_Run_Days **且** Status=Active；Position_ID 精确匹配优先于 Position_Family 匹配；同 Position+Channel 不得两条 Active（Validation_Rule）。结果行渠道解析路径 = Project_ID → Project_Member（Employee+Project 生效关系，D-009.1）→ Channel_ID，一人多项目取 Is_Primary；渠道无法解析视为不匹配（不豁免）。
+
+种子配置（迁移回填）：EXS000001 = {Position_ID=POS000013（兴趣电商运营）、Position_Family=运营、Channel_ID=CH000001（抖音）、Max_Project_Run_Days=90、Rule_Version=V04、Status=Active}。
+
+> **变更记录 CHG-D010-R2-001**（2026-08-17，Owner: Product Owner，任务 t_124c9981 / D-010-R2）：新增 Exemption_Scope 表（§5.6）；Commission_Tier 新增 Base_Rate 字段（§5.5）；Performance_Result 新增 Exemption_Scope_ID 字段（§5.4）。原因：D-010-R2 要求提成基数（当前 0.003）与豁免适用范围（当前仅抖音兴趣电商运营岗）可配置化、改配置即生效、不得硬编码进公式或写死单一岗位。影响：三个结构在 Base 已存在（CHG-T15B-001 遗留，未入模型/未回填/未实现），本次正式化模型并定义读取规则；纯新增字段/表，既有 181 条结果与既有公式不受影响；计算公式不内嵌任何配置值。
 
 ## 6. 支撑实体
 
@@ -388,6 +415,8 @@ V04 评分规则承载位置小结：分档→Scoring_Standard_Text（原文）+
 | D-008 花名册模拟数据 | Employee.Data_Origin 标记 ROSTER_MOCK / HR_OFFICIAL；切换按 §4.1 预留方案在原 ID 上更新，不换号 |
 | D-009 5 项口径确认 | ① 岗位↔渠道/项目映射：Project_Member 数据源与维护入口=在线人工维护的「在职人员对照项目」表（§4.6 注）；② 90 天归因来源：Actual.Source_Type 注明视频管理系统自动下载、直接套数（§5.3 注，走 D-007 路径1 导入表）；③ 客服奖惩：不进自动规则，客服主管手动录入走 Performance_Result.Manual_Score，双部分结构已承载（§5.4 注）；④ 新项目免责提成：HR 人工评判走人工部分不进公式（§8 第3条部分关闭）；⑤ 超梯度上限：按最高一档处理，兜底规则注明于 §5.5 梯度匹配语义 |
 | D-009 提成基数口径（2026-08-17） | Performance_Result 新增 Commission_Base_Type / Commission_Base / Commission_Ratio / Commission_Amount 四字段承载（§5.4，CHG-T11A-001）；岗位→基数类型映射与各岗提成比例由 T11b（BA）从 V04 提成梯度表提取并结构化 |
+| D-010-R1 豁免口径（2026-08-17） | Is_Exempt 保留为时间资格标记；豁免期提成=提成基数×达成GSV、跳过梯度/系数；打分照常（Auto_Score/Weighted_Score 正常计算，T14 已验证） |
+| D-010-R2 提成基数与豁免范围可配置化（2026-08-17） | Commission_Tier.Base_Rate 承载岗位族固定基数（当前 0.003，不硬编码）；Exemption_Scope 表承载豁免适用范围（岗位/岗位族×渠道×阈值，新增范围=新增行）；Performance_Result.Exemption_Scope_ID 记录命中（§5.4/§5.5/§5.6，CHG-D010-R2-001） |
 
 ## 8. 待确认清单（业务歧义，不自行裁断）
 

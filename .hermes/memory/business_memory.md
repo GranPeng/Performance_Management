@@ -26,3 +26,11 @@
 - 运营/高级主管提成比例 = 固定提成基数 0.003（运营 K12 / 高级主管 M12）× 档位系数；主播/广告投放/制作部取 Ratio_Value 直接数值；直播中控（绩效工资×80%~110% + 0.1%/中控人数）与客服（人工录入）不适用基数×比例公式。
 - 待 PO 确认 6 项（business_rules.md §5）：直播中控梯度边界错位（T9b L3）、直播中控金额口径、无梯度匹配兜底、新项目豁免得分100不参与加权时提成处理、多人共用基数分摊、广告投放消耗与 D-006 范围关系。
 - 核对：`scripts/t11b_verify_tiers.py`（V04 JSON 逐条，OK=34/FLAG-L3=4/BY-DESIGN=4）、`scripts/t11b_verify_doc_tables.py`（文档表 vs Commission_Tier 42 条 0 问题）。
+
+## D-010-R2 豁免提成基数可配置化（2026-08-17，BA 设计交付）
+
+- 决策：0.003 不是规则常量（仅运营岗当前比例基数）；豁免适用范围可扩展（不得写死单一岗位）。设计规格：`docs/D010-R2_豁免提成基数可配置化规格.md`；机器可读：`data/output/D010-R2_提成配置化规格.json`；模型变更 CHG-D010-R2-001（data_model.md §5.4/§5.5/§5.6）。
+- 配置载体：`Commission_Tier.Base_Rate`（岗位族固定基数，当前 0.003，改配置即生效不碰公式）；`Exemption_Scope` 表（适用范围=岗位/岗位族×渠道×阈值，新增范围=新增行，EXS000001=POS000013×抖音×90）；`Performance_Result.Exemption_Scope_ID`（命中记录，审计锚点）。
+- 豁免提成 = Base_Rate（配置）× 达成GSV，跳过梯度/考核系数；评分照常（Auto_Score/Weighted_Score 正常）。Base 公式 Commission_Amount 表达式不改。
+- Base 既有 CHG-T15B-001 遗留结构（Exemption_Scope 空表/Base_Rate 空字段/Exemption_Scope_ID 关联）已正式入模型，勿重复建表。
+- 待 PO 确认：Position_Family 值域与归属、多人共用 GSV 豁免全额口径、Max_Project_Run_Days 是否随版本区分。

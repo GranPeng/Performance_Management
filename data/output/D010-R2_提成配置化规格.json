@@ -1,0 +1,168 @@
+{
+  "spec_id": "D010-R2",
+  "title": "运营岗豁免提成基数可配置化规则设计",
+  "version": "1.0",
+  "status": "BA_DESIGN_AWAITING_PO_FC_CONFIRM",
+  "date": "2026-08-17",
+  "owner": "business-analyst",
+  "rule_basis": ["D-010-R1", "D-010-R2", "D-009", "D-009.5"],
+  "source_docs": [
+    "context/decision_log.md",
+    "docs/business_rules.md",
+    "docs/data_model.md",
+    "docs/D010-R2_豁免提成基数可配置化规格.md",
+    "docs/计算链公式说明.md"
+  ],
+  "hard_constraints": [
+    "禁止在 Base 公式或脚本中内嵌 0.003",
+    "禁止在豁免判定中写死单一岗位",
+    "不直接修改 Base 公式字段表达式",
+    "不直接修改业务数据；只改配置表并重跑计算批次",
+    "改配置即生效：更新配置表后重跑批次，不碰公式"
+  ],
+  "design_decision": "沿用 Base 既有 CHG-T15B-001 结构（Exemption_Scope 表 / Commission_Tier.Base_Rate / Performance_Result.Exemption_Scope_ID），正式入 Canonical 模型，不重复建表。",
+
+  "model_changes": {
+    "change_id": "CHG-D010-R2-001",
+    "owner": "Product Owner",
+    "date": "2026-08-17",
+    "reason": "D-010-R2 要求提成基数与豁免适用范围可配置化、不硬编码进公式、不写死单一岗位",
+    "tables": {
+      "Commission_Tier": {
+        "action": "add_field",
+        "field": "Base_Rate",
+        "field_id_in_base": "fldhfJkRTk",
+        "type": "NUMBER",
+        "required": false,
+        "purpose": "岗位族固定提成基数比例（当前运营族 0.003）。正常路径 Ratio=Base_Rate×Coefficient；豁免路径 Ratio=Base_Rate",
+        "source": "规则维护（BA+PO 确认后回填/更新）",
+        "consumer": "计算引擎、提成复算、审计",
+        "lifecycle": "改配置即生效（更新后重跑批次）；规则版本内稳定",
+        "read_rule": "取该岗位任一 Status=Active 梯度行的 Base_Rate；同岗位族多行不一致由 Validation_Rule BLOCKER 拦截",
+        "seed_rows": [
+          {"position_id": "POS000013", "position_name": "兴趣电商运营", "base_rate": 0.003, "tier_ids": "CT-V04-IE-OPS-001..007"},
+          {"position_id": "POS000017", "position_name": "兴趣电商运营高级主管", "base_rate": 0.003, "tier_ids": "CT-V04-IE-SUP-001..007"}
+        ],
+        "seed_note": "其余 40 条梯度行（主播/内容部/广告投放/直播中控/客服）Base_Rate 留空；这些岗位 Commission_Ratio 直接用 Ratio_Value"
+      },
+      "Exemption_Scope": {
+        "action": "new_table",
+        "table_id_in_base": "tblP6Im75vDohuPF",
+        "id_prefix": "EXS",
+        "purpose": "豁免适用范围配置：一行 = 岗位/岗位族 × 渠道 × 豁免期阈值。新增范围=新增行",
+        "fields": [
+          {"name": "Exemption_Scope_ID", "type": "TEXT", "required": true, "purpose": "主键", "source": "规则维护", "consumer": "引擎匹配、结果关联", "lifecycle": "见模型 §1.1"},
+          {"name": "Position_ID", "type": "LINK->Position", "required": "condition(与 Position_Family 至少填一)", "purpose": "岗位精确绑定", "source": "规则维护", "consumer": "引擎匹配", "lifecycle": "规则版本内稳定"},
+          {"name": "Position_Family", "type": "TEXT", "required": "condition(与 Position_ID 至少填一)", "purpose": "岗位族绑定（运营/内容部/主播…），支撑按族扩展不写死岗位", "source": "规则维护", "consumer": "引擎匹配", "lifecycle": "规则版本内稳定", "note": "当前 Base 表无此字段，需补建（text）"},
+          {"name": "Channel_ID", "type": "LINK->Channel", "required": false, "purpose": "渠道绑定；空=全部渠道", "source": "规则维护", "consumer": "引擎匹配", "lifecycle": "规则版本内稳定"},
+          {"name": "Max_Project_Run_Days", "type": "NUMBER", "required": true, "purpose": "豁免期阈值（当前 90）", "source": "规则维护", "consumer": "引擎匹配", "lifecycle": "规则版本内稳定"},
+          {"name": "Rule_Version", "type": "TEXT", "required": true, "purpose": "规则版本（V04）", "source": "规则维护", "consumer": "可回溯", "lifecycle": "新版本新增"},
+          {"name": "Note", "type": "TEXT", "required": false, "purpose": "说明", "source": "规则维护", "consumer": "解释、审计", "lifecycle": "变更时更新"},
+          {"name": "Source", "type": "TEXT", "required": true, "purpose": "治理四要素", "source": "规则维护", "consumer": "审计", "lifecycle": "写入不变"},
+          {"name": "Create_Time", "type": "DATETIME", "required": true, "purpose": "治理四要素", "source": "规则维护", "consumer": "审计", "lifecycle": "写入不变"},
+          {"name": "Update_Time", "type": "DATETIME", "required": true, "purpose": "治理四要素", "source": "规则维护", "consumer": "审计", "lifecycle": "每次更新刷新"},
+          {"name": "Status", "type": "TEXT", "required": true, "purpose": "Active/Inactive；停用即回滚手段，不删除记录", "source": "规则维护", "consumer": "引擎准入", "lifecycle": "流转"}
+        ],
+        "match_semantics": "命中 =（Position_ID 匹配 或 Position_Family 匹配）且（Channel_ID 空 或 匹配结果行渠道）且 Project_Run_Days < Max_Project_Run_Days 且 Status=Active；Position_ID 精确优先；同 Position+Channel 不得两条 Active",
+        "channel_resolution": "结果行渠道 = Project_ID → Project_Member（Employee+Project 生效，D-009.1 在职人员对照项目）→ Channel_ID；一人多项目取 Is_Primary；无法解析视为不匹配（不豁免）",
+        "seed_rows": [
+          {
+            "exemption_scope_id": "EXS000001",
+            "position_id": "POS000013",
+            "position_name": "兴趣电商运营",
+            "position_family": "运营",
+            "channel_id": "CH000001",
+            "channel_name": "抖音",
+            "max_project_run_days": 90,
+            "rule_version": "V04",
+            "status": "Active",
+            "note": "D-010-R1 当前范围：仅抖音兴趣电商运营岗；未来按族/渠道扩行"
+          }
+        ]
+      },
+      "Performance_Result": {
+        "action": "add_field",
+        "field": "Exemption_Scope_ID",
+        "field_id_in_base": "fld6ma3OlX",
+        "type": "LINK->Exemption_Scope",
+        "required": false,
+        "purpose": "记录结果行命中的豁免范围配置（审计锚点）；未命中留空",
+        "source": "计算引擎（按 Exemption_Scope 匹配写入）",
+        "consumer": "Is_Exempt 展示、审计复算、复核看板",
+        "lifecycle": "随计算批次重算，整批重出"
+      }
+    }
+  },
+
+  "formula_spec": {
+    "commission_amount": {
+      "expression": "Commission_Base × Commission_Ratio",
+      "base_formula_unchanged": true,
+      "note": "Base 公式字段 Commission_Amount 表达式保持 IF(ISBLANK([Commission_Base])||ISBLANK([Commission_Ratio]),\"\",[Commission_Base]*[Commission_Ratio])，不改"
+    },
+    "commission_ratio_branches": [
+      {"scenario": "正常·运营族(POS000013/POS000017)", "condition": "不豁免且命中梯度", "ratio": "Commission_Tier.Base_Rate × Commission_Tier.Coefficient", "business_meaning": "固定提成基数 × 档位系数"},
+      {"scenario": "正常·其他族", "condition": "不豁免且命中梯度", "ratio": "Commission_Tier.Ratio_Value", "business_meaning": "直接数值比例（主播/内容部/广告投放）"},
+      {"scenario": "豁免", "condition": "命中 Exemption_Scope 且 Project_Run_Days < Max_Project_Run_Days", "ratio": "Commission_Tier.Base_Rate（直接取配置基数，跳过梯度与考核系数）", "business_meaning": "D-010-R1：豁免期提成=配置基数×达成GSV"}
+    ],
+    "exempt_commission": "Commission_Amount = Commission_Base（达成GSV） × Base_Rate（配置，当前0.003）",
+    "exempt_skips": ["Commission_Tier 梯度匹配", "考核系数 Coefficient"],
+    "scoring_unchanged": ["Auto_Score", "Final_Score", "Weighted_Score", "Monthly_Total", "Commission_Tier_Level（展示用，不参与豁免提成金额）"]
+  },
+
+  "migration": {
+    "steps": [
+      {"order": 1, "action": "模型登记", "detail": "data_model.md 追加 §5.6 Exemption_Scope、§5.5 Base_Rate、§5.4 Exemption_Scope_ID，记录 CHG-D010-R2-001（本任务已同步）"},
+      {"order": 2, "action": "Base 结构校验", "detail": "Exemption_Scope(tblP6Im75vDohuPF) 补建 Position_Family(text) 字段；Commission_Tier.Base_Rate(fldhfJkRTk)、Performance_Result.Exemption_Scope_ID(fld6ma3OlX) 已存在无需建"},
+      {"order": 3, "action": "回填 Commission_Tier.Base_Rate", "detail": "POS000013、POS000017 全部 Active 梯度行 Base_Rate=0.003；其余岗位留空", "batch_type": "MASTER_DATA/CALC"},
+      {"order": 4, "action": "插入 Exemption_Scope 种子", "detail": "EXS000001 = POS000013 × CH000001(抖音) × 90 天 × V04 × Active", "batch_type": "MASTER_DATA/CALC"},
+      {"order": 5, "action": "引擎改造", "detail": "t11c_generate_results.py 删除 round(0.003*coef) 硬编码，改读 Commission_Tier.Base_Rate；豁免分支读 Exemption_Scope 并写 Exemption_Scope_ID；t14_audit_repair.py 等测试脚本同步（测试值须标注非配置源）"},
+      {"order": 6, "action": "全量回归验证", "detail": "以当前值重跑批次，与 T14 最终参数快照零差异（difference_rows=0）；验收 AC-1~AC-5、AC-9"}
+    ]
+  },
+
+  "rollback": {
+    "priority_order": [
+      {"layer": "配置", "action": "Exemption_Scope 行 Status=Inactive（不删除）；Base_Rate 恢复原值或置空", "data_impact": "重跑批次后豁免分支消失/回原值"},
+      {"layer": "引擎", "action": "git revert 脚本改动（恢复常量版）", "data_impact": "重跑批次按旧逻辑"},
+      {"layer": "Base 公式", "action": "本设计不改公式；如实施期误改，按 T11c_set_formula_fields.py 历史表达式恢复", "data_impact": "重跑批次"},
+      {"layer": "数据", "action": "快照字段（Commission_Ratio/Amount/Exemption_Scope_ID）随批次重出覆盖；不直接删除/改写业务数据", "data_impact": "无残留"}
+    ],
+    "principle": "配置停用优先（保留审计），引擎回退次之；任何回滚必须重跑计算批次并复核差异"
+  },
+
+  "validation_rules": [
+    {"rule": "Base_Rate 一致性", "severity": "BLOCKER", "expression": "同一 Position 的所有 Active 梯度行 Base_Rate 必须一致"},
+    {"rule": "Exemption_Scope 唯一性", "severity": "BLOCKER", "expression": "同一 Position_ID+Channel_ID 不得存在两条 Active 行"},
+    {"rule": "Exemption_Scope 必填", "severity": "BLOCKER", "expression": "Position_ID 与 Position_Family 至少填一；Max_Project_Run_Days 必填且 >0"},
+    {"rule": "渠道存在性", "severity": "BLOCKER", "expression": "Channel_ID 必须指向 Channel 表 Active 记录"}
+  ],
+
+  "runtime_abnormal_handling": [
+    {"scenario": "运营族岗位找不到 Active Base_Rate", "behavior": "计算批次失败并写 Error_Log，不静默用 0.003"},
+    {"scenario": "豁免范围解析不到渠道", "behavior": "不豁免（不匹配），写 WARNING 提示人工核查 Project_Member 渠道归属"},
+    {"scenario": "人员调岗", "behavior": "结果行岗位以 Metric→Position 快照为准；调岗后不命中原豁免行 → 走正常梯度"},
+    {"scenario": "项目多人参与（渠道级 GSV 共用）", "behavior": "豁免按人×岗位×渠道逐人判定，不改变分摊语义（分摊口径仍挂 business_rules §4.5 待PO确认）"},
+    {"scenario": "配置值非法", "behavior": "Validation_Rule BLOCKER 拦截"}
+  ],
+
+  "acceptance_cases": [
+    {"id": "AC-1", "name": "配置存在性", "precondition": "完成迁移", "assertions": ["Exemption_Scope 存在 Active EXS000001（POS000013×抖音×90）", "Commission_Tier 运营族所有 Active 行 Base_Rate=0.003"]},
+    {"id": "AC-2", "name": "豁免行评分照常（正常评分不受影响）", "case": "复用 T14 场景（运行44天、GSV=100、Base=100）", "assertions": ["Auto_Score=100", "Weighted_Score=30（权重0.3）", "Monthly_Total 正常", "与 T14最终参数快照.json 一致"]},
+    {"id": "AC-3", "name": "豁免提成=配置基数×达成GSV（跳过梯度/系数）", "assertions": ["豁免行 Commission_Ratio=0.003（=Base_Rate，非0.003×系数）", "Commission_Amount=Base×0.003=0.3（GSV=100）", "Commission_Amount>0"]},
+    {"id": "AC-4", "name": "改配置即生效（不碰公式）", "case": "Base_Rate 0.003→0.004（测试值）→ 重跑", "assertions": ["正常行 Ratio=0.004×Coefficient", "豁免行 Ratio=0.004", "Amount 随之更新", "公式字段表达式零变更", "恢复0.003并重跑"]},
+    {"id": "AC-5", "name": "豁免范围扩展（不写死岗位）", "case": "新增 Exemption_Scope {Position_Family=运营, Channel_ID=CH000002 视频号, 90天}", "assertions": ["视频号渠道运营岗运行<90天豁免", "抖音兴趣电商运营岗仍豁免", "高级主管(POS000017)在抖音不豁免（验证 Position_ID 精确优先）", "撤销测试行"]},
+    {"id": "AC-6", "name": "无豁免配置的岗位不受影响", "assertions": ["主播/内容部/广告投放等无豁免行岗位即使运行<90天也不豁免", "走正常 Ratio_Value 梯度"]},
+    {"id": "AC-7", "name": "渠道留空=全部渠道", "case": "EXS000002 {Position_ID=POS000013, Channel_ID=空, 90天}（测试行）", "assertions": ["该岗位任意渠道运行<90天均豁免", "撤销测试行"]},
+    {"id": "AC-8", "name": "配置缺失不静默兜底", "case": "将 POS000013 的 Base_Rate 全部清空（模拟配置缺失）", "assertions": ["重跑批次 FAILED", "Error_Log 记录", "不得按 0.003 继续计算", "恢复 Base_Rate"]},
+    {"id": "AC-9", "name": "幂等与零差异回归", "assertions": ["连续重跑 created=0", "行数不变", "Monthly_Total 零差异", "与 T14 基线 difference_rows=0"]},
+    {"id": "AC-10", "name": "回滚", "case": "EXS000001 Status→Inactive → 重跑", "assertions": ["原豁免行不再豁免，走正常梯度（Ratio=Base_Rate×系数）", "恢复 Active 后复现豁免"]}
+  ],
+
+  "pending_po_confirmations": [
+    "Position_Family 字段值域是否与 business_rules §1 岗位族完全一致（建议取运营/内容部/主播/其他）",
+    "Position_Family 由 Position 主数据承载还是仅存于 Exemption_Scope 配置行（本设计暂以配置行自持，最小改动）",
+    "多人共用渠道 GSV 时豁免提成是否按人全额计发（默认全额，与正常梯度同口径）",
+    "Max_Project_Run_Days 未来是否随规则版本区分（当前 V04 统一 90）"
+  ]
+}
