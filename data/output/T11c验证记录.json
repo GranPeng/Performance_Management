@@ -1,0 +1,64 @@
+{
+  "task": "T11c",
+  "verified_at": "2026-08-17",
+  "period": "2026-07",
+  "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+  "scope": {
+    "performance_result_rows": 161,
+    "batch_id": "IB-T11C-CALC-20260817-01",
+    "runs_executed": 3,
+    "created_each_run": 0,
+    "updated_each_run": 161
+  },
+  "idempotence": {
+    "result": "PASS",
+    "detail": "连续 3 次执行 t11c_generate_results.py：created=0 / updated=161 / total=161；快照对比 Monthly_Total 零差异（base 161 行 vs run 161 行，无 missing / 无 extra）"
+  },
+  "exemption": {
+    "result": "PASS",
+    "qa_issue": "Q-10-01",
+    "method": "scratch 公式逻辑验证 + 正式表端到端（临时 SIMULATED 项目挂到 ACT000056 对应结果行，验证后清理）",
+    "target_row": "RST000124",
+    "temp_project": "PROJ900001 (SIMULATED_T11C, Start_Date=2026-05-15)",
+    "read_back": {
+      "Project_Run_Days": 77,
+      "Is_Exempt": true,
+      "Auto_Score": 100,
+      "Final_Score": 100,
+      "Weighted_Score": 0,
+      "Monthly_Total": 48,
+      "Monthly_Total_before": 48
+    },
+    "assertions": [
+      "Is_Exempt=true 且 Project_Run_Days=77 < 90",
+      "Auto_Score=100（豁免行单项得分强制 100）",
+      "Weighted_Score=0（豁免行不纳入月度加权）",
+      "Monthly_Total 保持 48 不变（豁免行贡献 0）"
+    ],
+    "cleanup": "已清空目标行 Project_ID 并删除临时项目，Project 表恢复 4 条正式记录",
+    "boundary": "Start_Date 缺失行 Is_Exempt 留空不误判；豁免行提成处理【待PO确认】（business_rules.md §4.3/§5-4）"
+  },
+  "commission": {
+    "result": "PASS",
+    "qa_issue": "Q-10-02",
+    "ratio_recheck": "107/107 与 Commission_Tier 梯度表手工复算一致（运营族=0.003×Coefficient，其余=Ratio_Value）",
+    "amount_recheck": "92/92 与 Base×Ratio 手工复算一致（含 0 元提成行）",
+    "blank_rows": "54（直播中控 42 + 客服 12）：无档位/无基数 → Commission 留空，符合 business_rules §2.6/§2.7",
+    "base_type_distribution": {"不适用": 54, "GSV": 16, "投放消耗": 5, "个人营收": 24, "个人消耗": 62},
+    "example": {"position": "SUP", "base": 300.5377, "monthly_total": 72, "tier": 3, "coefficient": 0.4, "ratio": 0.0012, "amount": 0.3606}
+  },
+  "formula_fields": {
+    "Auto_Score": "IF([Is_Exempt]=TRUE(),100,<原 SWITCH>)",
+    "Weighted_Score": "IF([Is_Exempt]=TRUE(),0,IFBLANK([Weight],0)*IFBLANK([Final_Score],0))",
+    "Commission_Amount": "IF(ISBLANK([Commission_Base])||ISBLANK([Commission_Ratio]),\"\",[Commission_Base]*[Commission_Ratio])",
+    "Commission_Base_Type": "text 存储快照（脚本按 D-009 写入）",
+    "Commission_Base": "number 存储快照（脚本按 D-009 口径取 Actual_Value）",
+    "Commission_Ratio": "number 存储快照（脚本按 Monthly_Total 对照 Commission_Tier 取档）"
+  },
+  "known_boundaries": [
+    "T11C-L1【待PO确认】：豁免行提成处理 V04 未规定；当前 Amount 公式对豁免行仍按 Base×Ratio 产出",
+    "T11C-L2【待PO确认】：广告投放/摄影师 Commission_Base 在 T9a 模拟数据无对应金额指标，快照留空",
+    "T11C-L3：既有 T9b 已知限制 L1-L5 不变"
+  ],
+  "status": "VERIFIED"
+}

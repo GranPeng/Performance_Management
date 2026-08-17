@@ -46,3 +46,10 @@
 **影响**：纯新增可选字段，既有 161 条结果与全部既有公式不受影响（已实测验证）；Project_Run_Days / Is_Exempt 公式三条路径（无关联 / Start_Date 空 / 正常计算 91 天→false、46 天→true）经临时表全路径验证通过，测试数据已清理。
 **风险**：① **Project.Start_Date 4/4 全空**（T8a 迁移时未携带），当前 Is_Exempt 全部留空，需业务在线维护补齐 Start_Date 后公式自动生效，禁止伪造日期（已在 Handoff 标注）；② 一人多项目时 Project_ID 归属口径（默认 Is_Primary）待 BA 确认；③ Commission_Amount 公式未落（T11b），Q-10-02 只解除模型层阻断，金额产出待 T11b 完成。
 
+## T11c 记录：幂等改造与豁免/提成公式落地（2026-08-17，feishu-builder 执行）
+- **幂等生成（Q-10-03）**：新脚本 `scripts/t11c_generate_results.py` 按业务键 `Employee_ID+Metric_ID+Period` upsert（已存在 batch-update 保留 Result_ID，缺失才 create），Import_Batch 按 Batch_ID 幂等复用；连续 3 次执行均 created=0/updated=161，Performance_Result 行数不变、Monthly_Total 零差异。T9b 脚本保留为历史产物，当前生成入口改为 T11c。
+- **豁免分支（Q-10-01）**：`Auto_Score` 前置 `IF([Is_Exempt]=TRUE(),100,...)`；`Weighted_Score` 改 `IF([Is_Exempt]=TRUE(),0,Weight×Final_Score)`，豁免行贡献 0 → Monthly_Total 自动不含豁免行。端到端验证（临时 SIMULATED 项目 77 天挂 RST000124）：Is_Exempt=true / Auto_Score=100 / Final_Score=100 / Weighted_Score=0 / Monthly_Total 不变（48），验证后已清理。
+- **提成金额（Q-10-02）**：`Commission_Base_Type/Base/Ratio` 为存储快照由脚本按 D-009 写入（运营=GSV、主播=个人营收、内容部=个人消耗、广告=投放消耗、直播中控/客服=不适用）；Base 取岗位基数指标 Actual_Value，Ratio 按 Monthly_Total 对照 Commission_Tier 取档（运营族=0.003×Coefficient、其余=Ratio_Value）；`Commission_Amount` 改 formula = Base×Ratio。验证：Ratio 107/107、Amount 92/92 手工复算一致。
+- **关键能力约束（实测）**：Base 公式 FILTER 条件内**不支持**链式访问 link 目标字段（`CurrentValue.[Metric_ID].[Metric_ID]` 被拒为 Bitable_Formula_InvalidReferenced），因此 Commission_Base 无法公式化，只能走「存储快照 + 脚本按 D-009 写入」；这与 data_model 生命周期「随批次固定/重算整批重出」一致。
+- **待 PO 边界**：T11C-L1 豁免行提成处理 V04 未规定（当前 Amount 公式仍按 Base×Ratio 产出）；T11C-L2 广告投放/摄影师 Commission_Base 在 T9a 模拟无对应金额指标留空；既有 T9b L1-L5 不变。
+
