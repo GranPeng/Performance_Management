@@ -1,0 +1,13 @@
+{
+  "create_records": [
+    {
+      "Result_ID": "RST-T11A-TEST",
+      "Period": "2026-07",
+      "Project_ID": ["recvslrVCv0oRY"],
+      "Source": "CALC_ENGINE",
+      "Rule_Version": "V04",
+      "Status": "Active",
+      "Review_Status": "待复核"
+    }
+  ]
+}

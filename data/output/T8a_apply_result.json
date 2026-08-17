@@ -1,0 +1,39 @@
+{
+  "planned_counts": {
+    "orgs": 15,
+    "positions": 53,
+    "projects": 4,
+    "channels": 9,
+    "employees": 80,
+    "errors": 12
+  },
+  "source_counts": {
+    "roster": 82,
+    "org": 145,
+    "project_channel": 60
+  },
+  "plan_file": "/Users/gran/Library/Mobile Documents/com~apple~CloudDocs/工作空间/工作文件WIP/1.进行中/performance-system/data/output/T8a_import_plan.json",
+  "applied": {
+    "batch_id": "IB-T8A-3E86810B7D929F2E",
+    "batch_record_id": "recvslqWd8ryC8",
+    "counts": {
+      "Organization": 15,
+      "Position": 53,
+      "Project": 4,
+      "Channel": 9,
+      "Employee": 80,
+      "Error_Log": 14
+    },
+    "source_counts": {
+      "roster": 82,
+      "org": 145,
+      "project_channel": 60
+    },
+    "source_sha": {
+      "roster": "55678c9fd75d372ce871daac6ed308e34fcd14d49fdba228f3d9b9b2e9ddf276",
+      "org": "d8b7f8a402f8cf9b4256354d2e47bd83368536bc38df5df80861d83f3e53f4e4",
+      "project_channel": "c51480c8c2da5b680bedf2a677aa77ef231a7ceea7d03b24c2212ec0123a6e6d"
+    },
+    "manager_errors": 2
+  }
+}

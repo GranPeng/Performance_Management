@@ -1,0 +1,10 @@
+{
+  "batch_record_id": "recvswmGFSTURr",
+  "batch_id": "IB-T9A-PREFLIGHT-20260817-01",
+  "error_record_ids": [
+    "recvswmHmbokwU",
+    "recvswmHmbokLA",
+    "recvswmHmbLsO8"
+  ],
+  "error_count": 3
+}

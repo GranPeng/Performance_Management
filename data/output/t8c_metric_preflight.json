@@ -1,0 +1,542 @@
+[
+  {
+    "record_id": "recvsgqAO9qu6Y",
+    "Metric_ID": "MET-V04-IE-OPS-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jZL0c"
+      }
+    ],
+    "Metric_Name": "团队GSV营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-运营"
+  },
+  {
+    "record_id": "recvsgqAO9qfRY",
+    "Metric_ID": "MET-V04-IE-OPS-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jZL0c"
+      }
+    ],
+    "Metric_Name": "团队ROI签收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-运营"
+  },
+  {
+    "record_id": "recvsgqAO9RXmg",
+    "Metric_ID": "MET-V04-IE-OPS-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jZL0c"
+      }
+    ],
+    "Metric_Name": "店铺运营能力",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-运营"
+  },
+  {
+    "record_id": "recvsgqAO9dVl1",
+    "Metric_ID": "MET-V04-IE-OPS-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jZL0c"
+      }
+    ],
+    "Metric_Name": "团队管理及组织能力",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-运营"
+  },
+  {
+    "record_id": "recvsgqAO9P9uR",
+    "Metric_ID": "MET-V04-IE-SUP-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jrFhn"
+      }
+    ],
+    "Metric_Name": "团队GSV营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-高级主管"
+  },
+  {
+    "record_id": "recvsgqAO91yOo",
+    "Metric_ID": "MET-V04-IE-SUP-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jrFhn"
+      }
+    ],
+    "Metric_Name": "团队ROI签收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-高级主管"
+  },
+  {
+    "record_id": "recvsgqAO9QUrn",
+    "Metric_ID": "MET-V04-IE-SUP-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jrFhn"
+      }
+    ],
+    "Metric_Name": "跨部门协调",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-高级主管"
+  },
+  {
+    "record_id": "recvsgqAO9CLPu",
+    "Metric_ID": "MET-V04-IE-SUP-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jrFhn"
+      }
+    ],
+    "Metric_Name": "团队管理及组织能力",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-高级主管"
+  },
+  {
+    "record_id": "recvsgqAO9e5yv",
+    "Metric_ID": "MET-V04-IE-ADS-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jNYII"
+      }
+    ],
+    "Metric_Name": "团队GSV营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-广告投放"
+  },
+  {
+    "record_id": "recvsgqAO9NL4M",
+    "Metric_ID": "MET-V04-IE-ADS-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jNYII"
+      }
+    ],
+    "Metric_Name": "团队ROI签收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-广告投放"
+  },
+  {
+    "record_id": "recvsgqAO95ycR",
+    "Metric_ID": "MET-V04-IE-ADS-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jNYII"
+      }
+    ],
+    "Metric_Name": "投中管理",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-广告投放"
+  },
+  {
+    "record_id": "recvsgqAO9emPC",
+    "Metric_ID": "MET-V04-IE-ADS-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jNYII"
+      }
+    ],
+    "Metric_Name": "素材管理",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-广告投放"
+  },
+  {
+    "record_id": "recvsgqAO96gsI",
+    "Metric_ID": "MET-V04-IE-ADS-005",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jNYII"
+      }
+    ],
+    "Metric_Name": "投后复盘",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-广告投放"
+  },
+  {
+    "record_id": "recvsgqAO9mdG3",
+    "Metric_ID": "MET-V04-IE-LIVE-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j9KFd"
+      }
+    ],
+    "Metric_Name": "团队GSV营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-直播中控"
+  },
+  {
+    "record_id": "recvsgqAO9BtF0",
+    "Metric_ID": "MET-V04-IE-LIVE-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j9KFd"
+      }
+    ],
+    "Metric_Name": "店铺链接管理：\n产品链接设置/产品编码编辑",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-直播中控"
+  },
+  {
+    "record_id": "recvsgqAO9P6en",
+    "Metric_ID": "MET-V04-IE-LIVE-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j9KFd"
+      }
+    ],
+    "Metric_Name": "客户服务与答疑",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-直播中控"
+  },
+  {
+    "record_id": "recvsgqAO9HBwj",
+    "Metric_ID": "MET-V04-IE-LIVE-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j9KFd"
+      }
+    ],
+    "Metric_Name": "样品管理",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-直播中控"
+  },
+  {
+    "record_id": "recvsgqAO9QQX4",
+    "Metric_ID": "MET-V04-IE-LIVE-005",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j9KFd"
+      }
+    ],
+    "Metric_Name": "工作态度",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-直播中控"
+  },
+  {
+    "record_id": "recvsgqAO9xOX7",
+    "Metric_ID": "MET-V04-IE-LIVE-006",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j9KFd"
+      }
+    ],
+    "Metric_Name": "工作能力",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-直播中控"
+  },
+  {
+    "record_id": "recvsgqAO956bY",
+    "Metric_ID": "MET-V04-IE-HOST-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jm31E"
+      }
+    ],
+    "Metric_Name": "个人直播签收ROI达成",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-主播"
+  },
+  {
+    "record_id": "recvsgqAO9bMNR",
+    "Metric_ID": "MET-V04-IE-HOST-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jm31E"
+      }
+    ],
+    "Metric_Name": "直播话术持续梳理与迭代",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-主播"
+  },
+  {
+    "record_id": "recvsgqAO9xGcS",
+    "Metric_ID": "MET-V04-IE-HOST-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jm31E"
+      }
+    ],
+    "Metric_Name": "工作态度",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-主播"
+  },
+  {
+    "record_id": "recvsgqAO9t3Jt",
+    "Metric_ID": "MET-V04-IE-HOST-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jm31E"
+      }
+    ],
+    "Metric_Name": "工作能力",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-主播"
+  },
+  {
+    "record_id": "recvsgqAO9TzuF",
+    "Metric_ID": "MET-V04-IE-CS-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0ji8UR"
+      }
+    ],
+    "Metric_Name": "接待响应率",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-客服"
+  },
+  {
+    "record_id": "recvsgqAO97CXH",
+    "Metric_ID": "MET-V04-IE-CS-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0ji8UR"
+      }
+    ],
+    "Metric_Name": "售前咨询转化标准",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-客服"
+  },
+  {
+    "record_id": "recvsgqAO9D0KD",
+    "Metric_ID": "MET-V04-IE-CS-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0ji8UR"
+      }
+    ],
+    "Metric_Name": "售后挽留",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-客服"
+  },
+  {
+    "record_id": "recvsgqAO9a4D4",
+    "Metric_ID": "MET-V04-IE-CS-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0ji8UR"
+      }
+    ],
+    "Metric_Name": "未付款催付+话术",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-客服"
+  },
+  {
+    "record_id": "recvsgqAO9Xmvf",
+    "Metric_ID": "MET-V04-IE-CS-005",
+    "Position_ID": [
+      {
+        "id": "recvslrK0ji8UR"
+      }
+    ],
+    "Metric_Name": "违规词/敏感词/错误回复",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-客服"
+  },
+  {
+    "record_id": "recvsgqAO9AEDA",
+    "Metric_ID": "MET-V04-IE-CS-006",
+    "Position_ID": [
+      {
+        "id": "recvslrK0ji8UR"
+      }
+    ],
+    "Metric_Name": "邀请好评",
+    "Status": "Active",
+    "Source_Sheet": "兴趣电商-客服"
+  },
+  {
+    "record_id": "recvsgqAO9jzlL",
+    "Metric_ID": "MET-V04-PROD-DIR-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jK9br"
+      }
+    ],
+    "Metric_Name": "团队营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "制作部-编导"
+  },
+  {
+    "record_id": "recvsgqAO9oSVw",
+    "Metric_ID": "MET-V04-PROD-DIR-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jK9br"
+      }
+    ],
+    "Metric_Name": "团队产出数量",
+    "Status": "Active",
+    "Source_Sheet": "制作部-编导"
+  },
+  {
+    "record_id": "recvsgqAO9a8qk",
+    "Metric_ID": "MET-V04-PROD-DIR-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jK9br"
+      }
+    ],
+    "Metric_Name": "团队产出消耗金额",
+    "Status": "Active",
+    "Source_Sheet": "制作部-编导"
+  },
+  {
+    "record_id": "recvsgqAO9RHxh",
+    "Metric_ID": "MET-V04-PROD-DIR-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jK9br"
+      }
+    ],
+    "Metric_Name": "工作能力",
+    "Status": "Active",
+    "Source_Sheet": "制作部-编导"
+  },
+  {
+    "record_id": "recvsgqAO9g8dv",
+    "Metric_ID": "MET-V04-PROD-DIR-005",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jK9br"
+      }
+    ],
+    "Metric_Name": "投后复盘",
+    "Status": "Active",
+    "Source_Sheet": "制作部-编导"
+  },
+  {
+    "record_id": "recvsgqAO93DMQ",
+    "Metric_ID": "MET-V04-PROD-DIR-006",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jK9br"
+      }
+    ],
+    "Metric_Name": "团队管理及组织能力",
+    "Status": "Active",
+    "Source_Sheet": "制作部-编导"
+  },
+  {
+    "record_id": "recvsgqAO99lgq",
+    "Metric_ID": "MET-V04-PROD-EDIT-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jAI9l"
+      }
+    ],
+    "Metric_Name": "团队营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "制作部-视频剪辑"
+  },
+  {
+    "record_id": "recvsgqAO9r899",
+    "Metric_ID": "MET-V04-PROD-EDIT-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jAI9l"
+      }
+    ],
+    "Metric_Name": "个人成片数量",
+    "Status": "Active",
+    "Source_Sheet": "制作部-视频剪辑"
+  },
+  {
+    "record_id": "recvsgqAO9sss4",
+    "Metric_ID": "MET-V04-PROD-EDIT-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jAI9l"
+      }
+    ],
+    "Metric_Name": "个人成片消耗金额",
+    "Status": "Active",
+    "Source_Sheet": "制作部-视频剪辑"
+  },
+  {
+    "record_id": "recvsgqAO9JjXx",
+    "Metric_ID": "MET-V04-PROD-EDIT-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jAI9l"
+      }
+    ],
+    "Metric_Name": "工作能力",
+    "Status": "Active",
+    "Source_Sheet": "制作部-视频剪辑"
+  },
+  {
+    "record_id": "recvsgqAO9fhqQ",
+    "Metric_ID": "MET-V04-PROD-EDIT-005",
+    "Position_ID": [
+      {
+        "id": "recvslrK0jAI9l"
+      }
+    ],
+    "Metric_Name": "素材管理",
+    "Status": "Active",
+    "Source_Sheet": "制作部-视频剪辑"
+  },
+  {
+    "record_id": "recvsgqAO9o4E6",
+    "Metric_ID": "MET-V04-PROD-CAM-001",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j6dfT"
+      }
+    ],
+    "Metric_Name": "团队营收目标达成率",
+    "Status": "Active",
+    "Source_Sheet": "制作部-摄影师"
+  },
+  {
+    "record_id": "recvsgqAO98dG9",
+    "Metric_ID": "MET-V04-PROD-CAM-002",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j6dfT"
+      }
+    ],
+    "Metric_Name": "个人素材数量",
+    "Status": "Active",
+    "Source_Sheet": "制作部-摄影师"
+  },
+  {
+    "record_id": "recvsgqAO9snId",
+    "Metric_ID": "MET-V04-PROD-CAM-003",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j6dfT"
+      }
+    ],
+    "Metric_Name": "工作能力",
+    "Status": "Active",
+    "Source_Sheet": "制作部-摄影师"
+  },
+  {
+    "record_id": "recvsgqAO9dvsH",
+    "Metric_ID": "MET-V04-PROD-CAM-004",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j6dfT"
+      }
+    ],
+    "Metric_Name": "职业素养",
+    "Status": "Active",
+    "Source_Sheet": "制作部-摄影师"
+  },
+  {
+    "record_id": "recvsgqAO9L6aL",
+    "Metric_ID": "MET-V04-PROD-CAM-005",
+    "Position_ID": [
+      {
+        "id": "recvslrK0j6dfT"
+      }
+    ],
+    "Metric_Name": "工作态度",
+    "Status": "Active",
+    "Source_Sheet": "制作部-摄影师"
+  }
+]

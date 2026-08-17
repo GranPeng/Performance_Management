@@ -1,0 +1,13 @@
+{
+  "batch_id": "IB-T8B-REL-20260815-01",
+  "batch_record_id": "recvslw7f2LYhf",
+  "rollback_scope": {
+    "Metric_Position_ID": 45,
+    "Commission_Tier_Position_ID": 42,
+    "Target_Channel_ID": 6156,
+    "Error_Log_delete": 317,
+    "Import_Batch_delete": 1
+  },
+  "method": "Clear only T8b-written relation fields, then delete only T8b-created Error_Log and Import_Batch records. Update_Time is refreshed by rollback and is not restored as a historical value.",
+  "apply_required": true
+}

@@ -1,0 +1,27 @@
+epics:
+  - id: EP0
+    name: 项目知识库
+    phase: 0
+    goal: 产出 system_design.md / business_rules.md / data_model.md
+    owners: [system_architect, business_analyst]
+    exit_criteria: 三份文档经 product_owner 确认
+
+  - id: EP1
+    name: 数据模型冻结
+    phase: 1
+    goal: 冻结 8 个核心实体
+    entities: [Employee, Organization, Position, Project, Metric, Target, Actual, Performance_Result]
+    exit_criteria: data_model.md 标记 FROZEN，变更需走 ADR
+
+  - id: EP2
+    name: 飞书 Base 验证
+    phase: 2
+    goal: 人工录入 100 条测试数据，验证公式正确
+    rule: 公式未验证前禁止任何自动化开发
+    owners: [feishu_builder, qa_reviewer]
+
+  - id: EP3
+    name: Agent ETL 自动化
+    phase: 3
+    goal: Excel → Canonical Schema → 飞书 Base 全链路自动化
+    owners: [data_engineer, automation_engineer]

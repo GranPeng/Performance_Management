@@ -1,0 +1,47 @@
+# Hermes Kanban 主配置 —— 绩效核算系统
+board:
+  name: 绩效核算系统
+  version: 0.1.0
+  workflow: planner_builder_reviewer   # 三阶段：分析 → 设计 → 实现+评审
+
+columns:
+  - id: backlog
+    name: 待规划
+  - id: analysis
+    name: 业务分析中
+    owner_role: business_analyst
+  - id: design
+    name: 架构设计中
+    owner_role: system_architect
+  - id: build
+    name: 实现中
+    owner_role: builder   # 按卡片 assigned_profile 动态路由
+  - id: review
+    name: 评审中
+    owner_role: qa_reviewer
+  - id: done
+    name: 完成
+
+profiles:
+  - product_owner
+  - system_architect
+  - business_analyst
+  - finance_controller
+  - data_engineer
+  - feishu_builder
+  - automation_engineer
+  - qa_reviewer
+
+# 卡片状态迁移规则：谁有资格把卡片推进到下一列
+transitions:
+  backlog_to_analysis:   [product_owner, business_analyst]
+  analysis_to_design:    [system_architect]              # 架构师审核业务产出后放行
+  design_to_build:       [system_architect]
+  build_to_review:       [data_engineer, feishu_builder, automation_engineer]
+  review_to_done:        [qa_reviewer, product_owner]    # QA 验证 + PO 业务价值确认
+  any_to_backlog:        [system_architect, product_owner]
+
+# 财务相关卡片强制会签
+mandatory_review:
+  finance_controller:
+    triggers: [预算, 收入, 成本, 费用, 利润, 达成率, ROI]

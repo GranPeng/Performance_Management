@@ -1,0 +1,52 @@
+{
+  "task": "T8c-rollback",
+  "decision": "仅回滚T8c记录级归并；D-012 Note字段保留",
+  "generated_at": "2026-08-17 12:34",
+  "source_execution_result": "/Users/gran/Library/Mobile Documents/com~apple~CloudDocs/工作空间/工作文件WIP/1.进行中/performance-system/data/output/T8c_position_merge_execution_result.json",
+  "updates": {
+    "Employee": {
+      "recvslsi1WjKy5": {
+        "Position_ID": [
+          {
+            "id": "recvslrK0jQSSX"
+          }
+        ],
+        "Update_Time": "2026-08-17 12:34"
+      },
+      "recvslsi1WvmFt": {
+        "Position_ID": [
+          {
+            "id": "recvslrK0jQSSX"
+          }
+        ],
+        "Update_Time": "2026-08-17 12:34"
+      }
+    },
+    "Position": {
+      "recvslrK0jQSSX": {
+        "Status": "Active",
+        "Note": null,
+        "Update_Time": "2026-08-17 12:34"
+      },
+      "recvslrK0jAhwx": {
+        "Note": null,
+        "Update_Time": "2026-08-17 12:34"
+      },
+      "recvslrK0j01uJ": {
+        "Note": null,
+        "Update_Time": "2026-08-17 12:34"
+      }
+    },
+    "Error_Log": {
+      "recvswujqTCUIC": {
+        "Error_Content": "T8c只读预检确认：Position 无可写归并注记字段。不得将“已并入 POS000038，2026-08-17”写入 Source（创建时固定的追溯字段）或 Position_Alias（仅别名语义）。在 Product Owner 以 FROZEN 变更流程明确承载字段前，未修改 EMP000027、EMP000028 或 POS000037。",
+        "Process_Status": "待处理",
+        "Handler": null,
+        "Handle_Time": null,
+        "Status": "Active",
+        "Update_Time": "2026-08-17 12:34"
+      }
+    }
+  },
+  "scope": "Employee.Position_ID、Position.Status/Note、Error_Log 状态；不删除正式模型 Note 字段，不修改 Metric/Target/业务结果"
+}

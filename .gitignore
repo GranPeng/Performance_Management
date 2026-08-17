@@ -1,0 +1,15 @@
+# 临时产物与中间数据（不入库）
+data/output/.t7_payloads/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 本地环境与密钥
+.env
+*.env.local
+
+# Hermes 运行时状态（kanban 任务板本地库、会话快照等）
+.hermes/kanban/*.db
+.hermes/kanban/*.db-wal
+.hermes/kanban/*.db-shm
+.hermes/memory/*.json

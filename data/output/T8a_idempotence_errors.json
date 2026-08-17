@@ -1,0 +1,350 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "data": [
+      [
+        "ERR000201",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Position",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "必填",
+        "T8a主数据ETL",
+        null,
+        "花名册缺少岗位或一级/二级部门，未注册",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "UNKNOWN"
+      ],
+      [
+        "ERR000202",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Position",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "必填",
+        "T8a主数据ETL",
+        null,
+        "花名册缺少岗位或一级/二级部门，未注册",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "UNKNOWN"
+      ],
+      [
+        "ERR000203",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“京东私域”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "京东私域"
+      ],
+      [
+        "ERR000204",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“快手”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "快手"
+      ],
+      [
+        "ERR000205",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“快手内容”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "快手内容"
+      ],
+      [
+        "ERR000206",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“快手达人”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "快手达人"
+      ],
+      [
+        "ERR000207",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“抖音内容”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "抖音内容"
+      ],
+      [
+        "ERR000208",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“抖音达人”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "抖音达人"
+      ],
+      [
+        "ERR000209",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“视频号内容”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "视频号内容"
+      ],
+      [
+        "ERR000210",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Channel",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "渠道映射",
+        "T8a主数据ETL",
+        null,
+        "旧项目渠道检索出现非V60权威渠道“视频号达人”，按任务要求不注册；待业务确认映射",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "视频号达人"
+      ],
+      [
+        "ERR000211",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Employee",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "ID存在性",
+        "T8a主数据ETL",
+        null,
+        "无法映射Org_ID或Position_ID：部门=None/None，岗位=None；该人员未导入",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "ROW80"
+      ],
+      [
+        "ERR000212",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Employee",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "ID存在性",
+        "T8a主数据ETL",
+        null,
+        "无法映射Org_ID或Position_ID：部门=None/None，岗位=None；该人员未导入",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "ROW81"
+      ],
+      [
+        "ERR000213",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Employee",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "ID存在性",
+        "T8a主数据ETL",
+        null,
+        "直属上级“上官”未能唯一解析为Employee_ID；未写入Direct_Manager_ID",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "EMP000066"
+      ],
+      [
+        "ERR000214",
+        "Active",
+        "2026-08-15T14:41:00.000+08:00",
+        "Employee",
+        "2026-08-15T14:41:00.000+08:00",
+        null,
+        "待处理",
+        "ID存在性",
+        "T8a主数据ETL",
+        null,
+        "直属上级“上官”未能唯一解析为Employee_ID；未写入Direct_Manager_ID",
+        [
+          {
+            "id": "recvslqWd8ryC8"
+          }
+        ],
+        "EMP000067"
+      ]
+    ],
+    "field_id_list": [
+      "fldfGx738G",
+      "fld1LwvmnD",
+      "fld4QEZpDx",
+      "fldAH1h1lx",
+      "fldbCCMc1w",
+      "fldDtcFR5Q",
+      "fldg24qIt8",
+      "fldGvsrhlv",
+      "fldHs0DlLA",
+      "fldis0v8sV",
+      "fldJnOVFz6",
+      "fldShFGvU5",
+      "fldzdoGoM8"
+    ],
+    "field_type_list": [
+      "text",
+      "text",
+      "datetime",
+      "text",
+      "datetime",
+      "text",
+      "text",
+      "text",
+      "text",
+      "datetime",
+      "text",
+      "link",
+      "text"
+    ],
+    "fields": [
+      "Error_ID",
+      "Status",
+      "Update_Time",
+      "Object_Type",
+      "Create_Time",
+      "Handler",
+      "Process_Status",
+      "Error_Type",
+      "Source",
+      "Handle_Time",
+      "Error_Content",
+      "Batch_ID",
+      "Object_ID"
+    ],
+    "has_more": false,
+    "query_context": {
+      "field_scope": "all_fields",
+      "record_scope": "filtered_records"
+    },
+    "record_id_list": [
+      "recvslsMRsjGKf",
+      "recvslsMRsXiup",
+      "recvslsMRsea4e",
+      "recvslsMRsFD8s",
+      "recvslsMRsThEd",
+      "recvslsMRsrEC0",
+      "recvslsMRsR6ve",
+      "recvslsMRsaKkA",
+      "recvslsMRsxhzf",
+      "recvslsMRsEZJ3",
+      "recvslsMRsVR31",
+      "recvslsMRsyHVN",
+      "recvslsMRsi1Zo",
+      "recvslsMRsvil0"
+    ],
+    "rev": 74,
+    "timezone": "Asia/Shanghai"
+  },
+  "_notice": {
+    "update": {
+      "command": "lark-cli update",
+      "current": "1.0.86",
+      "latest": "1.0.87",
+      "message": "lark-cli 1.0.87 available, current 1.0.86, run: lark-cli update"
+    }
+  }
+}

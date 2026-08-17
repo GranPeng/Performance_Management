@@ -1,0 +1,32 @@
+{
+  "task": "T8c",
+  "event": "受控执行中断与续跑恢复",
+  "occurred_at": "2026-08-17 12:19 +08:00",
+  "severity": "可恢复处理异常",
+  "initial_exception": "Import_Batch 创建成功后，CLI 返回体未含预期 record_id 路径，执行脚本在 Employee/Position/Error_Log 写入前主动停止。",
+  "initial_side_effects_verified": {
+    "note_fields_created": 14,
+    "import_batch": {
+      "Batch_ID": "IB-T8C-MERGE-20260817-01",
+      "record_id": "recvswzRyMEYY7",
+      "initial_status": "Running"
+    },
+    "Employee_Position_updates": 0,
+    "Position_status_or_note_updates": 0,
+    "Error_Log_updates": 0,
+    "Metric_or_Target_updates": 0
+  },
+  "recovery_action": "修正执行器以通过 Batch_ID 只读定位已创建且仍为 Running 的唯一批次，重新运行预检后使用同一批次续跑；未新建重复批次或重复字段。",
+  "post_recovery_verification": {
+    "batch_status": "Success",
+    "batch_counts": "19/19/0",
+    "confirmed_participant_position_to_active_metric": "32/32",
+    "independent_post_verification": "PREFLIGHT_PASSED，无失败项"
+  },
+  "audit_artifacts": [
+    "data/output/T8c_position_merge_execution_plan.json",
+    "data/output/T8c_position_merge_execution_result.json",
+    "data/output/T8c_position_merge_post_verification.json",
+    "data/output/T8c_position_merge_rollback_plan.json"
+  ]
+}

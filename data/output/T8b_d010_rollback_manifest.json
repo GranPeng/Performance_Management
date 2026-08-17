@@ -1,0 +1,12 @@
+{
+  "task": "T8b-D010-finalize",
+  "decision": "D-010",
+  "batch_record_id": "recvslw7f2LYhf",
+  "rollback_scope": {
+    "Project_Member_delete": 23,
+    "Error_Log_restore": 239,
+    "Import_Batch_restore": 1
+  },
+  "method": "Delete only D-010-created Project_Member records; restore exact prior mutable Error_Log and Import_Batch values captured in the preflight plan. Create_Time and original Source are untouched.",
+  "apply_required": true
+}

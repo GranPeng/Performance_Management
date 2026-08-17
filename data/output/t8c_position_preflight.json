@@ -1,0 +1,797 @@
+[
+  {
+    "record_id": "recvslrK0jmWwe",
+    "Position_ID": "POS000001",
+    "Position_Name": "DTC渠道销售",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHQ15Z"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jFa3P",
+    "Position_ID": "POS000002",
+    "Position_Name": "DTC渠道销售主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHQ15Z"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jhUoN",
+    "Position_ID": "POS000003",
+    "Position_Name": "DTC渠道销售总监",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jIoPD",
+    "Position_ID": "POS000004",
+    "Position_Name": "中台运营",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHb4xd"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jX5oS",
+    "Position_ID": "POS000005",
+    "Position_Name": "中台运营总监",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jm31E",
+    "Position_ID": "POS000006",
+    "Position_Name": "主播",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jp2yq",
+    "Position_ID": "POS000007",
+    "Position_Name": "人事行政专员",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHOtk3"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jrgUU",
+    "Position_ID": "POS000008",
+    "Position_Name": "人事行政主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHOtk3"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jKeOL",
+    "Position_ID": "POS000009",
+    "Position_Name": "会计",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHIX59"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jIa6m",
+    "Position_ID": "POS000010",
+    "Position_Name": "供应链专员",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHrivy"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j5CmP",
+    "Position_ID": "POS000011",
+    "Position_Name": "供应链主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHrivy"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jiUSh",
+    "Position_ID": "POS000012",
+    "Position_Name": "供应链总监",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jZL0c",
+    "Position_ID": "POS000013",
+    "Position_Name": "兴趣电商运营",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jT4eD",
+    "Position_ID": "POS000014",
+    "Position_Name": "兴趣电商运营主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jcS8h",
+    "Position_ID": "POS000015",
+    "Position_Name": "兴趣电商运营助理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jTYUq",
+    "Position_ID": "POS000016",
+    "Position_Name": "兴趣电商运营总监",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jrFhn",
+    "Position_ID": "POS000017",
+    "Position_Name": "兴趣电商运营高级主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jK9br",
+    "Position_ID": "POS000018",
+    "Position_Name": "内容主管/编导",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHxVvG"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jDPNg",
+    "Position_ID": "POS000019",
+    "Position_Name": "内容高级主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHxVvG"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j1DGD",
+    "Position_ID": "POS000020",
+    "Position_Name": "出纳",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHIX59"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jArRq",
+    "Position_ID": "POS000021",
+    "Position_Name": "副总经理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jZHcK",
+    "Position_ID": "POS000022",
+    "Position_Name": "加粉客服",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHM8vV"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jkE9x",
+    "Position_ID": "POS000023",
+    "Position_Name": "加粉客服主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHM8vV"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jbBBs",
+    "Position_ID": "POS000024",
+    "Position_Name": "平台电商运营",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jwSIS",
+    "Position_ID": "POS000025",
+    "Position_Name": "平台电商运营主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jVLW4",
+    "Position_ID": "POS000026",
+    "Position_Name": "平台电商运营助理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jodIV",
+    "Position_ID": "POS000027",
+    "Position_Name": "平台电商运营总监",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j48zL",
+    "Position_ID": "POS000028",
+    "Position_Name": "平台电商运营高级主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j6XH2",
+    "Position_ID": "POS000029",
+    "Position_Name": "平面设计师",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHxVvG"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jLmvT",
+    "Position_ID": "POS000030",
+    "Position_Name": "平面设计师",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jBEsX",
+    "Position_ID": "POS000031",
+    "Position_Name": "平面设计师",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHb4xd"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jNYII",
+    "Position_ID": "POS000032",
+    "Position_Name": "广告投放",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jpe8L",
+    "Position_ID": "POS000033",
+    "Position_Name": "总经办助理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHGyES"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jd7Dx",
+    "Position_ID": "POS000034",
+    "Position_Name": "总经理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j6dfT",
+    "Position_ID": "POS000035",
+    "Position_Name": "摄影师",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHxVvG"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jJkpB",
+    "Position_ID": "POS000036",
+    "Position_Name": "数字化专员",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHb4xd"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jQSSX",
+    "Position_ID": "POS000037",
+    "Position_Name": "电商客服专员",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Inactive",
+    "Note": "已并入 POS000038，2026-08-17，T8c",
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-17T12:25:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0ji8UR",
+    "Position_ID": "POS000038",
+    "Position_Name": "电商客服专员",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jAhwx",
+    "Position_ID": "POS000039",
+    "Position_Name": "电商客服主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": "T8c全量排查：与 POS000040 同名，但不在 V04 KPI 覆盖范围；保留原实体语义，暂不处理。",
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-17T12:25:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j01uJ",
+    "Position_ID": "POS000040",
+    "Position_Name": "电商客服主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHLXF4"
+      }
+    ],
+    "Status": "Active",
+    "Note": "T8c全量排查：与 POS000039 同名，但不在 V04 KPI 覆盖范围；保留原实体语义，暂不处理。",
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-17T12:25:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j9KFd",
+    "Position_ID": "POS000041",
+    "Position_Name": "直播中控/运营助理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHneDq"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jfpuf",
+    "Position_ID": "POS000042",
+    "Position_Name": "董事长",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jitxd",
+    "Position_ID": "POS000043",
+    "Position_Name": "行政司机",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jAI9l",
+    "Position_ID": "POS000044",
+    "Position_Name": "视频剪辑师",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHxVvG"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jnV0y",
+    "Position_ID": "POS000045",
+    "Position_Name": "财务",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHIX59"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jqFsA",
+    "Position_ID": "POS000046",
+    "Position_Name": "财务总监",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkwlQ"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j5PIo",
+    "Position_ID": "POS000047",
+    "Position_Name": "达人商务",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jXzyd",
+    "Position_ID": "POS000048",
+    "Position_Name": "达人商务主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jC4F6",
+    "Position_ID": "POS000049",
+    "Position_Name": "达人商务助理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jhHqT",
+    "Position_ID": "POS000050",
+    "Position_Name": "达人媒介",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j1kSd",
+    "Position_ID": "POS000051",
+    "Position_Name": "达人媒介主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0jm9JH",
+    "Position_ID": "POS000052",
+    "Position_Name": "达人媒介助理",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  },
+  {
+    "record_id": "recvslrK0j4za4",
+    "Position_ID": "POS000053",
+    "Position_Name": "达人媒介高级主管",
+    "Org_ID": [
+      {
+        "id": "recvslr8CHkYAH"
+      }
+    ],
+    "Status": "Active",
+    "Note": null,
+    "Position_Alias": null,
+    "Source": "T8a主数据ETL",
+    "Update_Time": "2026-08-15T14:37:00.000+08:00"
+  }
+]

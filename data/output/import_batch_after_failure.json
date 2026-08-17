@@ -1,0 +1,124 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "data": [
+      [
+        "IB-V60-65D3C2A6A3E26BCE",
+        "2026-08-14T18:00:00.000+08:00",
+        6156,
+        "羊喜市中期预算模型_20260716_V60.xlsx",
+        "data-engineer/T7",
+        0,
+        "Excel文件",
+        "BUDGET",
+        "Active",
+        "2026-08-14T18:00:00.000+08:00",
+        "T2结构化JSON；D-001权威V60",
+        6156,
+        "65d3c2a6a3e26bce63e196bd80025a3f0a293c05d1fa730da7b5fef0c0eb5943",
+        "2026-08-14T18:20:00.000+08:00"
+      ],
+      [
+        "IB-T6-V04-20260814-01",
+        "2026-08-14T18:02:00.000+08:00",
+        87,
+        "岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx",
+        "data-engineer/T6-V04-ETL",
+        0,
+        "Excel文件",
+        "MASTER_DATA",
+        "Active",
+        "2026-08-14T18:02:00.000+08:00",
+        "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+        87,
+        "5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250",
+        "2026-08-14T18:04:00.000+08:00"
+      ],
+      [
+        "IB-T8A-3E86810B7D929F2E",
+        "2026-08-15T14:35:00.000+08:00",
+        0,
+        "tblK13ENF7v5EwYg,tblIeQRH5U7Ip8b5,tbl6JGBru8LLWV52",
+        "data-engineer/T8a",
+        12,
+        "Base原型只读快照",
+        "MASTER_DATA",
+        "Running",
+        "2026-08-15T14:35:00.000+08:00",
+        "T8a主数据ETL",
+        161,
+        "3e86810b7d929f2e6450f652b2145ec650b74a68f7ccb70a63528742deff9348",
+        "2026-08-15T14:35:00.000+08:00"
+      ]
+    ],
+    "field_id_list": [
+      "fldwXh0adD",
+      "fld71SvTwd",
+      "fldEbDpavH",
+      "fldG3IixKh",
+      "fldIPW5jMM",
+      "fldJT7wCCk",
+      "fldmatnbAQ",
+      "fldmOtbc1S",
+      "fldPGi60ds",
+      "fldR3pQ7CU",
+      "fldtEiEfIS",
+      "fldvIqy8ZT",
+      "fldVOhd3H5",
+      "fldwNawedG"
+    ],
+    "field_type_list": [
+      "text",
+      "datetime",
+      "number",
+      "text",
+      "text",
+      "number",
+      "text",
+      "text",
+      "text",
+      "datetime",
+      "text",
+      "number",
+      "text",
+      "datetime"
+    ],
+    "fields": [
+      "Batch_ID",
+      "Import_Time",
+      "Success_Count",
+      "Source_File",
+      "Operator",
+      "Fail_Count",
+      "Source_Type",
+      "Batch_Type",
+      "Status",
+      "Create_Time",
+      "Source",
+      "Total_Count",
+      "Source_SHA256",
+      "Update_Time"
+    ],
+    "has_more": false,
+    "query_context": {
+      "field_scope": "all_fields",
+      "record_scope": "all_records"
+    },
+    "record_id_list": [
+      "recvsgpQpBrJYU",
+      "recvsgqAdvDCRY",
+      "recvslqWd8ryC8"
+    ],
+    "rev": 6,
+    "timezone": "Asia/Shanghai"
+  },
+  "_notice": {
+    "update": {
+      "command": "lark-cli update",
+      "current": "1.0.86",
+      "latest": "1.0.87",
+      "message": "lark-cli 1.0.87 available, current 1.0.86, run: lark-cli update"
+    }
+  }
+}

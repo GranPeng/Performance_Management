@@ -1,0 +1,75 @@
+{
+  "task_id": "t_3ef451b5",
+  "task_name": "回填 Metric 与 Commission_Tier 的 Position_ID",
+  "verified_at": "2026-08-15 16:20:35 +0800",
+  "base": {
+    "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+    "tables": {
+      "Position": "tbldzvsg9Op6pK29",
+      "Metric": "tbldKtdIVv8nnTyX",
+      "Commission_Tier": "tblkZUoHYwBIvDYe",
+      "Import_Batch": "tblHV3JoVR9AEETw",
+      "Error_Log": "tbl4ZpuuOxZacWgj"
+    }
+  },
+  "source": {
+    "position_registry": "T8a 已注册 Position 表；ID 仅以实际 Position record_id 链接写入",
+    "mapping_plan": "data/output/T8b_backfill_plan.json",
+    "mapping_rule": "V04 Source_Sheet → 唯一 Position_Name；九个来源工作表均在注册表中命中，不生成任何新 Position_ID。"
+  },
+  "mapping_rules": {
+    "兴趣电商-运营": "兴趣电商运营",
+    "兴趣电商-高级主管": "兴趣电商运营高级主管",
+    "兴趣电商-广告投放": "广告投放",
+    "兴趣电商-直播中控": "直播中控/运营助理",
+    "兴趣电商-主播": "主播",
+    "兴趣电商-客服": "电商客服专员",
+    "制作部-编导": "内容主管/编导",
+    "制作部-视频剪辑": "视频剪辑师",
+    "制作部-摄影师": "摄影师"
+  },
+  "result": {
+    "Metric": {
+      "total_rows": 45,
+      "position_id_single_link_rows": 45,
+      "successful_backfill_rows": 45,
+      "failed_backfill_rows": 0,
+      "failure_items": []
+    },
+    "Commission_Tier": {
+      "total_rows": 42,
+      "position_id_single_link_rows": 42,
+      "successful_backfill_rows": 42,
+      "failed_backfill_rows": 0,
+      "failure_items": []
+    },
+    "combined_successful_backfill_rows": 87,
+    "combined_failed_backfill_rows": 0
+  },
+  "batch_reconciliation": {
+    "batch_record_id": "recvslw7f2LYhf",
+    "batch_id": "IB-T8B-REL-20260815-01",
+    "shared_relation_backfill_batch": true,
+    "total_count": 6344,
+    "success_count": 6266,
+    "fail_count": 78,
+    "status": "Partial",
+    "position_id_scope_error_log_count": 0,
+    "note": "该批次同时覆盖 Target.Channel_ID 与 Project_Member/D-010 收尾；78 个失败均为 Project_Member 必填/ID存在性，非 Position_ID 回填失败。"
+  },
+  "verification": {
+    "readback_script": "scripts/verify_t8b_d010.py",
+    "readback_status": "PASSED",
+    "checks": [
+      "Metric.Position_ID 单链接数=45，Metric 总数=45",
+      "Commission_Tier.Position_ID 单链接数=42，Commission_Tier 总数=42",
+      "所有 Position_ID 链接均由 T8a 已注册 Position record_id 提供",
+      "Position_ID 范围无未回填且未记录的异常；失败清单为空"
+    ],
+    "rollback_dry_run": {
+      "script": "scripts/rollback_t8b_d010.py",
+      "status": "DRY_RUN_PASSED",
+      "manifest": "data/output/T8b_d010_rollback_manifest.json"
+    }
+  }
+}

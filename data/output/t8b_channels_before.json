@@ -1,0 +1,82 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "data": [
+      [
+        "CH000001",
+        "抖音"
+      ],
+      [
+        "CH000002",
+        "视频号"
+      ],
+      [
+        "CH000003",
+        "天猫淘宝"
+      ],
+      [
+        "CH000004",
+        "拼多多"
+      ],
+      [
+        "CH000005",
+        "京东POP"
+      ],
+      [
+        "CH000006",
+        "京东自营"
+      ],
+      [
+        "CH000007",
+        "达播"
+      ],
+      [
+        "CH000008",
+        "私域"
+      ],
+      [
+        "CH000009",
+        "外部分销"
+      ]
+    ],
+    "field_id_list": [
+      "fldsdlaeVy",
+      "flduBnSAwI"
+    ],
+    "field_type_list": [
+      "text",
+      "text"
+    ],
+    "fields": [
+      "Channel_ID",
+      "Channel_Name"
+    ],
+    "has_more": false,
+    "query_context": {
+      "field_scope": "selected_fields",
+      "record_scope": "all_records"
+    },
+    "record_id_list": [
+      "recvsls7z4BhTA",
+      "recvsls7z5bauE",
+      "recvsls7z5EtPG",
+      "recvsls7z5eaUU",
+      "recvsls7z5ChbC",
+      "recvsls7z57fhr",
+      "recvsls7z5Pfl0",
+      "recvsls7z5ttP9",
+      "recvsls7z5JisQ"
+    ],
+    "rev": 1,
+    "timezone": "Asia/Shanghai"
+  },
+  "_notice": {
+    "update": {
+      "command": "lark-cli update",
+      "current": "1.0.86",
+      "latest": "1.0.87",
+      "message": "lark-cli 1.0.87 available, current 1.0.86, run: lark-cli update"
+    }
+  }
+}

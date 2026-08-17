@@ -1,0 +1,14 @@
+[
+  { "type": "text", "name": "Period" },
+  { "type": "datetime", "name": "Start_Date", "style": { "format": "yyyy-MM-dd" } },
+  {
+    "type": "formula",
+    "name": "Run_Days",
+    "expression": "IF(ISBLANK([Start_Date]), \"\", DAYS(EOMONTH(TODATE([Period] & \"-01\"), 0), [Start_Date]))"
+  },
+  {
+    "type": "formula",
+    "name": "Exempt",
+    "expression": "IF(ISBLANK([Run_Days]), \"\", [Run_Days] < 90)"
+  }
+]

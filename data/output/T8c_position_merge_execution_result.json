@@ -1,0 +1,369 @@
+{
+  "plan": {
+    "task": "T8c",
+    "decision": "D-012/CHG-T8C-001",
+    "created_at": "2026-08-17 12:25",
+    "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+    "note_fields_total": 14,
+    "note_fields_existing": {
+      "Organization": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldU36Pxk3",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Position": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldyU8uqeS",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Employee": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldFLOxEJp",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Project": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldVAfILGg",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Channel": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldIZLWBvk",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Project_Member": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldgS5CwUR",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Metric": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldbr5nSCx",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Target": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldTLdVjoO",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Actual": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldMEw7pgg",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Performance_Result": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldFen3sKd",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Commission_Tier": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldbQaPgQu",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Import_Batch": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldJT2rBLD",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Validation_Rule": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "fldlIwy2iI",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ],
+      "Error_Log": [
+        {
+          "default_value": null,
+          "description": "通用治理备注；承载归并说明、作废原因、特殊标注等。CHG-T8C-001。",
+          "id": "flddEzuEKi",
+          "name": "Note",
+          "style": {
+            "type": "plain"
+          },
+          "type": "text"
+        }
+      ]
+    },
+    "note_fields_to_create": [],
+    "existing_batch_record_id": "recvswzRyMEYY7",
+    "precondition": {
+      "Position": {
+        "POS000037": "recvslrK0jQSSX",
+        "POS000038": "recvslrK0ji8UR",
+        "POS000039": "recvslrK0jAhwx",
+        "POS000040": "recvslrK0j01uJ"
+      },
+      "Employee": {
+        "EMP000027": "recvslsi1WjKy5",
+        "EMP000028": "recvslsi1WvmFt"
+      },
+      "POS000038_active_metric_count": 6,
+      "confirmed_participants_before": 32,
+      "participant_failures_before": [
+        "EMP000027",
+        "EMP000028"
+      ]
+    },
+    "updates": {
+      "Employee": [
+        {
+          "record_id": "recvslsi1WjKy5",
+          "fields": {
+            "Position_ID": [
+              {
+                "id": "recvslrK0ji8UR"
+              }
+            ],
+            "Update_Time": "2026-08-17 12:25"
+          },
+          "prior": {
+            "Position_ID": [
+              {
+                "id": "recvslrK0jQSSX"
+              }
+            ],
+            "Update_Time": null
+          }
+        },
+        {
+          "record_id": "recvslsi1WvmFt",
+          "fields": {
+            "Position_ID": [
+              {
+                "id": "recvslrK0ji8UR"
+              }
+            ],
+            "Update_Time": "2026-08-17 12:25"
+          },
+          "prior": {
+            "Position_ID": [
+              {
+                "id": "recvslrK0jQSSX"
+              }
+            ],
+            "Update_Time": null
+          }
+        }
+      ],
+      "Position": [
+        {
+          "record_id": "recvslrK0jQSSX",
+          "fields": {
+            "Status": "Inactive",
+            "Note": "已并入 POS000038，2026-08-17，T8c",
+            "Update_Time": "2026-08-17 12:25"
+          },
+          "prior": {
+            "Status": "Active",
+            "Note": null,
+            "Update_Time": "2026-08-15T14:37:00.000+08:00"
+          }
+        },
+        {
+          "record_id": "recvslrK0jAhwx",
+          "fields": {
+            "Note": "T8c全量排查：与 POS000040 同名，但不在 V04 KPI 覆盖范围；保留原实体语义，暂不处理。",
+            "Update_Time": "2026-08-17 12:25"
+          },
+          "prior": {
+            "Note": null,
+            "Update_Time": "2026-08-15T14:37:00.000+08:00"
+          }
+        },
+        {
+          "record_id": "recvslrK0j01uJ",
+          "fields": {
+            "Note": "T8c全量排查：与 POS000039 同名，但不在 V04 KPI 覆盖范围；保留原实体语义，暂不处理。",
+            "Update_Time": "2026-08-17 12:25"
+          },
+          "prior": {
+            "Note": null,
+            "Update_Time": "2026-08-15T14:37:00.000+08:00"
+          }
+        }
+      ],
+      "Error_Log": [
+        {
+          "record_id": "recvswujqTCUIC",
+          "fields": {
+            "Error_Content": "T8c只读预检确认：Position 无可写归并注记字段。不得将“已并入 POS000038，2026-08-17”写入 Source（创建时固定的追溯字段）或 Position_Alias（仅别名语义）。在 Product Owner 以 FROZEN 变更流程明确承载字段前，未修改 EMP000027、EMP000028 或 POS000037。；【D-012/CHG-T8C-001】14张正式表已补建 Note(TEXT)，归并已执行并读回验证。",
+            "Process_Status": "已解决",
+            "Handler": "data-engineer/T8c",
+            "Handle_Time": "2026-08-17 12:25",
+            "Status": "Archived",
+            "Update_Time": "2026-08-17 12:25"
+          },
+          "prior": {
+            "Error_Content": "T8c只读预检确认：Position 无可写归并注记字段。不得将“已并入 POS000038，2026-08-17”写入 Source（创建时固定的追溯字段）或 Position_Alias（仅别名语义）。在 Product Owner 以 FROZEN 变更流程明确承载字段前，未修改 EMP000027、EMP000028 或 POS000037。",
+            "Process_Status": "待处理",
+            "Handler": null,
+            "Handle_Time": null,
+            "Status": "Active",
+            "Update_Time": "2026-08-17T11:48:00.000+08:00"
+          }
+        }
+      ]
+    },
+    "batch": {
+      "Batch_ID": "IB-T8C-MERGE-20260817-01",
+      "Batch_Type": "MASTER_DATA",
+      "Source_Type": "D-012/CHG-T8C-001受控归并",
+      "Source_File": "context/decision_log.md;docs/data_model.md;data/output/T8c_position_merge_preflight.json",
+      "Source_SHA256": "1585a4d02ccd85a1b92487421750b4cbaab86bd5fc52c146bee683120805e795",
+      "Import_Time": "2026-08-17 12:25",
+      "Operator": "data-engineer/T8c",
+      "Total_Count": 19,
+      "Success_Count": 0,
+      "Fail_Count": 0,
+      "Source": "T8c岗位归并",
+      "Create_Time": "2026-08-17 12:25",
+      "Update_Time": "2026-08-17 12:25",
+      "Status": "Running"
+    }
+  },
+  "result": {
+    "written": {
+      "Note_fields": {},
+      "records": {
+        "Employee": [
+          "recvslsi1WjKy5",
+          "recvslsi1WvmFt"
+        ],
+        "Position": [
+          "recvslrK0jQSSX",
+          "recvslrK0jAhwx",
+          "recvslrK0j01uJ"
+        ],
+        "Error_Log": [
+          "recvswujqTCUIC"
+        ]
+      },
+      "batch_record_id": "recvswzRyMEYY7"
+    },
+    "verification": {
+      "note_fields": {
+        "Organization": "fldU36Pxk3",
+        "Position": "fldyU8uqeS",
+        "Employee": "fldFLOxEJp",
+        "Project": "fldVAfILGg",
+        "Channel": "fldIZLWBvk",
+        "Project_Member": "fldgS5CwUR",
+        "Metric": "fldbr5nSCx",
+        "Target": "fldTLdVjoO",
+        "Actual": "fldMEw7pgg",
+        "Performance_Result": "fldFen3sKd",
+        "Commission_Tier": "fldbQaPgQu",
+        "Import_Batch": "fldJT2rBLD",
+        "Validation_Rule": "fldlIwy2iI",
+        "Error_Log": "flddEzuEKi"
+      },
+      "EMP000027_Position_record_id": "recvslrK0ji8UR",
+      "EMP000028_Position_record_id": "recvslrK0ji8UR",
+      "POS000037": {
+        "status": "Inactive",
+        "note": "已并入 POS000038，2026-08-17，T8c"
+      },
+      "confirmed_participants": 32,
+      "participant_failures": [],
+      "active_metric_positions": 9
+    },
+    "batch_final": {
+      "Success_Count": 19,
+      "Fail_Count": 0,
+      "Status": "Success",
+      "Update_Time": "2026-08-17 12:26",
+      "Note": "D-012/CHG-T8C-001：14张正式表补建 Note；归并与32/32关联验证均通过。"
+    }
+  }
+}

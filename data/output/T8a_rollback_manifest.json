@@ -1,0 +1,34 @@
+{
+  "batch_id": "IB-T8A-3E86810B7D929F2E",
+  "apply": false,
+  "deletion_order": [
+    {
+      "table": "Error_Log",
+      "records": 14
+    },
+    {
+      "table": "Employee",
+      "records": 80
+    },
+    {
+      "table": "Channel",
+      "records": 9
+    },
+    {
+      "table": "Project",
+      "records": 4
+    },
+    {
+      "table": "Position",
+      "records": 53
+    },
+    {
+      "table": "Organization",
+      "records": 15
+    },
+    {
+      "table": "Import_Batch",
+      "records": 1
+    }
+  ]
+}

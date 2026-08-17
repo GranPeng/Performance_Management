@@ -1,0 +1,55 @@
+{
+  "task": "T7",
+  "started_at": "2026-08-14 18:19",
+  "status": "success",
+  "errors": [],
+  "finished_at": "2026-08-14 18:20",
+  "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+  "batch_id": "IB-V60-65D3C2A6A3E26BCE",
+  "batch_record_id": "recvsgpQpBrJYU",
+  "batch_created_this_run": false,
+  "source_json_sha256": "67e01680680a20c8e19b633e86526fcb46ca4c8a5c62ffd3b5dfc4d6f238c30c",
+  "source_excel_sha256": "65d3c2a6a3e26bce63e196bd80025a3f0a293c05d1fa730da7b5fef0c0eb5943",
+  "source_value_count": 6156,
+  "base_target_count_for_source": 6156,
+  "difference": 0,
+  "created_this_run": 0,
+  "already_present_this_run": 6156,
+  "null_target_value_count": 366,
+  "pending_channel_mapping": [
+    "京东POP",
+    "京东自营",
+    "外部分销",
+    "天猫淘宝",
+    "抖音",
+    "拼多多",
+    "私域",
+    "视频号",
+    "达播"
+  ],
+  "rejected_non_authoritative_channels": [],
+  "sample_checks": [
+    {
+      "target_id": "TGT-V60-31C556C4981551CC39F1",
+      "source_cell": "U3",
+      "expected_value": 412.736088,
+      "actual_value": 412.736088,
+      "matched": true
+    },
+    {
+      "target_id": "TGT-V60-7B9B60521AC0B615A37A",
+      "source_cell": "CI31",
+      "expected_value": 0.03543119085916443,
+      "actual_value": 0.0354311908591644,
+      "matched": true
+    },
+    {
+      "target_id": "TGT-V60-72A60F48C8B62B649C86",
+      "source_cell": "EV60",
+      "expected_value": 0.07342995652778872,
+      "actual_value": 0.0734299565277887,
+      "matched": true
+    }
+  ],
+  "error_log_created": 0
+}

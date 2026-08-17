@@ -1,0 +1,29 @@
+{
+  "task": "T11a",
+  "kanban_task_id": "t_455dcc0b",
+  "executed_at": "2026-08-17",
+  "change_id": "CHG-T11A-001",
+  "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+  "table": "Performance_Result (tbl6tFtVKExFUTWo)",
+  "fields_created": {
+    "Project_ID":            {"field_id": "fldJgBoJZw", "type": "link", "link_table": "tbl1GO2vR9ZAqPbr"},
+    "Project_Run_Days":      {"field_id": "fldMJsMza2", "type": "formula"},
+    "Is_Exempt":             {"field_id": "fldTsyIMer", "type": "formula"},
+    "Commission_Base_Type":  {"field_id": "fld7R7DgoG", "type": "text"},
+    "Commission_Base":       {"field_id": "fldJIRpzMO", "type": "number", "precision": 2},
+    "Commission_Ratio":      {"field_id": "fldE6Y0rc1", "type": "number", "precision": 4},
+    "Commission_Amount":     {"field_id": "fldmadr7wT", "type": "number", "precision": 2}
+  },
+  "verification": {
+    "existing_data_untouched": "Performance_Result 161 条记录复核数量不变；既有 33 字段与公式未修改",
+    "blank_path": "测试记录关联 PROJ000003（Start_Date=null）→ Project_Run_Days/Is_Exempt 留空无报错；测试记录已删除",
+    "full_path": "临时表 T11A_FORMULA_TEST 全路径验证：2026-05-01→91 天→Exempt=false；2026-06-15→46 天→Exempt=true；Start_Date 空→留空。临时表已删除",
+    "test_data_cleanup": "Base 侧测试记录与临时表均已删除，无残留"
+  },
+  "known_blockers": {
+    "project_start_date_empty": "Project 表 4/4 项目 Start_Date 全空（T8a 迁移未携带），Is_Exempt 当前全部留空；需业务在线维护补齐，禁止伪造日期",
+    "commission_formula_pending": "Commission_Amount 公式与岗位→基数映射属 T11b（BA）范围，本任务只落模型容器"
+  },
+  "field_payload_file": "data/output/t11a_fields_payload.json",
+  "docs_updated": ["docs/data_model.md (§1 头部/§3 关系图/§5.4 字段与变更记录/§7 决策对照)", ".hermes/memory/architecture_memory.md (ADR-005)"]
+}

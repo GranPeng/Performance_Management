@@ -1,0 +1,46 @@
+[
+  {
+    "type": "formula",
+    "name": "Is_Exempt",
+    "expression": "IF(ISBLANK([Project_Run_Days]), \"\", [Project_Run_Days] < 90)",
+    "description": "新项目豁免标志（公式）· 运行天数 <90 为 true（阈值 90 天：QA Q-10-01 / T11a 任务口径，源自 V04 新项目免责期）。仅时间资格标记；免责提成 x0.8 仍由 HR 人工评判走人工部分（D-009.4 / 2026-08-14）。CHG-T11A-001"
+  },
+  {
+    "type": "text",
+    "name": "Commission_Base_Type",
+    "description": "可选 · 提成基数类型，枚举：GSV / 个人消耗 / 个人营收（D-009 提成基数口径，2026-08-17）。产生：计算引擎按岗位类型写入快照（岗位到基数映射待 T11b BA 结构化）；消费：提成计算、复核。CHG-T11A-001"
+  },
+  {
+    "type": "number",
+    "name": "Commission_Base",
+    "style": {
+      "type": "plain",
+      "precision": 2,
+      "percentage": false,
+      "thousands_separator": false
+    },
+    "description": "可选 · 提成基数金额（按 Commission_Base_Type 取对应口径数值）。产生：计算引擎（T11b 落公式后启用）；消费：提成金额计算、复核。CHG-T11A-001"
+  },
+  {
+    "type": "number",
+    "name": "Commission_Ratio",
+    "style": {
+      "type": "plain",
+      "precision": 4,
+      "percentage": false,
+      "thousands_separator": false
+    },
+    "description": "可选 · 提成比例快照（留痕用，防梯度/比例改版后历史失真，同 Weight 快照语义）。产生：计算引擎取自 Commission_Tier（T11b）；消费：提成复算、审计。CHG-T11A-001"
+  },
+  {
+    "type": "number",
+    "name": "Commission_Amount",
+    "style": {
+      "type": "plain",
+      "precision": 2,
+      "percentage": false,
+      "thousands_separator": false
+    },
+    "description": "可选 · 提成金额（QA Q-10-02 承载字段）。产生：计算引擎按基数口径产出（公式属 T11b BA 职责，本任务只落容器）；消费：提成结算、复核看板。CHG-T11A-001"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "type": "formula",
+  "name": "Project_Run_Days",
+  "expression": "IF(ISBLANK([Project_ID]), \"\", IF(ISBLANK(FIRST([Project_ID].[Start_Date])), \"\", DAYS(EOMONTH(TODATE([Period] & \"-01\"), 0), FIRST([Project_ID].[Start_Date]))))",
+  "description": "项目运行天数（公式）· 基准日 = Period 对应自然月最后一日（不用 TODAY()，保证历史期间可回溯）；Project_ID 未关联或 Start_Date 缺失时留空，不伪造日期。CHG-T11A-001"
+}

@@ -1,0 +1,157 @@
+{
+  "create_records": [
+    {
+      "Error_ID": "ERR-T6-V04-001",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-LIVE-001",
+      "Error_Type": "VALUE_TYPE",
+      "Error_Content": "源单元格 兴趣电商-直播中控!I18 的得分上限原文为“0.1%/中控人数”，不符合 Commission_Tier.Score_Upper 数字字段；已保留到 Rule_Note，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-002",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-LIVE-002",
+      "Error_Type": "VALUE_TYPE",
+      "Error_Content": "源单元格 兴趣电商-直播中控!I19 的得分上限原文为“0.1%/中控人数”，不符合 Commission_Tier.Score_Upper 数字字段；已保留到 Rule_Note，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-003",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-LIVE-003",
+      "Error_Type": "VALUE_TYPE",
+      "Error_Content": "源单元格 兴趣电商-直播中控!I20 的得分上限原文为“0.1%/中控人数”，不符合 Commission_Tier.Score_Upper 数字字段；已保留到 Rule_Note，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-004",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-LIVE-004",
+      "Error_Type": "VALUE_TYPE",
+      "Error_Content": "源单元格 兴趣电商-直播中控!I21 的得分上限原文为“0.1%/中控人数”，不符合 Commission_Tier.Score_Upper 数字字段；已保留到 Rule_Note，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-005",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Metric",
+      "Object_ID": "MET-V04-IE-CS-006",
+      "Error_Type": "SOURCE_DATA_MISSING",
+      "Error_Content": "源单元格 兴趣电商-客服!B11 的KPI编号为空；已按源JSON原样写入 Metric_Number=未填写（源单元格B11为空），待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-006",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-CS-001",
+      "Error_Type": "SOURCE_DATA_MISSING",
+      "Error_Content": "源单元格 兴趣电商-客服!H18 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-007",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-CS-002",
+      "Error_Type": "SOURCE_DATA_MISSING",
+      "Error_Content": "源单元格 兴趣电商-客服!H19 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-008",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-CS-003",
+      "Error_Type": "SOURCE_DATA_MISSING",
+      "Error_Content": "源单元格 兴趣电商-客服!H20 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    },
+    {
+      "Error_ID": "ERR-T6-V04-009",
+      "Batch_ID": [
+        {
+          "id": "recvsgqAdvDCRY"
+        }
+      ],
+      "Object_Type": "Commission_Tier",
+      "Object_ID": "CT-V04-IE-CS-004",
+      "Error_Type": "SOURCE_DATA_MISSING",
+      "Error_Content": "源单元格 兴趣电商-客服!H21 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。",
+      "Process_Status": "待处理",
+      "Status": "Active",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04"
+    }
+  ]
+}

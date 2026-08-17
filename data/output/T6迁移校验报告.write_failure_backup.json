@@ -1,0 +1,176 @@
+{
+  "task": "T6",
+  "status": "WRITE_FAILED",
+  "source_file": {
+    "file": "岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx",
+    "sha256": "5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250",
+    "read_mode": "openpyxl data_only=False；只读提取，未修改源文件",
+    "sheet_count": 9,
+    "sheet_names": [
+      "兴趣电商-运营",
+      "兴趣电商-高级主管",
+      "兴趣电商-广告投放",
+      "兴趣电商-直播中控",
+      "兴趣电商-主播",
+      "兴趣电商-客服",
+      "制作部-编导",
+      "制作部-视频剪辑",
+      "制作部-摄影师"
+    ]
+  },
+  "batch_id": "IB-T6-V04-20260814-01",
+  "source_counts": {
+    "Metric": 45,
+    "Commission_Tier": 42
+  },
+  "preflight": {
+    "unique_metric_ids": 45,
+    "unique_tier_ids": 42,
+    "open_upper_tiers": 2,
+    "position_links_deferred": 87,
+    "warnings": [
+      {
+        "Object_Type": "Metric",
+        "Object_ID": "MET-V04-IE-CS-006",
+        "Error_Type": "SOURCE_DATA_MISSING",
+        "Error_Content": "源单元格 兴趣电商-客服!B11 的KPI编号为空；已按源JSON原样写入 Metric_Number=未填写（源单元格B11为空），待业务方补齐。"
+      },
+      {
+        "Object_Type": "Commission_Tier",
+        "Object_ID": "CT-V04-IE-CS-001",
+        "Error_Type": "SOURCE_DATA_MISSING",
+        "Error_Content": "源单元格 兴趣电商-客服!H18 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。"
+      },
+      {
+        "Object_Type": "Commission_Tier",
+        "Object_ID": "CT-V04-IE-CS-002",
+        "Error_Type": "SOURCE_DATA_MISSING",
+        "Error_Content": "源单元格 兴趣电商-客服!H19 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。"
+      },
+      {
+        "Object_Type": "Commission_Tier",
+        "Object_ID": "CT-V04-IE-CS-003",
+        "Error_Type": "SOURCE_DATA_MISSING",
+        "Error_Content": "源单元格 兴趣电商-客服!H20 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。"
+      },
+      {
+        "Object_Type": "Commission_Tier",
+        "Object_ID": "CT-V04-IE-CS-004",
+        "Error_Type": "SOURCE_DATA_MISSING",
+        "Error_Content": "源单元格 兴趣电商-客服!H21 未提供得分下限；保留为空，不以魔法数值替代，待业务方补齐。"
+      }
+    ]
+  },
+  "write_result": {
+    "Import_Batch": {
+      "record_id_list": [
+        "recvsgqAdvDCRY"
+      ]
+    },
+    "Metric": {
+      "record_id_list": [
+        "recvsgqAO9qu6Y",
+        "recvsgqAO9qfRY",
+        "recvsgqAO9RXmg",
+        "recvsgqAO9dVl1",
+        "recvsgqAO9P9uR",
+        "recvsgqAO91yOo",
+        "recvsgqAO9QUrn",
+        "recvsgqAO9CLPu",
+        "recvsgqAO9e5yv",
+        "recvsgqAO9NL4M",
+        "recvsgqAO95ycR",
+        "recvsgqAO9emPC",
+        "recvsgqAO96gsI",
+        "recvsgqAO9mdG3",
+        "recvsgqAO9BtF0",
+        "recvsgqAO9P6en",
+        "recvsgqAO9HBwj",
+        "recvsgqAO9QQX4",
+        "recvsgqAO9xOX7",
+        "recvsgqAO956bY",
+        "recvsgqAO9bMNR",
+        "recvsgqAO9xGcS",
+        "recvsgqAO9t3Jt",
+        "recvsgqAO9TzuF",
+        "recvsgqAO97CXH",
+        "recvsgqAO9D0KD",
+        "recvsgqAO9a4D4",
+        "recvsgqAO9Xmvf",
+        "recvsgqAO9AEDA",
+        "recvsgqAO9jzlL",
+        "recvsgqAO9oSVw",
+        "recvsgqAO9a8qk",
+        "recvsgqAO9RHxh",
+        "recvsgqAO9g8dv",
+        "recvsgqAO93DMQ",
+        "recvsgqAO99lgq",
+        "recvsgqAO9r899",
+        "recvsgqAO9sss4",
+        "recvsgqAO9JjXx",
+        "recvsgqAO9fhqQ",
+        "recvsgqAO9o4E6",
+        "recvsgqAO98dG9",
+        "recvsgqAO9snId",
+        "recvsgqAO9dvsH",
+        "recvsgqAO9L6aL"
+      ]
+    }
+  },
+  "rollback": {
+    "created_record_ids": {
+      "Import_Batch": [
+        "recvsgqAdvDCRY"
+      ],
+      "Metric": [
+        "recvsgqAO9qu6Y",
+        "recvsgqAO9qfRY",
+        "recvsgqAO9RXmg",
+        "recvsgqAO9dVl1",
+        "recvsgqAO9P9uR",
+        "recvsgqAO91yOo",
+        "recvsgqAO9QUrn",
+        "recvsgqAO9CLPu",
+        "recvsgqAO9e5yv",
+        "recvsgqAO9NL4M",
+        "recvsgqAO95ycR",
+        "recvsgqAO9emPC",
+        "recvsgqAO96gsI",
+        "recvsgqAO9mdG3",
+        "recvsgqAO9BtF0",
+        "recvsgqAO9P6en",
+        "recvsgqAO9HBwj",
+        "recvsgqAO9QQX4",
+        "recvsgqAO9xOX7",
+        "recvsgqAO956bY",
+        "recvsgqAO9bMNR",
+        "recvsgqAO9xGcS",
+        "recvsgqAO9t3Jt",
+        "recvsgqAO9TzuF",
+        "recvsgqAO97CXH",
+        "recvsgqAO9D0KD",
+        "recvsgqAO9a4D4",
+        "recvsgqAO9Xmvf",
+        "recvsgqAO9AEDA",
+        "recvsgqAO9jzlL",
+        "recvsgqAO9oSVw",
+        "recvsgqAO9a8qk",
+        "recvsgqAO9RHxh",
+        "recvsgqAO9g8dv",
+        "recvsgqAO93DMQ",
+        "recvsgqAO99lgq",
+        "recvsgqAO9r899",
+        "recvsgqAO9sss4",
+        "recvsgqAO9JjXx",
+        "recvsgqAO9fhqQ",
+        "recvsgqAO9o4E6",
+        "recvsgqAO98dG9",
+        "recvsgqAO9snId",
+        "recvsgqAO9dvsH",
+        "recvsgqAO9L6aL"
+      ]
+    },
+    "method": "Use lark-cli base +record-delete with the recorded IDs and --yes if an approved rollback is required."
+  },
+  "write_error": "CLI returned non-JSON (rc=1): \n{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"api\",\n    \"subtype\": \"unknown\",\n    \"code\": 800010407,\n    \"message\": \"The cell value does not match the expected input shape.\",\n    \"hint\": \"Provide a number value. Numeric strings, percent strings, and boolean values are also accepted.\",\n    \"log_id\": \"202608141803031E0DBF0F7DCCA629D283\"\n  },\n  \"_notice\": {\n    \"update\": {\n      \"command\": \"lark-cli update\",\n      \"current\": \"1.0.86\",\n      \"latest\": \"1.0.87\",\n      \"message\": \"lark-cli 1.0.87 available, current 1.0.86, run: lark-cli update\"\n    }\n  }\n}\n"
+}

@@ -1,0 +1,1805 @@
+{
+  "errors": [
+    {
+      "Object_Type": "Position",
+      "Object_ID": "UNKNOWN",
+      "Error_Type": "必填",
+      "Error_Content": "花名册缺少岗位或一级/二级部门，未注册"
+    },
+    {
+      "Object_Type": "Position",
+      "Object_ID": "UNKNOWN",
+      "Error_Type": "必填",
+      "Error_Content": "花名册缺少岗位或一级/二级部门，未注册"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "京东私域",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“京东私域”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "快手",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“快手”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "快手内容",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“快手内容”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "快手达人",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“快手达人”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "抖音内容",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“抖音内容”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "抖音达人",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“抖音达人”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "视频号内容",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“视频号内容”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Channel",
+      "Object_ID": "视频号达人",
+      "Error_Type": "渠道映射",
+      "Error_Content": "旧项目渠道检索出现非V60权威渠道“视频号达人”，按任务要求不注册；待业务确认映射"
+    },
+    {
+      "Object_Type": "Employee",
+      "Object_ID": "ROW80",
+      "Error_Type": "ID存在性",
+      "Error_Content": "无法映射Org_ID或Position_ID：部门=None/None，岗位=None；该人员未导入"
+    },
+    {
+      "Object_Type": "Employee",
+      "Object_ID": "ROW81",
+      "Error_Type": "ID存在性",
+      "Error_Content": "无法映射Org_ID或Position_ID：部门=None/None，岗位=None；该人员未导入"
+    }
+  ],
+  "sha": {
+    "roster": "55678c9fd75d372ce871daac6ed308e34fcd14d49fdba228f3d9b9b2e9ddf276",
+    "org": "d8b7f8a402f8cf9b4256354d2e47bd83368536bc38df5df80861d83f3e53f4e4",
+    "project_channel": "c51480c8c2da5b680bedf2a677aa77ef231a7ceea7d03b24c2212ec0123a6e6d"
+  },
+  "source_counts": {
+    "roster": 82,
+    "org": 145,
+    "project_channel": 60
+  },
+  "orgs": [
+    {
+      "Org_ID": "ORG000001",
+      "Org_Name": "DTC渠道业务部",
+      "parent_key": null,
+      "Org_Level": 1
+    },
+    {
+      "Org_ID": "ORG000002",
+      "Org_Name": "前端业务部",
+      "parent_key": null,
+      "Org_Level": 1
+    },
+    {
+      "Org_ID": "ORG000003",
+      "Org_Name": "综合职能",
+      "parent_key": null,
+      "Org_Level": 1
+    },
+    {
+      "Org_ID": "ORG000004",
+      "Org_Name": "客服部",
+      "parent_key": "DTC渠道业务部",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000005",
+      "Org_Name": "销售部",
+      "parent_key": "DTC渠道业务部",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000006",
+      "Org_Name": "兴趣电商部",
+      "parent_key": "前端业务部",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000007",
+      "Org_Name": "制作部",
+      "parent_key": "前端业务部",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000008",
+      "Org_Name": "平台电商部",
+      "parent_key": "前端业务部",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000009",
+      "Org_Name": "达人媒介部",
+      "parent_key": "前端业务部",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000010",
+      "Org_Name": "中台运营",
+      "parent_key": "综合职能",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000011",
+      "Org_Name": "人事行政部",
+      "parent_key": "综合职能",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000012",
+      "Org_Name": "供应链管理指挥部",
+      "parent_key": "综合职能",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000013",
+      "Org_Name": "总经办",
+      "parent_key": "综合职能",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000014",
+      "Org_Name": "综合管理",
+      "parent_key": "综合职能",
+      "Org_Level": 2
+    },
+    {
+      "Org_ID": "ORG000015",
+      "Org_Name": "财务部",
+      "parent_key": "综合职能",
+      "Org_Level": 2
+    }
+  ],
+  "positions": [
+    {
+      "Position_ID": "POS000001",
+      "Position_Name": "DTC渠道销售",
+      "root": "DTC渠道业务部",
+      "sec": "销售部",
+      "Org_ID": "ORG000005",
+      "Grade": "P2-助理、P3-专员、P4-高级专员、P5-专家、P6-高级专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000002",
+      "Position_Name": "DTC渠道销售主管",
+      "root": "DTC渠道业务部",
+      "sec": "销售部",
+      "Org_ID": "ORG000005",
+      "Grade": "M1-主管、M2-初级部门经理、M3-中级部门经理、P5-专家",
+      "Job_Family": "专业序列、管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000003",
+      "Position_Name": "DTC渠道销售总监",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000004",
+      "Position_Name": "中台运营",
+      "root": "综合职能",
+      "sec": "中台运营",
+      "Org_ID": "ORG000010",
+      "Grade": "P3-专员、P4-高级专员、P5-专家、P6-高级专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000005",
+      "Position_Name": "中台运营总监",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000006",
+      "Position_Name": "主播",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P5-专家、P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000007",
+      "Position_Name": "人事行政专员",
+      "root": "综合职能",
+      "sec": "人事行政部",
+      "Org_ID": "ORG000011",
+      "Grade": "P2-助理、P3-专员、P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000008",
+      "Position_Name": "人事行政主管",
+      "root": "综合职能",
+      "sec": "人事行政部",
+      "Org_ID": "ORG000011",
+      "Grade": "P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000009",
+      "Position_Name": "会计",
+      "root": "综合职能",
+      "sec": "财务部",
+      "Org_ID": "ORG000015",
+      "Grade": "P3-专员、P4-高级专员、P5-专家、P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000010",
+      "Position_Name": "供应链专员",
+      "root": "综合职能",
+      "sec": "供应链管理指挥部",
+      "Org_ID": "ORG000012",
+      "Grade": "P3-专员、P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000011",
+      "Position_Name": "供应链主管",
+      "root": "综合职能",
+      "sec": "供应链管理指挥部",
+      "Org_ID": "ORG000012",
+      "Grade": "P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000012",
+      "Position_Name": "供应链总监",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000013",
+      "Position_Name": "兴趣电商运营",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P4-高级专员、P5-专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000014",
+      "Position_Name": "兴趣电商运营主管",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000015",
+      "Position_Name": "兴趣电商运营助理",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P1-实习生、P2-助理、P3-专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000016",
+      "Position_Name": "兴趣电商运营总监",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000017",
+      "Position_Name": "兴趣电商运营高级主管",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "M6-高级总监 （分公司总经理）、P7-资深专家、P8-首席专家",
+      "Job_Family": "专业序列、管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000018",
+      "Position_Name": "内容主管/编导",
+      "root": "前端业务部",
+      "sec": "制作部",
+      "Org_ID": "ORG000007",
+      "Grade": "P4-高级专员、P5-专家、P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000019",
+      "Position_Name": "内容高级主管",
+      "root": "前端业务部",
+      "sec": "制作部",
+      "Org_ID": "ORG000007",
+      "Grade": "M3-中级部门经理、M4-高级部门经理、M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000020",
+      "Position_Name": "出纳",
+      "root": "综合职能",
+      "sec": "财务部",
+      "Org_ID": "ORG000015",
+      "Grade": "P3-专员、P4-高级专员、P5-专家、P6-高级专家、P7-资深专家、P8-首席专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000021",
+      "Position_Name": "副总经理",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "M7-副总经理",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000022",
+      "Position_Name": "加粉客服",
+      "root": "DTC渠道业务部",
+      "sec": "客服部",
+      "Org_ID": "ORG000004",
+      "Grade": "P2-助理、P3-专员、P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000023",
+      "Position_Name": "加粉客服主管",
+      "root": "DTC渠道业务部",
+      "sec": "客服部",
+      "Org_ID": "ORG000004",
+      "Grade": "M1-主管",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000024",
+      "Position_Name": "平台电商运营",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "P4-高级专员、P5-专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000025",
+      "Position_Name": "平台电商运营主管",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "P6-高级专家、P7-资深专家、P8-首席专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000026",
+      "Position_Name": "平台电商运营助理",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "P1-实习生、P2-助理、P3-专员、P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000027",
+      "Position_Name": "平台电商运营总监",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000028",
+      "Position_Name": "平台电商运营高级主管",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "M2-初级部门经理、M3-中级部门经理、M4-高级部门经理",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000029",
+      "Position_Name": "平面设计师",
+      "root": "前端业务部",
+      "sec": "制作部",
+      "Org_ID": "ORG000007",
+      "Grade": "P3-专员、P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000030",
+      "Position_Name": "平面设计师",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "P3-专员、P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000031",
+      "Position_Name": "平面设计师",
+      "root": "综合职能",
+      "sec": "中台运营",
+      "Org_ID": "ORG000010",
+      "Grade": "P3-专员、P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000032",
+      "Position_Name": "广告投放",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P3-专员、P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000033",
+      "Position_Name": "总经办助理",
+      "root": "综合职能",
+      "sec": "综合管理",
+      "Org_ID": "ORG000014",
+      "Grade": "M1-主管",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000034",
+      "Position_Name": "总经理",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "M8-总经理",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000035",
+      "Position_Name": "摄影师",
+      "root": "前端业务部",
+      "sec": "制作部",
+      "Org_ID": "ORG000007",
+      "Grade": "P3-专员、P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000036",
+      "Position_Name": "数字化专员",
+      "root": "综合职能",
+      "sec": "中台运营",
+      "Org_ID": "ORG000010",
+      "Grade": "P3-专员、P4-高级专员、P5-专家、P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000037",
+      "Position_Name": "电商客服专员",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P2-助理、P3-专员、P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000038",
+      "Position_Name": "电商客服专员",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "P2-助理、P3-专员、P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000039",
+      "Position_Name": "电商客服主管",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "M1-主管",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000040",
+      "Position_Name": "电商客服主管",
+      "root": "前端业务部",
+      "sec": "平台电商部",
+      "Org_ID": "ORG000008",
+      "Grade": "M1-主管、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000041",
+      "Position_Name": "直播中控/运营助理",
+      "root": "前端业务部",
+      "sec": "兴趣电商部",
+      "Org_ID": "ORG000006",
+      "Grade": "P3-专员、P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000042",
+      "Position_Name": "董事长",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "异常-无有效薪资数据",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000043",
+      "Position_Name": "行政司机",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P4-高级专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000044",
+      "Position_Name": "视频剪辑师",
+      "root": "前端业务部",
+      "sec": "制作部",
+      "Org_ID": "ORG000007",
+      "Grade": "P3-专员、P4-高级专员、P5-专家、P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000045",
+      "Position_Name": "财务",
+      "root": "综合职能",
+      "sec": "财务部",
+      "Org_ID": "ORG000015",
+      "Grade": "P3-专员、P4-高级专员、P5-专家、P6-高级专家、P7-资深专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000046",
+      "Position_Name": "财务总监",
+      "root": "综合职能",
+      "sec": "总经办",
+      "Org_ID": "ORG000013",
+      "Grade": "M5-部门总监",
+      "Job_Family": "管理序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000047",
+      "Position_Name": "达人商务",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000048",
+      "Position_Name": "达人商务主管",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P6-高级专家、P7-资深专家、P8-首席专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000049",
+      "Position_Name": "达人商务助理",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P1-实习生、P2-助理、P3-专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000050",
+      "Position_Name": "达人媒介",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P4-高级专员、P5-专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表",
+        "花名册"
+      ]
+    },
+    {
+      "Position_ID": "POS000051",
+      "Position_Name": "达人媒介主管",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P6-高级专家、P7-资深专家、P8-首席专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000052",
+      "Position_Name": "达人媒介助理",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P1-实习生、P2-助理、P3-专员",
+      "Job_Family": "专业序列",
+      "sources": [
+        "组织架构表"
+      ]
+    },
+    {
+      "Position_ID": "POS000053",
+      "Position_Name": "达人媒介高级主管",
+      "root": "前端业务部",
+      "sec": "达人媒介部",
+      "Org_ID": "ORG000009",
+      "Grade": "P8-首席专家",
+      "Job_Family": "专业序列",
+      "sources": [
+        "花名册"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "Project_ID": "PROJ000001",
+      "Project_Name": "伊利少年状元",
+      "Brand": "伊利"
+    },
+    {
+      "Project_ID": "PROJ000002",
+      "Project_Name": "伊利骨能",
+      "Brand": "伊利"
+    },
+    {
+      "Project_ID": "PROJ000003",
+      "Project_Name": "伊利高个子",
+      "Brand": "伊利"
+    },
+    {
+      "Project_ID": "PROJ000004",
+      "Project_Name": "美赞臣跃高",
+      "Brand": "美赞臣"
+    }
+  ],
+  "channels": [
+    {
+      "Channel_ID": "CH000001",
+      "Channel_Name": "抖音",
+      "Channel_Alias": null
+    },
+    {
+      "Channel_ID": "CH000002",
+      "Channel_Name": "视频号",
+      "Channel_Alias": null
+    },
+    {
+      "Channel_ID": "CH000003",
+      "Channel_Name": "天猫淘宝",
+      "Channel_Alias": "天猫/淘宝"
+    },
+    {
+      "Channel_ID": "CH000004",
+      "Channel_Name": "拼多多",
+      "Channel_Alias": null
+    },
+    {
+      "Channel_ID": "CH000005",
+      "Channel_Name": "京东POP",
+      "Channel_Alias": "京东pop"
+    },
+    {
+      "Channel_ID": "CH000006",
+      "Channel_Name": "京东自营",
+      "Channel_Alias": null
+    },
+    {
+      "Channel_ID": "CH000007",
+      "Channel_Name": "达播",
+      "Channel_Alias": "抖音达人"
+    },
+    {
+      "Channel_ID": "CH000008",
+      "Channel_Name": "私域",
+      "Channel_Alias": null
+    },
+    {
+      "Channel_ID": "CH000009",
+      "Channel_Name": "外部分销",
+      "Channel_Alias": ""
+    }
+  ],
+  "employees": [
+    {
+      "Employee_ID": "EMP000001",
+      "Name": "蔡诗诗",
+      "Org_ID": "ORG000004",
+      "Position_ID": "POS000022",
+      "Hire_Date": "2023-06-05",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "刘志云",
+      "source_row": 1
+    },
+    {
+      "Employee_ID": "EMP000002",
+      "Name": "王小英",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000001",
+      "Hire_Date": "2024-09-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "陈锦涛",
+      "source_row": 2
+    },
+    {
+      "Employee_ID": "EMP000003",
+      "Name": "陈锦涛",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000002",
+      "Hire_Date": "2025-02-10",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "刘志云",
+      "source_row": 3
+    },
+    {
+      "Employee_ID": "EMP000004",
+      "Name": "罗燕菲",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000001",
+      "Hire_Date": "2024-09-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "梁广东",
+      "source_row": 4
+    },
+    {
+      "Employee_ID": "EMP000005",
+      "Name": "曾丽丽",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000001",
+      "Hire_Date": "2024-09-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "梁广东",
+      "source_row": 5
+    },
+    {
+      "Employee_ID": "EMP000006",
+      "Name": "曾海飞",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000001",
+      "Hire_Date": "2024-09-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "梁广东",
+      "source_row": 6
+    },
+    {
+      "Employee_ID": "EMP000007",
+      "Name": "梁广东",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000002",
+      "Hire_Date": "2025-11-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "刘志云",
+      "source_row": 7
+    },
+    {
+      "Employee_ID": "EMP000008",
+      "Name": "张庆娟",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000001",
+      "Hire_Date": "2023-03-25",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "毕爽",
+      "source_row": 8
+    },
+    {
+      "Employee_ID": "EMP000009",
+      "Name": "毕爽",
+      "Org_ID": "ORG000005",
+      "Position_ID": "POS000002",
+      "Hire_Date": "2023-03-25",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "刘志云",
+      "source_row": 9
+    },
+    {
+      "Employee_ID": "EMP000010",
+      "Name": "肖若岚",
+      "Org_ID": "ORG000009",
+      "Position_ID": "POS000050",
+      "Hire_Date": "2025-11-24",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "彭毓秀",
+      "source_row": 10
+    },
+    {
+      "Employee_ID": "EMP000011",
+      "Name": "陈瑞",
+      "Org_ID": "ORG000009",
+      "Position_ID": "POS000053",
+      "Hire_Date": "2024-04-24",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "彭毓秀",
+      "source_row": 11
+    },
+    {
+      "Employee_ID": "EMP000012",
+      "Name": "董震",
+      "Org_ID": "ORG000009",
+      "Position_ID": "POS000043",
+      "Hire_Date": "2026-03-16",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "彭毓秀",
+      "source_row": 12
+    },
+    {
+      "Employee_ID": "EMP000013",
+      "Name": "周密",
+      "Org_ID": "ORG000009",
+      "Position_ID": "POS000047",
+      "Hire_Date": "2024-04-22",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "彭毓秀",
+      "source_row": 13
+    },
+    {
+      "Employee_ID": "EMP000014",
+      "Name": "郑洪镔",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000040",
+      "Hire_Date": "2026-04-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 14
+    },
+    {
+      "Employee_ID": "EMP000015",
+      "Name": "王明义",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000040",
+      "Hire_Date": "2024-05-14",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 15
+    },
+    {
+      "Employee_ID": "EMP000016",
+      "Name": "罗育杰",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000038",
+      "Hire_Date": "2025-09-12",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 16
+    },
+    {
+      "Employee_ID": "EMP000017",
+      "Name": "黄晓梅",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000038",
+      "Hire_Date": "2025-09-11",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 17
+    },
+    {
+      "Employee_ID": "EMP000018",
+      "Name": "覃超怡",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000038",
+      "Hire_Date": "2025-04-07",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 18
+    },
+    {
+      "Employee_ID": "EMP000019",
+      "Name": "陈柔静",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000030",
+      "Hire_Date": "2026-03-24",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 19
+    },
+    {
+      "Employee_ID": "EMP000020",
+      "Name": "陈湘兰",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000030",
+      "Hire_Date": "2025-02-27",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 20
+    },
+    {
+      "Employee_ID": "EMP000021",
+      "Name": "刘美辰",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000026",
+      "Hire_Date": "2026-05-25",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "待确认",
+      "manager_name": "麦定伟",
+      "source_row": 21
+    },
+    {
+      "Employee_ID": "EMP000022",
+      "Name": "栾世坤",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000024",
+      "Hire_Date": "2026-05-06",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 22
+    },
+    {
+      "Employee_ID": "EMP000023",
+      "Name": "黄宽越",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000024",
+      "Hire_Date": "2026-03-30",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 23
+    },
+    {
+      "Employee_ID": "EMP000024",
+      "Name": "杨碧君",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000024",
+      "Hire_Date": "2025-05-29",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 24
+    },
+    {
+      "Employee_ID": "EMP000025",
+      "Name": "杨志财",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000024",
+      "Hire_Date": "2025-03-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 25
+    },
+    {
+      "Employee_ID": "EMP000026",
+      "Name": "何丽丽",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000024",
+      "Hire_Date": "2025-02-26",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "麦定伟",
+      "source_row": 26
+    },
+    {
+      "Employee_ID": "EMP000027",
+      "Name": "胡可可",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000037",
+      "Hire_Date": "2023-10-07",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 27
+    },
+    {
+      "Employee_ID": "EMP000028",
+      "Name": "吕剑",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000037",
+      "Hire_Date": "2023-02-25",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 28
+    },
+    {
+      "Employee_ID": "EMP000029",
+      "Name": "李陶",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000017",
+      "Hire_Date": "2024-05-28",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "彭毓秀",
+      "source_row": 29
+    },
+    {
+      "Employee_ID": "EMP000030",
+      "Name": "周光辉",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000017",
+      "Hire_Date": "2021-05-25",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李培智",
+      "source_row": 30
+    },
+    {
+      "Employee_ID": "EMP000031",
+      "Name": "杨艺",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000032",
+      "Hire_Date": "2026-01-26",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 31
+    },
+    {
+      "Employee_ID": "EMP000032",
+      "Name": "马振兴",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000013",
+      "Hire_Date": "2026-04-09",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 32
+    },
+    {
+      "Employee_ID": "EMP000033",
+      "Name": "黄宏宇",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000013",
+      "Hire_Date": "2026-03-23",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "周光辉",
+      "source_row": 33
+    },
+    {
+      "Employee_ID": "EMP000034",
+      "Name": "李晓东",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2025-11-11",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 34
+    },
+    {
+      "Employee_ID": "EMP000035",
+      "Name": "卿婷",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2025-11-06",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 35
+    },
+    {
+      "Employee_ID": "EMP000036",
+      "Name": "谭芳",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2025-10-22",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 36
+    },
+    {
+      "Employee_ID": "EMP000037",
+      "Name": "彭滔荣",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2025-05-21",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 37
+    },
+    {
+      "Employee_ID": "EMP000038",
+      "Name": "罗颖",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2025-05-10",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 38
+    },
+    {
+      "Employee_ID": "EMP000039",
+      "Name": "戴雨君",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2025-03-27",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 39
+    },
+    {
+      "Employee_ID": "EMP000040",
+      "Name": "李依婷",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000041",
+      "Hire_Date": "2023-03-16",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 40
+    },
+    {
+      "Employee_ID": "EMP000041",
+      "Name": "张惠婷",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000006",
+      "Hire_Date": "2025-10-23",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 41
+    },
+    {
+      "Employee_ID": "EMP000042",
+      "Name": "刘宴莎",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000006",
+      "Hire_Date": "2025-10-21",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 42
+    },
+    {
+      "Employee_ID": "EMP000043",
+      "Name": "温苏华",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000006",
+      "Hire_Date": "2024-12-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 43
+    },
+    {
+      "Employee_ID": "EMP000044",
+      "Name": "古珊珊",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000006",
+      "Hire_Date": "2023-09-13",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 44
+    },
+    {
+      "Employee_ID": "EMP000045",
+      "Name": "肖静宜",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000006",
+      "Hire_Date": "2023-09-05",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 45
+    },
+    {
+      "Employee_ID": "EMP000046",
+      "Name": "张莎莎",
+      "Org_ID": "ORG000006",
+      "Position_ID": "POS000006",
+      "Hire_Date": "2022-09-12",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "李陶",
+      "source_row": 46
+    },
+    {
+      "Employee_ID": "EMP000047",
+      "Name": "潘剑秋",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000018",
+      "Hire_Date": "2026-05-06",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "施桐鑫",
+      "source_row": 47
+    },
+    {
+      "Employee_ID": "EMP000048",
+      "Name": "王思伟",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000018",
+      "Hire_Date": "2026-04-27",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "施桐鑫",
+      "source_row": 48
+    },
+    {
+      "Employee_ID": "EMP000049",
+      "Name": "何嘉楠",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000029",
+      "Hire_Date": "2024-04-25",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "王思伟",
+      "source_row": 49
+    },
+    {
+      "Employee_ID": "EMP000050",
+      "Name": "盘子烨",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000035",
+      "Hire_Date": "2025-11-10",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "潘剑秋",
+      "source_row": 50
+    },
+    {
+      "Employee_ID": "EMP000051",
+      "Name": "欧子豪",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000035",
+      "Hire_Date": "2025-02-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 51
+    },
+    {
+      "Employee_ID": "EMP000052",
+      "Name": "黄祖湛",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2026-04-07",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 52
+    },
+    {
+      "Employee_ID": "EMP000053",
+      "Name": "褚翼玮",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2026-02-05",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 53
+    },
+    {
+      "Employee_ID": "EMP000054",
+      "Name": "罗卓彬",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2025-12-02",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "潘剑秋",
+      "source_row": 54
+    },
+    {
+      "Employee_ID": "EMP000055",
+      "Name": "肖思宇",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2025-11-27",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 55
+    },
+    {
+      "Employee_ID": "EMP000056",
+      "Name": "高广泳",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2025-11-10",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 56
+    },
+    {
+      "Employee_ID": "EMP000057",
+      "Name": "古旭锋",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2025-03-31",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 57
+    },
+    {
+      "Employee_ID": "EMP000058",
+      "Name": "谢梦欣",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2023-09-04",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "王思伟",
+      "source_row": 58
+    },
+    {
+      "Employee_ID": "EMP000059",
+      "Name": "李波",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000044",
+      "Hire_Date": "2020-07-22",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认参与",
+      "manager_name": "潘剑秋",
+      "source_row": 59
+    },
+    {
+      "Employee_ID": "EMP000060",
+      "Name": "施桐鑫",
+      "Org_ID": "ORG000007",
+      "Position_ID": "POS000019",
+      "Hire_Date": "2025-03-13",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "彭毓秀",
+      "source_row": 60
+    },
+    {
+      "Employee_ID": "EMP000061",
+      "Name": "吴群珍",
+      "Org_ID": "ORG000015",
+      "Position_ID": "POS000045",
+      "Hire_Date": "2026-03-05",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "王曦",
+      "source_row": 61
+    },
+    {
+      "Employee_ID": "EMP000062",
+      "Name": "黄国洪",
+      "Org_ID": "ORG000015",
+      "Position_ID": "POS000020",
+      "Hire_Date": "2024-04-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "王曦",
+      "source_row": 62
+    },
+    {
+      "Employee_ID": "EMP000063",
+      "Name": "刘颖",
+      "Org_ID": "ORG000015",
+      "Position_ID": "POS000009",
+      "Hire_Date": "2025-01-13",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "王曦",
+      "source_row": 63
+    },
+    {
+      "Employee_ID": "EMP000064",
+      "Name": "王金洪",
+      "Org_ID": "ORG000015",
+      "Position_ID": "POS000009",
+      "Hire_Date": "2023-11-14",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "王曦",
+      "source_row": 64
+    },
+    {
+      "Employee_ID": "EMP000065",
+      "Name": "上官云锋",
+      "Org_ID": "ORG000012",
+      "Position_ID": "POS000011",
+      "Hire_Date": "2023-03-13",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "待确认",
+      "manager_name": "麦定伟",
+      "source_row": 65
+    },
+    {
+      "Employee_ID": "EMP000066",
+      "Name": "董佳音",
+      "Org_ID": "ORG000012",
+      "Position_ID": "POS000010",
+      "Hire_Date": "2025-11-15",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "上官",
+      "source_row": 66
+    },
+    {
+      "Employee_ID": "EMP000067",
+      "Name": "黄桂清",
+      "Org_ID": "ORG000012",
+      "Position_ID": "POS000010",
+      "Hire_Date": "2024-04-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "上官",
+      "source_row": 67
+    },
+    {
+      "Employee_ID": "EMP000068",
+      "Name": "柴婷婷",
+      "Org_ID": "ORG000011",
+      "Position_ID": "POS000008",
+      "Hire_Date": "2024-04-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 68
+    },
+    {
+      "Employee_ID": "EMP000069",
+      "Name": "丁念念",
+      "Org_ID": "ORG000011",
+      "Position_ID": "POS000007",
+      "Hire_Date": "2024-03-29",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "柴婷婷",
+      "source_row": 69
+    },
+    {
+      "Employee_ID": "EMP000070",
+      "Name": "林晓明",
+      "Org_ID": "ORG000010",
+      "Position_ID": "POS000036",
+      "Hire_Date": "2024-03-11",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "刘阳",
+      "source_row": 70
+    },
+    {
+      "Employee_ID": "EMP000071",
+      "Name": "华梅",
+      "Org_ID": "ORG000010",
+      "Position_ID": "POS000004",
+      "Hire_Date": "2023-07-06",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "刘阳",
+      "source_row": 71
+    },
+    {
+      "Employee_ID": "EMP000072",
+      "Name": "李亮",
+      "Org_ID": "ORG000014",
+      "Position_ID": "POS000033",
+      "Hire_Date": "2026-04-27",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": "彭毓秀",
+      "source_row": 72
+    },
+    {
+      "Employee_ID": "EMP000073",
+      "Name": "刘志云",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000003",
+      "Hire_Date": "2024-09-20",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 73
+    },
+    {
+      "Employee_ID": "EMP000074",
+      "Name": "王曦",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000046",
+      "Hire_Date": "2024-03-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 74
+    },
+    {
+      "Employee_ID": "EMP000075",
+      "Name": "朱成",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000042",
+      "Hire_Date": "1999-01-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 75
+    },
+    {
+      "Employee_ID": "EMP000076",
+      "Name": "彭毓秀",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000021",
+      "Hire_Date": "2026-04-13",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 76
+    },
+    {
+      "Employee_ID": "EMP000077",
+      "Name": "麦定伟",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000012",
+      "Hire_Date": "2024-02-22",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 77
+    },
+    {
+      "Employee_ID": "EMP000078",
+      "Name": "刘阳",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000005",
+      "Hire_Date": "2023-03-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 78
+    },
+    {
+      "Employee_ID": "EMP000079",
+      "Name": "李培智",
+      "Org_ID": "ORG000013",
+      "Position_ID": "POS000034",
+      "Hire_Date": "2020-03-01",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "确认不参与",
+      "manager_name": null,
+      "source_row": 79
+    },
+    {
+      "Employee_ID": "EMP000082",
+      "Name": "刘怀璞",
+      "Org_ID": "ORG000008",
+      "Position_ID": "POS000026",
+      "Hire_Date": "2026-06-08",
+      "Employment_Status": "在职",
+      "Perf_Participate_Status": "待确认",
+      "manager_name": "麦定伟",
+      "source_row": 82
+    }
+  ]
+}

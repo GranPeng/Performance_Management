@@ -1,0 +1,84 @@
+{
+  "status": "PASSED",
+  "registered_master_ids": {
+    "Position": {
+      "count": 53,
+      "sample": [
+        "recvslrK0j01uJ",
+        "recvslrK0j1DGD",
+        "recvslrK0j1kSd"
+      ]
+    },
+    "Channel": {
+      "count": 9,
+      "sample": [
+        "recvsls7z4BhTA",
+        "recvsls7z57fhr",
+        "recvsls7z5ChbC"
+      ]
+    },
+    "Employee": {
+      "count": 80,
+      "sample": [
+        "recvslsi1W2pfe",
+        "recvslsi1W3inE",
+        "recvslsi1W4hLG"
+      ]
+    },
+    "Project": {
+      "count": 4,
+      "sample": [
+        "recvslrVCv0oRY",
+        "recvslrVCvL16C",
+        "recvslrVCvQSJp"
+      ]
+    }
+  },
+  "link_registry_checks": {
+    "violations": [],
+    "checked": {
+      "Metric.Position_ID": 45,
+      "Commission_Tier.Position_ID": 42,
+      "Target.Channel_ID": 6156,
+      "Project_Member.Employee_ID": 23,
+      "Project_Member.Project_ID": 23,
+      "Project_Member.Channel_ID": 23
+    }
+  },
+  "counts": {
+    "Metric_position_single_link": 45,
+    "Metric_total": 45,
+    "Commission_position_single_link": 42,
+    "Commission_total": 42,
+    "Target_channel_single_link": 6156,
+    "Target_total": 6156,
+    "Project_Member_total": 23,
+    "Project_Member_d010_expected": 23,
+    "Error_Log_batch_total": 317,
+    "Error_Log_closed_target_expected": 216,
+    "Error_Log_closed_pm_expected": 23,
+    "Error_Log_active_pm_expected": 78
+  },
+  "source_closure": {
+    "source_rows": 101,
+    "pm_traced": 23,
+    "active_error_traced": 78,
+    "partition_issues": []
+  },
+  "batch": {
+    "record_id": "recvslw7f2LYhf",
+    "Batch_ID": "IB-T8B-REL-20260815-01",
+    "Total_Count": 6344,
+    "Success_Count": 6266,
+    "Fail_Count": 78,
+    "Status": "Partial"
+  },
+  "project_member_statuses": {
+    "待在线维护": 23
+  },
+  "project_member_empty_effective_start": 23,
+  "project_member_false_primary": 23,
+  "open_error_breakdown": {
+    "Project_Member|必填/ID存在性": 78
+  }
+}

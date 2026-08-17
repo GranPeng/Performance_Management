@@ -1,0 +1,49 @@
+{
+  "task": "T9b",
+  "verified_at": "2026-08-17",
+  "period": "2026-07",
+  "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+  "table": "Performance_Result (tbl6tFtVKExFUTWo)",
+  "batch_id": "IB-T9B-CALC-20260817-01",
+  "batch_record_id": "recvswR3oFFTVH",
+  "result_id_range": "RST000001~RST000161",
+  "result_count": 161,
+  "formula_fields": {
+    "Achievement_Rate": "IF(ISBLANK(FIRST([Actual_ID].[Actual_Value])), \"\", IFERROR(FIRST([Actual_ID].[Actual_Value]) / IF(ISBLANK([Target_ID]), [Target_Value_Snapshot], FIRST([Target_ID].[Target_Value])), \"\"))",
+    "Weight": "FIRST([Metric_ID].[Weight])",
+    "Auto_Score": "SWITCH(FIRST([Metric_ID].[Scoring_Type]), \"达成率/进度型\", ..., \"次数阈值型\", ..., \"扣分制\", ...)",
+    "Final_Score": "IF(ISBLANK([Auto_Score]) && ISBLANK([Manual_Score]), \"\", IFBLANK([Auto_Score], 0) + IFBLANK([Manual_Score], 0))",
+    "Weighted_Score": "IFBLANK([Weight], 0) * IFBLANK([Final_Score], 0)",
+    "Monthly_Total": "SUM([Performance_Result].FILTER(CurrentValue.[Employee_ID] = [Employee_ID] && CurrentValue.[Period] = [Period]).[Weighted_Score].LISTCOMBINE())",
+    "Commission_Tier_Level": "FIRST([Commission_Tier].FILTER(CurrentValue.[Position_ID] = FIRST([Metric_ID].[Position_ID]) && CurrentValue.[Score_Lower] <= [Monthly_Total] && CurrentValue.[Status] = \"Active\").SORTBY([Commission_Tier].[Tier_Level], FALSE).[Tier_Level])"
+  },
+  "aux_snapshot_columns": [
+    "Target_Value_Snapshot", "Rate_T1", "Score_T1", "Rate_T2", "Score_T2",
+    "Rate_T3", "Score_T3", "Score_Cap", "Score_Floor", "Deduct_Per"
+  ],
+  "verification": {
+    "auto_score_match": "90/93 与 T9a 预期一致",
+    "auto_score_mismatch": 3,
+    "mismatch_detail": "MET-V04-IE-LIVE-003 客户服务与答疑：V04 原文中档=60分，T9a 模拟统一 count_cycle 用 80 分；公式按 V04 原文实现（60），差异记录报 PO（L1）",
+    "qualitative_reward_penalty_blank": "68/68 Auto_Score 留空（定性 56 + 奖惩 12，D-009.3 人工录入）",
+    "manual_score_final_compat": "已验证：定性类录入 Manual_Score=70 → Final_Score=70，Weighted_Score=7，Monthly_Total=7",
+    "weight_lookup": "161/161 lookup Metric.Weight 成功",
+    "achievement_rate": "57/57 达成率型记录有值（无 Target 关联时用 Target_Value_Snapshot）",
+    "monthly_total": "加权汇总正确（SUP 员工 72 = 0.3×150+0.3×90）",
+    "commission_tier_level": "107/161 匹配档位；54 None = LIVE 42（梯度边界疑似 T6 迁移错位 L3）+ CS 12（人工奖惩无分数梯度 L4，预期）",
+    "complete_chain_employees": "32/32 有结果行；30/32 有自动分；2 名客服（奖惩制人工录入，预期）"
+  },
+  "known_limitations": [
+    "L1: T9a 模拟对 LIVE-003 中档用 80 分，V04 原文为 60 分；公式按原文实现，差异报 PO",
+    "L2: Metric.Score_Cap_Value / Score_Floor_Value / Scoring_Rule_Payload 未结构化（BA 待填），当前用 Performance_Result 辅助列快照承载分档参数",
+    "L3: Commission_Tier 表 LIVE 岗位梯度边界疑似 T6 迁移错位（lower=60/80/100/150 vs V04 原文 0/60/80/100），直播中控 42 条总分 20~38 无法命中档位",
+    "L4: 客服岗位 Commission_Tier 无分数梯度（V04 客服提成为奖励/处罚金额，D-009.3 人工录入），None 属预期",
+    "L5: 定性/奖惩 68 条待 Manual_Score 录入，录入前加权总分不完整"
+  ],
+  "po_report_items": [
+    "L1 LIVE-003 档位：公式按 V04 原文 60 分 vs T9a 模拟 80 分，请确认口径",
+    "L3 Commission_Tier 直播中控梯度边界：疑似 T6 迁移错位，需核对修正（走数据修正流程）",
+    "L2 Metric 分档参数结构化容器填充排期"
+  ],
+  "status": "VERIFIED_WITH_KNOWN_LIMITATIONS"
+}

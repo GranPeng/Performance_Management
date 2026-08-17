@@ -1,0 +1,237 @@
+{
+  "status": "success",
+  "source_sha256": "5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250",
+  "sheet_count": 9,
+  "metric_count": 45,
+  "checks": [
+    {
+      "sheet": "兴趣电商-运营",
+      "metric_count": 4,
+      "source_total_row": 10,
+      "weight_total_formula": "=SUM(E6:E9)",
+      "total_score_formula": "=SUM(M6:M9)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "E10",
+        "M10",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-高级主管",
+      "metric_count": 4,
+      "source_total_row": 10,
+      "weight_total_formula": "=SUM(E6:E9)",
+      "total_score_formula": "=SUM(M6:M9)",
+      "formula_cells": [
+        "Q2",
+        "T2",
+        "W2",
+        "M6",
+        "R6",
+        "U6",
+        "X6",
+        "M7",
+        "R7",
+        "U7",
+        "X7",
+        "M8",
+        "R8",
+        "U8",
+        "X8",
+        "M9",
+        "R9",
+        "U9",
+        "X9",
+        "E10",
+        "M10",
+        "R10",
+        "U10",
+        "X10",
+        "M14",
+        "Q14",
+        "R14",
+        "T14",
+        "U14",
+        "W14",
+        "X14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-广告投放",
+      "metric_count": 5,
+      "source_total_row": 11,
+      "weight_total_formula": "=SUM(E6:E10)",
+      "total_score_formula": "=SUM(M6:M10)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "E11",
+        "M11"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-直播中控",
+      "metric_count": 6,
+      "source_total_row": 12,
+      "weight_total_formula": "=SUM(E6:E11)",
+      "total_score_formula": "=SUM(M6:M11)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "M11",
+        "E12",
+        "M12"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-主播",
+      "metric_count": 4,
+      "source_total_row": 10,
+      "weight_total_formula": "=SUM(E6:E9)",
+      "total_score_formula": "=SUM(M6:M9)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "E10",
+        "M10"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-客服",
+      "metric_count": 6,
+      "source_total_row": 12,
+      "weight_total_formula": "=SUM(E6:E11)",
+      "total_score_formula": "=SUM(L6:L11)",
+      "formula_cells": [
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10",
+        "L11",
+        "E12",
+        "L12"
+      ]
+    },
+    {
+      "sheet": "制作部-编导",
+      "metric_count": 6,
+      "source_total_row": 12,
+      "weight_total_formula": "=SUM(E6:E11)",
+      "total_score_formula": "=SUM(M6:M11)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "M11",
+        "E12",
+        "M12"
+      ]
+    },
+    {
+      "sheet": "制作部-视频剪辑",
+      "metric_count": 5,
+      "source_total_row": 11,
+      "weight_total_formula": "=SUM(E6:E10)",
+      "total_score_formula": "=SUM(M6:M10)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "E11",
+        "M11"
+      ]
+    },
+    {
+      "sheet": "制作部-摄影师",
+      "metric_count": 5,
+      "source_total_row": 11,
+      "weight_total_formula": "=SUM(E6:E10)",
+      "total_score_formula": "=SUM(M6:M10)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "E11",
+        "M11"
+      ]
+    }
+  ],
+  "derived_document_metric_counts": {
+    "docs/绩效框架结构化规则.md": 45,
+    "docs/business_rules.md": 45,
+    ".hermes/memory/business_memory.md": 45
+  },
+  "outputs": [
+    "data/output/绩效框架结构化规则.json",
+    "docs/绩效框架结构化规则.md",
+    "docs/business_rules.md",
+    "context/business_glossary.md",
+    ".hermes/memory/business_memory.md"
+  ],
+  "validation": [
+    "源Excel未被写入",
+    "JSON重新加载成功",
+    "岗位数与工作表数一致",
+    "KPI总数与按岗位提取总数一致",
+    "工作表顺序与源文件一致",
+    "所有派生文档 KPI 总数与 JSON 一致",
+    "9个岗位合计公式已逐项与JSON验证"
+  ],
+  "exceptions": [
+    {
+      "source": "兴趣电商-客服!B11",
+      "issue": "“邀请好评”指标存在但B列编号为空；已保留该指标，并在结构化结果中标记为“未填写（源单元格B11为空）”，未自行补号。"
+    },
+    {
+      "source": "兴趣电商-广告投放!I7",
+      "issue": "评分标准末档原文为“90%＞达成率，0分”，与紧邻的“90%＞达成率≥80%，60分”重叠；按原文保留，需业务确认。"
+    },
+    {
+      "source": "兴趣电商-直播中控!I18:M21",
+      "issue": "提成表的列头与数据列存在视觉错位：J 列存分数下限、K 列存上限、L 列存“0.1%/中控人数”、M 列存“绩效工资*比例”。JSON按源单元格保留，未自行重排。"
+    },
+    {
+      "source": "兴趣电商-广告投放!I17:M20；兴趣电商-主播!I16:M19；制作部各岗位提成表",
+      "issue": "多个提成梯度最高仅至150分，未给出≥150分的处理规则；不得自行外推。"
+    },
+    {
+      "source": "各岗位“完成结果”列及高级主管测算区",
+      "issue": "源工作簿含示例完成结果/测算值；其是否为演示数据或历史业务结果未标记，本提取仅作为来源字段记录，不作为规则事实。"
+    },
+    {
+      "source": "兴趣电商-客服!F6:H11",
+      "issue": "客服表按奖励/处罚金额与分值并列描述，但未给出将金额、次数与最终得分的统一换算公式；本提取保留原文，待业务与财务确认。"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "record_type": "budget_target_extraction_validation_log",
+  "run_timestamp_utc": "2026-08-14T08:04:00.233821+00:00",
+  "source_sha256_before": "65d3c2a6a3e26bce63e196bd80025a3f0a293c05d1fa730da7b5fef0c0eb5943",
+  "source_sha256_after": "65d3c2a6a3e26bce63e196bd80025a3f0a293c05d1fa730da7b5fef0c0eb5943",
+  "checks": [
+    {
+      "name": "source_unchanged",
+      "passed": true,
+      "expected": "65d3c2a6a3e26bce63e196bd80025a3f0a293c05d1fa730da7b5fef0c0eb5943",
+      "actual": "65d3c2a6a3e26bce63e196bd80025a3f0a293c05d1fa730da7b5fef0c0eb5943"
+    },
+    {
+      "name": "channel_count",
+      "passed": true,
+      "expected": 9,
+      "actual": 9
+    },
+    {
+      "name": "month_count_per_channel",
+      "passed": true,
+      "expected": 12,
+      "actual": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "name": "quantitative_kpi_mapping_coverage",
+      "passed": true,
+      "expected": 16,
+      "actual": 16
+    },
+    {
+      "name": "source_reference_completeness",
+      "passed": true,
+      "expected": "all extracted values carry source cells",
+      "actual": "verified"
+    }
+  ],
+  "exceptions": [
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "F14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "G14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "H14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "I14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "J14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "K14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "L14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "M14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "N14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "O14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "P14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_FORMULA_REF_ERROR",
+      "source_sheet": "总表-渠道二维汇总",
+      "source_cell": "Q14",
+      "line_item": "渠道投入/退货成本",
+      "channel": null,
+      "month": null,
+      "message": "源工作簿已存在 #REF!；原样记录，未修改。"
+    }
+  ],
+  "exception_summary": {
+    "SOURCE_FORMULA_REF_ERROR": 12
+  }
+}

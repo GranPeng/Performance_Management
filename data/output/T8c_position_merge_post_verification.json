@@ -1,0 +1,180 @@
+{
+  "task": "T8c",
+  "generated_at": "2026-08-17 12:34:39 +0800",
+  "mode": "READ_ONLY_PREFLIGHT",
+  "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+  "counts": {
+    "Position": 53,
+    "Employee": 80,
+    "Metric": 45
+  },
+  "known_case": {
+    "POS000037": {
+      "record_id": "recvslrK0jQSSX",
+      "status": "Inactive"
+    },
+    "POS000038": {
+      "record_id": "recvslrK0ji8UR",
+      "status": "Active",
+      "metric_count": 6
+    },
+    "affected_employees": [
+      {
+        "Employee_ID": "EMP000027",
+        "Name": "胡可可",
+        "Position_record_id": "recvslrK0ji8UR"
+      },
+      {
+        "Employee_ID": "EMP000028",
+        "Name": "吕剑",
+        "Position_record_id": "recvslrK0ji8UR"
+      }
+    ]
+  },
+  "duplicate_position_groups": [
+    {
+      "position_name": "平面设计师",
+      "positions": [
+        {
+          "record_id": "recvslrK0j6XH2",
+          "Position_ID": "POS000029",
+          "Org_record_id": "recvslr8CHxVvG",
+          "Status": "Active",
+          "Note": null,
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        },
+        {
+          "record_id": "recvslrK0jLmvT",
+          "Position_ID": "POS000030",
+          "Org_record_id": "recvslr8CHLXF4",
+          "Status": "Active",
+          "Note": null,
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        },
+        {
+          "record_id": "recvslrK0jBEsX",
+          "Position_ID": "POS000031",
+          "Org_record_id": "recvslr8CHb4xd",
+          "Status": "Active",
+          "Note": null,
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        }
+      ],
+      "employee_count": 3,
+      "employee_ids": [
+        "EMP000019",
+        "EMP000020",
+        "EMP000049"
+      ],
+      "employee_position_record_ids": [
+        "recvslrK0j6XH2",
+        "recvslrK0jLmvT"
+      ],
+      "metric_count": 0,
+      "metric_ids": [],
+      "metric_position_record_ids": [],
+      "employee_metric_position_mismatch": false,
+      "conclusion": "保留：无 Metric 挂靠，无法以 V04 KPI 规则证明应合并；同名记录按部门实体语义保留。"
+    },
+    {
+      "position_name": "电商客服专员",
+      "positions": [
+        {
+          "record_id": "recvslrK0jQSSX",
+          "Position_ID": "POS000037",
+          "Org_record_id": "recvslr8CHneDq",
+          "Status": "Inactive",
+          "Note": "已并入 POS000038，2026-08-17，T8c",
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        },
+        {
+          "record_id": "recvslrK0ji8UR",
+          "Position_ID": "POS000038",
+          "Org_record_id": "recvslr8CHLXF4",
+          "Status": "Active",
+          "Note": null,
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        }
+      ],
+      "employee_count": 5,
+      "employee_ids": [
+        "EMP000016",
+        "EMP000017",
+        "EMP000018",
+        "EMP000027",
+        "EMP000028"
+      ],
+      "employee_position_record_ids": [
+        "recvslrK0ji8UR"
+      ],
+      "metric_count": 6,
+      "metric_ids": [
+        "MET-V04-IE-CS-001",
+        "MET-V04-IE-CS-002",
+        "MET-V04-IE-CS-003",
+        "MET-V04-IE-CS-004",
+        "MET-V04-IE-CS-005",
+        "MET-V04-IE-CS-006"
+      ],
+      "metric_position_record_ids": [
+        "recvslrK0ji8UR"
+      ],
+      "employee_metric_position_mismatch": false,
+      "conclusion": "归并完成：EMP000027/EMP000028 已改挂 POS000038；POS000037 已 Inactive 并保留归并注记；6项 Active Metric 仍挂 POS000038。"
+    },
+    {
+      "position_name": "电商客服主管",
+      "positions": [
+        {
+          "record_id": "recvslrK0jAhwx",
+          "Position_ID": "POS000039",
+          "Org_record_id": "recvslr8CHneDq",
+          "Status": "Active",
+          "Note": "T8c全量排查：与 POS000040 同名，但不在 V04 KPI 覆盖范围；保留原实体语义，暂不处理。",
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        },
+        {
+          "record_id": "recvslrK0j01uJ",
+          "Position_ID": "POS000040",
+          "Org_record_id": "recvslr8CHLXF4",
+          "Status": "Active",
+          "Note": "T8c全量排查：与 POS000039 同名，但不在 V04 KPI 覆盖范围；保留原实体语义，暂不处理。",
+          "Position_Alias": null,
+          "Source": "T8a主数据ETL"
+        }
+      ],
+      "employee_count": 2,
+      "employee_ids": [
+        "EMP000014",
+        "EMP000015"
+      ],
+      "employee_position_record_ids": [
+        "recvslrK0j01uJ"
+      ],
+      "metric_count": 0,
+      "metric_ids": [],
+      "metric_position_record_ids": [],
+      "employee_metric_position_mismatch": false,
+      "conclusion": "暂不处理：同名但属于不同实体语义，且不在 V04 KPI 覆盖范围；按任务要求保留。"
+    }
+  ],
+  "position_note_field_candidates": [
+    "Note"
+  ],
+  "participant_active_metric_verification_pre": {
+    "expected_confirmed_participants": 32,
+    "confirmed_participants": 32,
+    "passed": 32,
+    "failed": 0,
+    "failures": []
+  },
+  "preflight_errors": [],
+  "status": "PREFLIGHT_PASSED",
+  "no_write_statement": "本次脚本只读。未修改 Position、Employee、Metric、Target 或任何 Base 记录。"
+}

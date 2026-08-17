@@ -1,0 +1,20 @@
+{
+  "create_records": [
+    {
+      "Batch_ID": "IB-T6-V04-20260814-01",
+      "Batch_Type": "MASTER_DATA",
+      "Total_Count": 87,
+      "Success_Count": 0,
+      "Fail_Count": 0,
+      "Import_Time": "2026-08-14 18:04",
+      "Create_Time": "2026-08-14 18:04",
+      "Update_Time": "2026-08-14 18:04",
+      "Operator": "data-engineer/T6-V04-ETL",
+      "Source": "Excel文件|岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx|SHA256:5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250|T6-V04",
+      "Source_Type": "Excel文件",
+      "Source_File": "岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx",
+      "Source_SHA256": "5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250",
+      "Status": "Active"
+    }
+  ]
+}
