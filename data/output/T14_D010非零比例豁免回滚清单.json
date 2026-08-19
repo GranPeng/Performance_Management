@@ -1,0 +1,22 @@
+{
+  "task": "T14",
+  "rollback_scope": "仅删除 T14 创建的 SIMULATED Project、两批次、Actual 和 Performance_Result；不修改既有业务记录或公式",
+  "execution": "T14_D010非零比例豁免执行结果.json",
+  "project_record_id": "recvsyarr5pjlN",
+  "actual_record_ids": [
+    "recvsyastLpoaV"
+  ],
+  "performance_result_record_ids": [
+    "recvsyat0oz6cL"
+  ],
+  "import_batch_record_ids": [
+    "recvsyarYfXU9R",
+    "recvsyarYfhCfL"
+  ],
+  "rollback_order": [
+    "Performance_Result",
+    "Actual",
+    "Import_Batch",
+    "Project"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "task": "T14",
+  "type": "T12b审计链最终参数快照",
+  "generated_at": "2026-08-17T20:48:07.529398+08:00",
+  "source_documents": [
+    "T12b边界异常模拟计划.json",
+    "T12b梯度精确边界修正记录.json",
+    "T12b边界异常执行结果.json"
+  ],
+  "rule_basis": "V04；LIVE-001 实际权重为0.1，三项自动分固定加权贡献50，Manual_Score=(目标总分-50)/0.1",
+  "reason_for_plan_difference": "首次执行未按 LIVE-001 的实际权重0.1换算；只更新本任务四条测试结果，不改 Base 公式",
+  "records": [
+    {
+      "result_id": "RST000168",
+      "base_record_id": "recvsxUHPswwbq",
+      "achievement_rate": 1.0,
+      "auto_score": 100.0,
+      "manual_score": 100.0,
+      "weight": 0.1,
+      "formula": "Final_Score=Auto_Score+Manual_Score；Weighted_Score=Final_Score×Weight；Monthly_Total=同员工同期间各 Weighted_Score 合计",
+      "final_score": 200.0,
+      "weighted_score": 20.0,
+      "monthly_total": 60.0,
+      "correction_reason": "首次执行未按 LIVE-001 的实际权重0.1换算；只更新本任务四条测试结果，不改 Base 公式",
+      "correction_prior_manual_score": 50.0
+    },
+    {
+      "result_id": "RST000171",
+      "base_record_id": "recvsxUHPsr5iZ",
+      "achievement_rate": 1.0,
+      "auto_score": 100.0,
+      "manual_score": 300.0,
+      "weight": 0.1,
+      "formula": "Final_Score=Auto_Score+Manual_Score；Weighted_Score=Final_Score×Weight；Monthly_Total=同员工同期间各 Weighted_Score 合计",
+      "final_score": 400.0,
+      "weighted_score": 40.0,
+      "monthly_total": 80.0,
+      "correction_reason": "首次执行未按 LIVE-001 的实际权重0.1换算；只更新本任务四条测试结果，不改 Base 公式",
+      "correction_prior_manual_score": 150.0
+    },
+    {
+      "result_id": "RST000174",
+      "base_record_id": "recvsxUHPsmr2M",
+      "achievement_rate": 1.0,
+      "auto_score": 100.0,
+      "manual_score": 500.0,
+      "weight": 0.1,
+      "formula": "Final_Score=Auto_Score+Manual_Score；Weighted_Score=Final_Score×Weight；Monthly_Total=同员工同期间各 Weighted_Score 合计",
+      "final_score": 600.0,
+      "weighted_score": 60.0,
+      "monthly_total": 100.0,
+      "correction_reason": "首次执行未按 LIVE-001 的实际权重0.1换算；只更新本任务四条测试结果，不改 Base 公式",
+      "correction_prior_manual_score": 250.0
+    },
+    {
+      "result_id": "RST000177",
+      "base_record_id": "recvsxUHPsoIHD",
+      "achievement_rate": 1.0,
+      "auto_score": 100.0,
+      "manual_score": 1100.0,
+      "weight": 0.1,
+      "formula": "Final_Score=Auto_Score+Manual_Score；Weighted_Score=Final_Score×Weight；Monthly_Total=同员工同期间各 Weighted_Score 合计",
+      "final_score": 1200.0,
+      "weighted_score": 120.0,
+      "monthly_total": 160.0,
+      "correction_reason": "首次执行未按 LIVE-001 的实际权重0.1换算；只更新本任务四条测试结果，不改 Base 公式",
+      "correction_prior_manual_score": 550.0
+    }
+  ],
+  "verification": "逐条读取 Base 结果，确认人工分与修正记录一致，并以快照公式复算 Final_Score/Weighted_Score；Monthly_Total 取同一 Base 读取值，交由独立全量校验器复核。"
+}

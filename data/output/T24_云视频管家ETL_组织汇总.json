@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-08-18 19:21",
+  "batch_id": "IB-YSP-733DBFC9529AFBDB",
+  "calculation": "编导=直属小组已导入成员消耗总和；剪辑=同组已导入消耗÷配置成员数×0.9。Period/Channel未见于CSV，标记待确认。",
+  "groups": [
+    {
+      "leader": "施桐鑫",
+      "group_name": "施桐鑫（内容高级主管）小组",
+      "member_count_configured": 0,
+      "member_detail": [],
+      "team_spend_sum_imported": 0,
+      "director_team_sum": null,
+      "editor_equal_share_x_0_9": null,
+      "period": "【待确认】",
+      "channel": "【待确认】"
+    },
+    {
+      "leader": "潘剑秋",
+      "group_name": "潘剑秋（编导，骨能）小组",
+      "member_count_configured": 3,
+      "member_detail": [
+        {
+          "employee": "李波",
+          "spend": 12254.31,
+          "in_this_import": true
+        },
+        {
+          "employee": "盘子烨",
+          "spend": null,
+          "in_this_import": false
+        },
+        {
+          "employee": "罗卓彬",
+          "spend": 2682.03,
+          "in_this_import": true
+        }
+      ],
+      "team_spend_sum_imported": 14936.34,
+      "director_team_sum": 14936.34,
+      "editor_equal_share_x_0_9": 4480.902,
+      "period": "【待确认】",
+      "channel": "【待确认】"
+    },
+    {
+      "leader": "王思伟",
+      "group_name": "王思伟（编导，高个子）小组",
+      "member_count_configured": 7,
+      "member_detail": [
+        {
+          "employee": "古旭锋",
+          "spend": 76197.38,
+          "in_this_import": true
+        },
+        {
+          "employee": "欧子豪",
+          "spend": null,
+          "in_this_import": false
+        },
+        {
+          "employee": "肖思宇",
+          "spend": 9382.4,
+          "in_this_import": true
+        },
+        {
+          "employee": "褚翼玮",
+          "spend": 64823.7,
+          "in_this_import": true
+        },
+        {
+          "employee": "谢梦欣",
+          "spend": 82532.69,
+          "in_this_import": true
+        },
+        {
+          "employee": "高广泳",
+          "spend": 15121.66,
+          "in_this_import": true
+        },
+        {
+          "employee": "黄祖湛",
+          "spend": 9137.08,
+          "in_this_import": true
+        }
+      ],
+      "team_spend_sum_imported": 257194.91,
+      "director_team_sum": 257194.91,
+      "editor_equal_share_x_0_9": 33067.917,
+      "period": "【待确认】",
+      "channel": "【待确认】"
+    }
+  ]
+}

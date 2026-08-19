@@ -1,0 +1,19 @@
+{
+  "task": "T23",
+  "change_type": "SIMULATION_CORRECTION",
+  "timestamp": "2026-08-18 13:35",
+  "reason": "首次三条模拟结果使用同一员工与同一期间，导致 Monthly_Total 交叉汇总，独立校验发现1条提成差异。",
+  "scope": "仅更新本任务 SOURCE=SIMULATED_T23_D010_R3 的前两条 Project.Start_Date、Actual.Period、Performance_Result.Period；未修改既有业务记录、Base公式或规则配置。",
+  "updates": [
+    {"case": "T23-EXEMPT-AT-LIMIT", "project_record_id": "recvsCIhszigl3", "actual_record_id": "recvsCIi9WFPv7", "result_record_id": "recvsCIiRbc4wD", "period": "2027-07", "start_date": "2027-06-17"},
+    {"case": "T23-REVENUE-OVER-LIMIT", "project_record_id": "recvsCIhszL9kW", "actual_record_id": "recvsCIi9W7oiq", "result_record_id": "recvsCIiRbjLBJ", "period": "2027-08", "start_date": "2027-07-18"}
+  ],
+  "verification_after_correction": {
+    "command": "python3 scripts/verify_calculation_chain.py",
+    "status": "PASS",
+    "performance_result_rows": 192,
+    "difference_rows": 0,
+    "monthly_total_stable": true
+  },
+  "rollback": "仍按 data/output/T23_D010_R3回滚清单.json 执行；该清单已同步更正后的期间与日期。"
+}

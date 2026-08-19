@@ -1,0 +1,400 @@
+{
+  "task": "T12b",
+  "generated_at": "2026-08-17T17:49:10.063682+08:00",
+  "mode": "PREFLIGHT",
+  "source": "SIMULATED_T12B_BOUNDARY",
+  "actual_batch_id": "IB-T12B-ACTUAL-20260817-01",
+  "calc_batch_id": "IB-T12B-CALC-20260817-01",
+  "counts": {
+    "cases": 19,
+    "actuals": 18,
+    "results": 19
+  },
+  "actual_id_start": 94,
+  "result_id_start": 162,
+  "cases": [
+    {
+      "case_id": "T12B-RATE-08",
+      "kind": "rate",
+      "label": "达成率精确临界 rate=1.0",
+      "period": "2026-08",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-001",
+      "actual_value": 100.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 100.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-RATE-09",
+      "kind": "rate",
+      "label": "达成率精确临界 rate=0.8",
+      "period": "2026-09",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-001",
+      "actual_value": 80.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 90.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-RATE-10",
+      "kind": "rate",
+      "label": "达成率精确临界 rate=0.6",
+      "period": "2026-10",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-001",
+      "actual_value": 60.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 60.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-RATE-11",
+      "kind": "rate",
+      "label": "达成率型 Actual=0",
+      "period": "2026-11",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-001",
+      "actual_value": 0.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 0.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TARGET-12",
+      "kind": "target_exception",
+      "label": "Target=null：无错误得分",
+      "period": "2026-12",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-001",
+      "actual_value": 100.0,
+      "target_snapshot": null,
+      "expected_auto_score": null,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TARGET-01",
+      "kind": "target_exception",
+      "label": "Target=0：除零保护、无错误得分",
+      "period": "2027-01",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-001",
+      "actual_value": 100.0,
+      "target_snapshot": 0.0,
+      "expected_auto_score": null,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-08-01",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=60.0",
+      "period": "2026-08",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-001",
+      "actual_value": 100.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 100.0,
+      "manual_score": 50.0,
+      "expected_total": 60.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-08-02",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=60.0",
+      "period": "2026-08",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-002",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 60.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 80,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-08-03",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=60.0",
+      "period": "2026-08",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-003",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 60.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-09-01",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=80.0",
+      "period": "2026-09",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-001",
+      "actual_value": 100.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 100.0,
+      "manual_score": 150.0,
+      "expected_total": 80.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-09-02",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=80.0",
+      "period": "2026-09",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-002",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 80.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 80,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-09-03",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=80.0",
+      "period": "2026-09",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-003",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 80.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-10-01",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=100.0",
+      "period": "2026-10",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-001",
+      "actual_value": 100.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 100.0,
+      "manual_score": 250.0,
+      "expected_total": 100.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-10-02",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=100.0",
+      "period": "2026-10",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-002",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 100.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 80,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-10-03",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=100.0",
+      "period": "2026-10",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-003",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 100.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-11-01",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=160.0",
+      "period": "2026-11",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-001",
+      "actual_value": 100.0,
+      "target_snapshot": 100.0,
+      "expected_auto_score": 100.0,
+      "manual_score": 550.0,
+      "expected_total": 160.0,
+      "parameter_snapshot": {
+        "Rate_T1": 1.0,
+        "Score_T1": 0,
+        "Score_Cap": 150,
+        "Rate_T2": 0.8,
+        "Score_T2": 90,
+        "Rate_T3": 0.6,
+        "Score_T3": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-11-02",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=160.0",
+      "period": "2026-11",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-002",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 160.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 80,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-TIER-11-03",
+      "kind": "tier",
+      "label": "梯度精确边界/超上限：总分=160.0",
+      "period": "2026-11",
+      "employee": "EMP000034",
+      "metric": "MET-V04-IE-LIVE-003",
+      "actual_value": 0,
+      "target_snapshot": null,
+      "expected_auto_score": 100.0,
+      "expected_total": 160.0,
+      "parameter_snapshot": {
+        "Rate_T1": 0,
+        "Score_T1": 100,
+        "Rate_T2": 3,
+        "Score_T2": 60,
+        "Score_Floor": 0
+      }
+    },
+    {
+      "case_id": "T12B-MANUAL-QUAL-08",
+      "kind": "qualitative",
+      "label": "定性指标无 Actual，按 D-009.3 人工分场景",
+      "period": "2026-08",
+      "employee": "EMP000032",
+      "metric": "MET-V04-IE-OPS-003",
+      "actual_value": null,
+      "target_snapshot": null,
+      "expected_auto_score": null,
+      "manual_score": 70.0,
+      "parameter_snapshot": {}
+    }
+  ]
+}

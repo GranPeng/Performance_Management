@@ -1,0 +1,8 @@
+[
+  {"type":"text","name":"Group_ID","description":"必填 · 主键，GRP 号段；制作部小组稳定唯一标识，供全系统 ID 关联；主数据维护流程产生，创建时分配、终身不变。CHG-T18-002 / D-015.3"},
+  {"type":"text","name":"Group_Name","description":"必填 · 小组人读展示名称，禁止作关联键；制作部/HR 维护，供看板与复核展示；更名时更新。CHG-T18-002 / D-015.3"},
+  {"type":"link","name":"Leader_Employee_ID","link_table":"tblc59aB4EnSxkQv","description":"必填 · 小组负责编导（ID 关联→Employee）；制作部/HR 维护，供小组聚合路由与复核；换编导时更新，历史结果不改写。CHG-T18-002 / D-015.3"},
+  {"type":"text","name":"Status","description":"必填 · 生命周期状态：Active / Inactive / Archived；主数据维护流程产生，所有查询默认消费 Active。CHG-T18-002"},
+  {"type":"datetime","name":"Create_Time","style":{"format":"yyyy-MM-dd HH:mm"},"description":"必填 · 创建时间；主数据维护流程产生，供审计与排查；创建时写入、不变。CHG-T18-002"},
+  {"type":"datetime","name":"Update_Time","style":{"format":"yyyy-MM-dd HH:mm"},"description":"必填 · 最近变更时间；主数据维护流程产生，供审计与冲突排查；每次更新刷新。CHG-T18-002"}
+]

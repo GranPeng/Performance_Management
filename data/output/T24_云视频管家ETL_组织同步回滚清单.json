@@ -1,0 +1,7 @@
+{
+  "batch_id": "IB-YSP-733DBFC9529AFBDB",
+  "batch_record_id": "recvsDaGA8TZQ3",
+  "project_member_group_updates": [],
+  "actual_owner_employee_updates": [],
+  "rollback_method": "按 project_member_group_updates 的 old_group_record_id 恢复 Group_ID；按 actual_owner_employee_updates 的 old_owner_employee_record_id 恢复 Owner_Employee_ID；null 表示清空关联。"
+}

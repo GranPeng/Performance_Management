@@ -1,0 +1,45 @@
+{
+  "change_id": "CHG-D010-R3-001-TRACE",
+  "task": "T23",
+  "date": "2026-08-18",
+  "reason": "复核发现 EXS000001 已消费 D-010-R3 的营收阈值和双条件公式，但 Rule_Version 与字段说明曾停留在 R2；本修正对齐当前生效版本，同时保留 R2 来源。",
+  "scope": {
+    "base_token": "FCxObLU6yao5jgsciZfcWHKwnjh",
+    "table_id": "tblP6Im75vDohuPF",
+    "record_id": "recvsyf5IYhkt5",
+    "field_id": "fldizqgSuF"
+  },
+  "legacy_precondition": {
+    "Exemption_Scope_ID": "EXS000001",
+    "Rule_Version": "V04+D-010-R2",
+    "Rule_Version_field_description": "Required rule version. Current active seed is V04+D-010-R2."
+  },
+  "record_update_payload": {
+    "Rule_Version": "V04+D-010-R3",
+    "Note": "D010-R3 active: revenue limit 1000000 CNY; missing revenue remains pending. R2 provenance: PO_DECISION_D010_R2, created 2026-08-17."
+  },
+  "field_update_payload": {
+    "name": "Rule_Version",
+    "type": "text",
+    "default_value": null,
+    "style": {"type": "plain"},
+    "description": "Required rule version. Current active seed is V04+D-010-R3; R2 provenance is retained in the record Note and change log."
+  },
+  "validation": {
+    "record": "EXS000001 的 Rule_Version=V04+D-010-R3、Max_Monthly_Revenue=1000000，且 Note 包含 R2 provenance。",
+    "field": "Rule_Version 字段为 text，字段说明包含 V04+D-010-R3 和 R2 provenance。"
+  },
+  "rollback": {
+    "record_payload": {
+      "Rule_Version": "V04+D-010-R2",
+      "Note": "D-010-R3：阈值=1,000,000元；营收未知时结果留空待确认。"
+    },
+    "field_payload": {
+      "name": "Rule_Version",
+      "type": "text",
+      "default_value": null,
+      "style": {"type": "plain"},
+      "description": "必填·规则版本（当前V04+D-010-R2）。产生：规则维护；消费：审计/重算；规则变更时新增版本记录。"
+    }
+  }
+}

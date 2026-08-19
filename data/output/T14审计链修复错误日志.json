@@ -1,0 +1,6 @@
+{
+  "task": "T14",
+  "status": "FAILED",
+  "timestamp": "2026-08-17T20:48:12.854088+08:00",
+  "error": "D-010 业务键已存在，拒绝重复写入：('recvslsi1W4hLG', 'recvsgqAO9qu6Y', '2027-02')"
+}

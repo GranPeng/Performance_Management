@@ -3,16 +3,22 @@
 
 For each row with Monthly_Total + position:
   find tier with highest Score_Lower <= Monthly_Total (Status=Active)
-  运营族 (has Coefficient): expected_ratio = 0.003 × Coefficient
+  运营族 (has Coefficient): expected_ratio = Commission_Tier.Base_Rate × Coefficient
   其他族: expected_ratio = Ratio_Value
 Compare with stored Commission_Ratio.
 """
-import json, sys
+import argparse, json, sys
 from collections import defaultdict
 
 base = "FCxObLU6yao5jgsciZfcWHKwnjh"
 import shutil, subprocess, time
 from pathlib import Path
+from base_rate_config import resolve_base_rate
+
+parser = argparse.ArgumentParser(description="提成比例只读复核；--base-rate 仅覆盖预期值，不写入 Base。")
+parser.add_argument("result_json", help="待复核的 Performance_Result JSON 文件")
+parser.add_argument("--base-rate", type=float, help="只读验证用 Base_Rate 覆盖值")
+args = parser.parse_args()
 
 CLI_BIN = shutil.which("lark-cli") or str(Path.home() / ".local/bin/lark-cli")
 
@@ -36,7 +42,7 @@ tier_rows = []
 offset = 0
 while True:
     d = cli(["+record-list", "--base-token", base, "--table-id", "tblkZUoHYwBIvDYe", "--limit", "200", "--format", "json"]
-            + [a for f in ["Commission_Tier_ID", "Position_ID", "Score_Lower", "Coefficient", "Ratio_Value", "Status"] for a in ("--field-id", f)]
+            + [a for f in ["Commission_Tier_ID", "Position_ID", "Score_Lower", "Coefficient", "Ratio_Value", "Base_Rate", "Status"] for a in ("--field-id", f)]
             + (["--offset", str(offset)] if offset else []))
     names = d["fields"]; ids = d["record_id_list"]
     for rid, vals in zip(ids, d["data"]):
@@ -79,7 +85,7 @@ for m in metric_rows:
     if pl:
         metric_pos_text[m["_rid"]] = pos_text.get(pl[0]["id"])
 
-rows = json.load(open(sys.argv[1], encoding="utf-8"))
+rows = json.load(open(args.result_json, encoding="utf-8"))
 checked = 0
 fails = []
 for r in rows:
@@ -113,7 +119,7 @@ for r in rows:
     coef = matched.get("Coefficient")
     rv = matched.get("Ratio_Value")
     if coef is not None:
-        exp = round(0.003 * float(coef), 6)
+        exp = round(resolve_base_rate(tier_rows, matched["Position_ID"][0]["id"], args.base_rate) * float(coef), 6)
     elif rv is not None:
         exp = float(rv)
     else:
@@ -132,5 +138,6 @@ if fails:
     print("FAILS:", len(fails))
     for f in fails[:20]:
         print(json.dumps(f, ensure_ascii=False))
+    sys.exit(1)
 else:
     print("ALL COMMISSION_RATIO MANUAL RECHECK PASSED")

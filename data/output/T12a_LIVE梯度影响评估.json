@@ -1,0 +1,32 @@
+{
+  "change_id": "CHG-T12A-001",
+  "date": "2026-08-17",
+  "owner": "Product Owner（修复方向确认）/ data-engineer（执行）",
+  "reason": "V04 直播中控提成梯度下限/上限为 0/60、60/80、80/100、100/150；Base 迁移时仅写入下限 60/80/100/150 且上限为空，导致档位整体偏移一档。",
+  "authoritative_source": {
+    "file": "岗位绩效说明书汇总_20260809_V04_最新绩效框架.xlsx",
+    "structured_rule": "data/output/绩效框架结构化规则.json",
+    "source_cells": ["I18", "I19", "I20", "I21"],
+    "source_sha256": "5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250"
+  },
+  "read_only_baseline": {
+    "commission_tier_rows_to_update": 4,
+    "performance_result_rows": 161,
+    "po_expected_affected_live_result_rows": 42,
+    "actual_baseline_affected_live_result_rows": 37,
+    "affected_live_monthly_total_range": [20, 38],
+    "current_effect": "PO 预期42条；变更前独立校验报告对当前161条实际统计为37条直播中控结果因最低 Score_Lower=60 未命中任何梯度，Commission_Tier_Level 为空。",
+    "post_change_expected_effect": "当前统计的37条（及 PO 预期范围内的42条）Monthly_Total 为20-38的直播中控结果将命中 Tier_Level=1；Monthly_Total、Auto_Score、Final_Score、Weighted_Score 不改变。",
+    "commission_effect": "LIVE 四档 Coefficient 与 Ratio_Value 均为空，现有直播中控行 Commission_Base 亦为空；本次修复仅恢复档位展示，不产生或改写提成金额。"
+  },
+  "field_scope": ["Commission_Tier.Score_Lower", "Commission_Tier.Score_Upper", "Commission_Tier.Note"],
+  "before_after": [
+    {"commission_tier_id": "CT-V04-IE-LIVE-001", "record_id": "recvsgr1TzEh1d", "before": {"lower": 60, "upper": null}, "after": {"lower": 0, "upper": 60}},
+    {"commission_tier_id": "CT-V04-IE-LIVE-002", "record_id": "recvsgr1Tzl1Q2", "before": {"lower": 80, "upper": null}, "after": {"lower": 60, "upper": 80}},
+    {"commission_tier_id": "CT-V04-IE-LIVE-003", "record_id": "recvsgr1TzJLaM", "before": {"lower": 100, "upper": null}, "after": {"lower": 80, "upper": 100}},
+    {"commission_tier_id": "CT-V04-IE-LIVE-004", "record_id": "recvsgr1TzNVzm", "before": {"lower": 150, "upper": null}, "after": {"lower": 100, "upper": 150}}
+  ],
+  "rollback": "以本文件 before 值对四个 record_id 执行 batch-update；不涉及删除、新增记录或业务结果写入。",
+  "approval": "PO 已在 Kanban 任务评论中确认修复方向。",
+  "status": "APPROVED_FOR_EXECUTION"
+}

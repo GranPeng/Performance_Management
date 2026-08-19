@@ -1,0 +1,59 @@
+{
+  "task": "T21",
+  "source": "SIMULATED_T21_D013_D014",
+  "mode": "PREFLIGHT",
+  "actual_batch_id": "IB-T21-ACTUAL-20260818-01",
+  "calc_batch_id": "IB-T21-CALC-20260818-01",
+  "employee_id_start": 83,
+  "actual_id_start": 113,
+  "result_id_start": 182,
+  "cases": [
+    [
+      "D013-ONE-80",
+      "2027-02",
+      [
+        0
+      ],
+      100000,
+      5000,
+      60
+    ],
+    [
+      "D013-TWO-90",
+      "2027-03",
+      [
+        0,
+        1
+      ],
+      200000,
+      6000,
+      80
+    ],
+    [
+      "D013-THREE-100",
+      "2027-04",
+      [
+        0,
+        1,
+        2
+      ],
+      300000,
+      7000,
+      100
+    ],
+    [
+      "D013-ONE-110",
+      "2027-05",
+      [
+        0
+      ],
+      100000,
+      8000,
+      110
+    ]
+  ],
+  "rules": {
+    "D-013": "Perf_Salary×tier% + GSV×0.001÷eligible_middle_control_count",
+    "D-014": "sum(GSV of each Responsible_Channel_ID), no allocation ratio"
+  }
+}

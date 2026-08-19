@@ -1,0 +1,1826 @@
+{
+  "task": "T19",
+  "generated_at_utc": "2026-08-17T17:38:19.609730+00:00",
+  "mode": "READ_ONLY_EXCEPTION_LOG",
+  "summary": {
+    "pending_manual_score_rows": 68,
+    "missing_target_or_actual_link_rows": 141
+  },
+  "pending_manual_score_rows": [
+    {
+      "result_id": "RST000001",
+      "result_record_id": "recvswR3Yts5qV",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-001",
+      "metric_name": "接待响应率",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000002",
+      "result_record_id": "recvswR3Yt3YCd",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-002",
+      "metric_name": "售前咨询转化标准",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000003",
+      "result_record_id": "recvswR3YtHp55",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-003",
+      "metric_name": "售后挽留",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000004",
+      "result_record_id": "recvswR3YtxacZ",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-004",
+      "metric_name": "未付款催付+话术",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000005",
+      "result_record_id": "recvswR3YtEdFk",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-005",
+      "metric_name": "违规词/敏感词/错误回复",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000006",
+      "result_record_id": "recvswR3YtKfEX",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-006",
+      "metric_name": "邀请好评",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000007",
+      "result_record_id": "recvswR3YtGHCc",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-001",
+      "metric_name": "接待响应率",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000008",
+      "result_record_id": "recvswR3Yt64op",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-002",
+      "metric_name": "售前咨询转化标准",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000009",
+      "result_record_id": "recvswR3YtpxX7",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-003",
+      "metric_name": "售后挽留",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000010",
+      "result_record_id": "recvswR3YtDCsA",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-004",
+      "metric_name": "未付款催付+话术",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000011",
+      "result_record_id": "recvswR3YtxMYi",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-005",
+      "metric_name": "违规词/敏感词/错误回复",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000012",
+      "result_record_id": "recvswR3YtgDv7",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-006",
+      "metric_name": "邀请好评",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000015",
+      "result_record_id": "recvswR3Ytkc0U",
+      "employee_id": "EMP000029",
+      "metric_id": "MET-V04-IE-SUP-003",
+      "metric_name": "跨部门协调",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000016",
+      "result_record_id": "recvswR3YtA6fa",
+      "employee_id": "EMP000029",
+      "metric_id": "MET-V04-IE-SUP-004",
+      "metric_name": "团队管理及组织能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000019",
+      "result_record_id": "recvswR3YtzqQt",
+      "employee_id": "EMP000030",
+      "metric_id": "MET-V04-IE-SUP-003",
+      "metric_name": "跨部门协调",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000020",
+      "result_record_id": "recvswR3YtcgQ4",
+      "employee_id": "EMP000030",
+      "metric_id": "MET-V04-IE-SUP-004",
+      "metric_name": "团队管理及组织能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000023",
+      "result_record_id": "recvswR3YtQO5D",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-003",
+      "metric_name": "投中管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000024",
+      "result_record_id": "recvswR3YtPyOe",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-004",
+      "metric_name": "素材管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000025",
+      "result_record_id": "recvswR3YtsURk",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-005",
+      "metric_name": "投后复盘",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000028",
+      "result_record_id": "recvswR3Ytzmo3",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-003",
+      "metric_name": "店铺运营能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000029",
+      "result_record_id": "recvswR3Ytv3Fw",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-004",
+      "metric_name": "团队管理及组织能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000032",
+      "result_record_id": "recvswR3Yt4sXi",
+      "employee_id": "EMP000033",
+      "metric_id": "MET-V04-IE-OPS-003",
+      "metric_name": "店铺运营能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000033",
+      "result_record_id": "recvswR3YtImeK",
+      "employee_id": "EMP000033",
+      "metric_id": "MET-V04-IE-OPS-004",
+      "metric_name": "团队管理及组织能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000037",
+      "result_record_id": "recvswR3YtaK4c",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000038",
+      "result_record_id": "recvswR3YtMMZu",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000039",
+      "result_record_id": "recvswR3YtE8gN",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000043",
+      "result_record_id": "recvswR3YtUNdW",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000044",
+      "result_record_id": "recvswR3YtmYpl",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000045",
+      "result_record_id": "recvswR3YtssZK",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000049",
+      "result_record_id": "recvswR3Yt8MkJ",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000050",
+      "result_record_id": "recvswR3YtVJua",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000051",
+      "result_record_id": "recvswR3YtXZKD",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000055",
+      "result_record_id": "recvswR3YtyrA8",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000056",
+      "result_record_id": "recvswR3YtOKEg",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000057",
+      "result_record_id": "recvswR3YtIgqi",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000061",
+      "result_record_id": "recvswR3YtyuKR",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000062",
+      "result_record_id": "recvswR3YtYx23",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000063",
+      "result_record_id": "recvswR3Ytl7mw",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000067",
+      "result_record_id": "recvswR3YtVDta",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000068",
+      "result_record_id": "recvswR3Yt73wH",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000069",
+      "result_record_id": "recvswR3YtgvNL",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000073",
+      "result_record_id": "recvswR3YtJD5P",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "metric_name": "样品管理",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000074",
+      "result_record_id": "recvswR3Ytoq2Z",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000075",
+      "result_record_id": "recvswR3YtfnXm",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000077",
+      "result_record_id": "recvswR3Ytoteq",
+      "employee_id": "EMP000041",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "metric_name": "直播话术持续梳理与迭代",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000078",
+      "result_record_id": "recvswR3YtiwjJ",
+      "employee_id": "EMP000041",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000079",
+      "result_record_id": "recvswR3YtuHg9",
+      "employee_id": "EMP000041",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000081",
+      "result_record_id": "recvswR3YtTKVl",
+      "employee_id": "EMP000042",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "metric_name": "直播话术持续梳理与迭代",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000082",
+      "result_record_id": "recvswR3YtMGX3",
+      "employee_id": "EMP000042",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000083",
+      "result_record_id": "recvswR3YtRTKc",
+      "employee_id": "EMP000042",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000085",
+      "result_record_id": "recvswR3YtYqBw",
+      "employee_id": "EMP000043",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "metric_name": "直播话术持续梳理与迭代",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000086",
+      "result_record_id": "recvswR3YttUot",
+      "employee_id": "EMP000043",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000087",
+      "result_record_id": "recvswR3YtO9du",
+      "employee_id": "EMP000043",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000089",
+      "result_record_id": "recvswR3YtMXSM",
+      "employee_id": "EMP000044",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "metric_name": "直播话术持续梳理与迭代",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000090",
+      "result_record_id": "recvswR3YtgCAp",
+      "employee_id": "EMP000044",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000091",
+      "result_record_id": "recvswR3Yt8bVB",
+      "employee_id": "EMP000044",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000093",
+      "result_record_id": "recvswR3YtJa4v",
+      "employee_id": "EMP000045",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "metric_name": "直播话术持续梳理与迭代",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000094",
+      "result_record_id": "recvswR3YtudkB",
+      "employee_id": "EMP000045",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000095",
+      "result_record_id": "recvswR3YtOAA2",
+      "employee_id": "EMP000045",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000097",
+      "result_record_id": "recvswR3YtvV1m",
+      "employee_id": "EMP000046",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "metric_name": "直播话术持续梳理与迭代",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000098",
+      "result_record_id": "recvswR3YtCM1X",
+      "employee_id": "EMP000046",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "metric_name": "工作态度",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000099",
+      "result_record_id": "recvswR3Yt1K4r",
+      "employee_id": "EMP000046",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000103",
+      "result_record_id": "recvswR3YtIO3h",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000104",
+      "result_record_id": "recvswR3YtLwYe",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-005",
+      "metric_name": "投后复盘",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000105",
+      "result_record_id": "recvswR3YtUMYw",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-006",
+      "metric_name": "团队管理及组织能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000109",
+      "result_record_id": "recvswR3YtcOOm",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-004",
+      "metric_name": "工作能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000110",
+      "result_record_id": "recvswR3Ytz0db",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-005",
+      "metric_name": "投后复盘",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    },
+    {
+      "result_id": "RST000111",
+      "result_record_id": "recvswR3YtzbsN",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-006",
+      "metric_name": "团队管理及组织能力",
+      "reason": "D-009.3：缺少负责人 Manual_Score，V02 显示待人工分"
+    }
+  ],
+  "missing_target_or_actual_link_rows": [
+    {
+      "result_id": "RST000001",
+      "result_record_id": "recvswR3Yts5qV",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-001",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000002",
+      "result_record_id": "recvswR3Yt3YCd",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000003",
+      "result_record_id": "recvswR3YtHp55",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000004",
+      "result_record_id": "recvswR3YtxacZ",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000005",
+      "result_record_id": "recvswR3YtEdFk",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000006",
+      "result_record_id": "recvswR3YtKfEX",
+      "employee_id": "EMP000027",
+      "metric_id": "MET-V04-IE-CS-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000007",
+      "result_record_id": "recvswR3YtGHCc",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-001",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000008",
+      "result_record_id": "recvswR3Yt64op",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000009",
+      "result_record_id": "recvswR3YtpxX7",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000010",
+      "result_record_id": "recvswR3YtDCsA",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000011",
+      "result_record_id": "recvswR3YtxMYi",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000012",
+      "result_record_id": "recvswR3YtgDv7",
+      "employee_id": "EMP000028",
+      "metric_id": "MET-V04-IE-CS-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000014",
+      "result_record_id": "recvswR3Yt4jVY",
+      "employee_id": "EMP000029",
+      "metric_id": "MET-V04-IE-SUP-002",
+      "target_id": "",
+      "actual_id": "ACT000002",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000015",
+      "result_record_id": "recvswR3Ytkc0U",
+      "employee_id": "EMP000029",
+      "metric_id": "MET-V04-IE-SUP-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000016",
+      "result_record_id": "recvswR3YtA6fa",
+      "employee_id": "EMP000029",
+      "metric_id": "MET-V04-IE-SUP-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000018",
+      "result_record_id": "recvswR3Yt0Vfx",
+      "employee_id": "EMP000030",
+      "metric_id": "MET-V04-IE-SUP-002",
+      "target_id": "",
+      "actual_id": "ACT000004",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000019",
+      "result_record_id": "recvswR3YtzqQt",
+      "employee_id": "EMP000030",
+      "metric_id": "MET-V04-IE-SUP-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000020",
+      "result_record_id": "recvswR3YtcgQ4",
+      "employee_id": "EMP000030",
+      "metric_id": "MET-V04-IE-SUP-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000022",
+      "result_record_id": "recvswR3YtZg3b",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-002",
+      "target_id": "",
+      "actual_id": "ACT000006",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000023",
+      "result_record_id": "recvswR3YtQO5D",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000024",
+      "result_record_id": "recvswR3YtPyOe",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000025",
+      "result_record_id": "recvswR3YtsURk",
+      "employee_id": "EMP000031",
+      "metric_id": "MET-V04-IE-ADS-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000027",
+      "result_record_id": "recvswR3Yt0lB6",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-002",
+      "target_id": "",
+      "actual_id": "ACT000008",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000028",
+      "result_record_id": "recvswR3Ytzmo3",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000029",
+      "result_record_id": "recvswR3Ytv3Fw",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000031",
+      "result_record_id": "recvswR3YtCadi",
+      "employee_id": "EMP000033",
+      "metric_id": "MET-V04-IE-OPS-002",
+      "target_id": "",
+      "actual_id": "ACT000010",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000032",
+      "result_record_id": "recvswR3Yt4sXi",
+      "employee_id": "EMP000033",
+      "metric_id": "MET-V04-IE-OPS-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000033",
+      "result_record_id": "recvswR3YtImeK",
+      "employee_id": "EMP000033",
+      "metric_id": "MET-V04-IE-OPS-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000035",
+      "result_record_id": "recvswR3Yt7pFu",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000012",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000036",
+      "result_record_id": "recvswR3YtRfkZ",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000013",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000037",
+      "result_record_id": "recvswR3YtaK4c",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000038",
+      "result_record_id": "recvswR3YtMMZu",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000039",
+      "result_record_id": "recvswR3YtE8gN",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000041",
+      "result_record_id": "recvswR3YtJmlR",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000015",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000042",
+      "result_record_id": "recvswR3YtrqVn",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000016",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000043",
+      "result_record_id": "recvswR3YtUNdW",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000044",
+      "result_record_id": "recvswR3YtmYpl",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000045",
+      "result_record_id": "recvswR3YtssZK",
+      "employee_id": "EMP000035",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000047",
+      "result_record_id": "recvswR3YtXtdO",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000018",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000048",
+      "result_record_id": "recvswR3YtOpwY",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000019",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000049",
+      "result_record_id": "recvswR3Yt8MkJ",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000050",
+      "result_record_id": "recvswR3YtVJua",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000051",
+      "result_record_id": "recvswR3YtXZKD",
+      "employee_id": "EMP000036",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000053",
+      "result_record_id": "recvswR3YtN3tG",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000021",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000054",
+      "result_record_id": "recvswR3YtUEAf",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000022",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000055",
+      "result_record_id": "recvswR3YtyrA8",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000056",
+      "result_record_id": "recvswR3YtOKEg",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000057",
+      "result_record_id": "recvswR3YtIgqi",
+      "employee_id": "EMP000037",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000059",
+      "result_record_id": "recvswR3YtoPkx",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000024",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000060",
+      "result_record_id": "recvswR3YtPS1q",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000025",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000061",
+      "result_record_id": "recvswR3YtyuKR",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000062",
+      "result_record_id": "recvswR3YtYx23",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000063",
+      "result_record_id": "recvswR3Ytl7mw",
+      "employee_id": "EMP000038",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000065",
+      "result_record_id": "recvswR3YtC7I8",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000027",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000066",
+      "result_record_id": "recvswR3YtVURg",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000028",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000067",
+      "result_record_id": "recvswR3YtVDta",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000068",
+      "result_record_id": "recvswR3Yt73wH",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000069",
+      "result_record_id": "recvswR3YtgvNL",
+      "employee_id": "EMP000039",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000071",
+      "result_record_id": "recvswR3YtOOnZ",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000030",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000072",
+      "result_record_id": "recvswR3YtS0ZU",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000031",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000073",
+      "result_record_id": "recvswR3YtJD5P",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000074",
+      "result_record_id": "recvswR3Ytoq2Z",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000075",
+      "result_record_id": "recvswR3YtfnXm",
+      "employee_id": "EMP000040",
+      "metric_id": "MET-V04-IE-LIVE-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000077",
+      "result_record_id": "recvswR3Ytoteq",
+      "employee_id": "EMP000041",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000078",
+      "result_record_id": "recvswR3YtiwjJ",
+      "employee_id": "EMP000041",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000079",
+      "result_record_id": "recvswR3YtuHg9",
+      "employee_id": "EMP000041",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000081",
+      "result_record_id": "recvswR3YtTKVl",
+      "employee_id": "EMP000042",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000082",
+      "result_record_id": "recvswR3YtMGX3",
+      "employee_id": "EMP000042",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000083",
+      "result_record_id": "recvswR3YtRTKc",
+      "employee_id": "EMP000042",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000085",
+      "result_record_id": "recvswR3YtYqBw",
+      "employee_id": "EMP000043",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000086",
+      "result_record_id": "recvswR3YttUot",
+      "employee_id": "EMP000043",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000087",
+      "result_record_id": "recvswR3YtO9du",
+      "employee_id": "EMP000043",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000089",
+      "result_record_id": "recvswR3YtMXSM",
+      "employee_id": "EMP000044",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000090",
+      "result_record_id": "recvswR3YtgCAp",
+      "employee_id": "EMP000044",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000091",
+      "result_record_id": "recvswR3Yt8bVB",
+      "employee_id": "EMP000044",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000093",
+      "result_record_id": "recvswR3YtJa4v",
+      "employee_id": "EMP000045",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000094",
+      "result_record_id": "recvswR3YtudkB",
+      "employee_id": "EMP000045",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000095",
+      "result_record_id": "recvswR3YtOAA2",
+      "employee_id": "EMP000045",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000097",
+      "result_record_id": "recvswR3YtvV1m",
+      "employee_id": "EMP000046",
+      "metric_id": "MET-V04-IE-HOST-002",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000098",
+      "result_record_id": "recvswR3YtCM1X",
+      "employee_id": "EMP000046",
+      "metric_id": "MET-V04-IE-HOST-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000099",
+      "result_record_id": "recvswR3Yt1K4r",
+      "employee_id": "EMP000046",
+      "metric_id": "MET-V04-IE-HOST-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000101",
+      "result_record_id": "recvswR3YtPpFL",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-002",
+      "target_id": "",
+      "actual_id": "ACT000039",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000103",
+      "result_record_id": "recvswR3YtIO3h",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000104",
+      "result_record_id": "recvswR3YtLwYe",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000105",
+      "result_record_id": "recvswR3YtUMYw",
+      "employee_id": "EMP000047",
+      "metric_id": "MET-V04-PROD-DIR-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000107",
+      "result_record_id": "recvswR3YttpsC",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-002",
+      "target_id": "",
+      "actual_id": "ACT000042",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000109",
+      "result_record_id": "recvswR3YtcOOm",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-004",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000110",
+      "result_record_id": "recvswR3Ytz0db",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-005",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000111",
+      "result_record_id": "recvswR3YtzbsN",
+      "employee_id": "EMP000048",
+      "metric_id": "MET-V04-PROD-DIR-006",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000113",
+      "result_record_id": "recvswR3Yt5vTl",
+      "employee_id": "EMP000050",
+      "metric_id": "MET-V04-PROD-CAM-002",
+      "target_id": "",
+      "actual_id": "ACT000045",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000114",
+      "result_record_id": "recvswR3YtmvhH",
+      "employee_id": "EMP000050",
+      "metric_id": "MET-V04-PROD-CAM-003",
+      "target_id": "",
+      "actual_id": "ACT000046",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000115",
+      "result_record_id": "recvswR3Ytljtl",
+      "employee_id": "EMP000050",
+      "metric_id": "MET-V04-PROD-CAM-004",
+      "target_id": "",
+      "actual_id": "ACT000047",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000116",
+      "result_record_id": "recvswR3Yt6cZY",
+      "employee_id": "EMP000050",
+      "metric_id": "MET-V04-PROD-CAM-005",
+      "target_id": "",
+      "actual_id": "ACT000048",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000118",
+      "result_record_id": "recvswR3YtA2PN",
+      "employee_id": "EMP000051",
+      "metric_id": "MET-V04-PROD-CAM-002",
+      "target_id": "",
+      "actual_id": "ACT000050",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000119",
+      "result_record_id": "recvswR3YtA6PG",
+      "employee_id": "EMP000051",
+      "metric_id": "MET-V04-PROD-CAM-003",
+      "target_id": "",
+      "actual_id": "ACT000051",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000120",
+      "result_record_id": "recvswR3Yt4A5g",
+      "employee_id": "EMP000051",
+      "metric_id": "MET-V04-PROD-CAM-004",
+      "target_id": "",
+      "actual_id": "ACT000052",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000121",
+      "result_record_id": "recvswR3YtMaX0",
+      "employee_id": "EMP000051",
+      "metric_id": "MET-V04-PROD-CAM-005",
+      "target_id": "",
+      "actual_id": "ACT000053",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000123",
+      "result_record_id": "recvswR3Ytgcb3",
+      "employee_id": "EMP000052",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000055",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000125",
+      "result_record_id": "recvswR3Yte7i0",
+      "employee_id": "EMP000052",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000057",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000126",
+      "result_record_id": "recvswR3YttP1P",
+      "employee_id": "EMP000052",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000058",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000128",
+      "result_record_id": "recvswR3YtT1oP",
+      "employee_id": "EMP000053",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000060",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000130",
+      "result_record_id": "recvswR3Yt4Lrl",
+      "employee_id": "EMP000053",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000062",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000131",
+      "result_record_id": "recvswR3YtwnSa",
+      "employee_id": "EMP000053",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000063",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000133",
+      "result_record_id": "recvswR3YtQ31F",
+      "employee_id": "EMP000054",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000065",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000135",
+      "result_record_id": "recvswR3YuK7Jm",
+      "employee_id": "EMP000054",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000067",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000136",
+      "result_record_id": "recvswR3YuEauR",
+      "employee_id": "EMP000054",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000068",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000138",
+      "result_record_id": "recvswR3Yua1tU",
+      "employee_id": "EMP000055",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000070",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000140",
+      "result_record_id": "recvswR3YupqbK",
+      "employee_id": "EMP000055",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000072",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000141",
+      "result_record_id": "recvswR3YukSO5",
+      "employee_id": "EMP000055",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000073",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000143",
+      "result_record_id": "recvswR3Yut6tx",
+      "employee_id": "EMP000056",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000075",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000145",
+      "result_record_id": "recvswR3Yuw3yc",
+      "employee_id": "EMP000056",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000077",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000146",
+      "result_record_id": "recvswR3Yutf5s",
+      "employee_id": "EMP000056",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000078",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000148",
+      "result_record_id": "recvswR3Yu9eNG",
+      "employee_id": "EMP000057",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000080",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000150",
+      "result_record_id": "recvswR3YutqQA",
+      "employee_id": "EMP000057",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000082",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000151",
+      "result_record_id": "recvswR3YuxbXy",
+      "employee_id": "EMP000057",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000083",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000153",
+      "result_record_id": "recvswR3YuC1kO",
+      "employee_id": "EMP000058",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000085",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000155",
+      "result_record_id": "recvswR3YuIh6W",
+      "employee_id": "EMP000058",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000087",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000156",
+      "result_record_id": "recvswR3YuP5XZ",
+      "employee_id": "EMP000058",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000088",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000158",
+      "result_record_id": "recvswR3YuK6pC",
+      "employee_id": "EMP000059",
+      "metric_id": "MET-V04-PROD-EDIT-002",
+      "target_id": "",
+      "actual_id": "ACT000090",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000160",
+      "result_record_id": "recvswR3Yukjak",
+      "employee_id": "EMP000059",
+      "metric_id": "MET-V04-PROD-EDIT-004",
+      "target_id": "",
+      "actual_id": "ACT000092",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000161",
+      "result_record_id": "recvswR3YuXlIB",
+      "employee_id": "EMP000059",
+      "metric_id": "MET-V04-PROD-EDIT-005",
+      "target_id": "",
+      "actual_id": "ACT000093",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000162",
+      "result_record_id": "recvsxUHPszDrj",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000094",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000163",
+      "result_record_id": "recvsxUHPsuwmB",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000095",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000164",
+      "result_record_id": "recvsxUHPsbAVi",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000096",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000165",
+      "result_record_id": "recvsxUHPsnTxm",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000097",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000166",
+      "result_record_id": "recvsxUHPsnhh1",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000098",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000167",
+      "result_record_id": "recvsxUHPsZQjH",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000099",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000168",
+      "result_record_id": "recvsxUHPswwbq",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-001",
+      "target_id": "",
+      "actual_id": "ACT000100",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000169",
+      "result_record_id": "recvsxUHPsUhcv",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000101",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000170",
+      "result_record_id": "recvsxUHPsUHY5",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000102",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000171",
+      "result_record_id": "recvsxUHPsr5iZ",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-001",
+      "target_id": "",
+      "actual_id": "ACT000103",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000172",
+      "result_record_id": "recvsxUHPsAKAC",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000104",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000173",
+      "result_record_id": "recvsxUHPsZbjr",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000105",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000174",
+      "result_record_id": "recvsxUHPsmr2M",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-001",
+      "target_id": "",
+      "actual_id": "ACT000106",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000175",
+      "result_record_id": "recvsxUHPs8mzM",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000107",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000176",
+      "result_record_id": "recvsxUHPsCaMt",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000108",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000177",
+      "result_record_id": "recvsxUHPsoIHD",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-001",
+      "target_id": "",
+      "actual_id": "ACT000109",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000178",
+      "result_record_id": "recvsxUHPsbuSZ",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-002",
+      "target_id": "",
+      "actual_id": "ACT000110",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000179",
+      "result_record_id": "recvsxUHPspVZm",
+      "employee_id": "EMP000034",
+      "metric_id": "MET-V04-IE-LIVE-003",
+      "target_id": "",
+      "actual_id": "ACT000111",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000180",
+      "result_record_id": "recvsxUHPsOf8N",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-003",
+      "target_id": "",
+      "actual_id": "",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    },
+    {
+      "result_id": "RST000181",
+      "result_record_id": "recvsyat0oz6cL",
+      "employee_id": "EMP000032",
+      "metric_id": "MET-V04-IE-OPS-001",
+      "target_id": "",
+      "actual_id": "ACT000112",
+      "reason": "Target 或 Actual 关联缺失/不适用；保留空值，不补造数据"
+    }
+  ]
+}

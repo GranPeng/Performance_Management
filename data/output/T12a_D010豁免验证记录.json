@@ -1,0 +1,32 @@
+{
+  "task": "T12a2",
+  "verification": "D-010 exemption end-to-end",
+  "method": "Create temporary SIMULATED project, link it to RST000124, read formula values, then clear Project_ID and delete the temporary project.",
+  "target_result_id": "RST000124",
+  "temporary_project": {
+    "start_date": "2026-05-15",
+    "project_run_days": 77,
+    "cleaned_up": true
+  },
+  "read_back_while_linked": {
+    "is_exempt": true,
+    "auto_score": 100,
+    "final_score": 100,
+    "weighted_score": 0,
+    "monthly_total_before": 48,
+    "monthly_total_after": 48,
+    "commission_base": 34.152,
+    "commission_ratio": 0,
+    "commission_amount": 0,
+    "commission_formula_check": "34.152 × 0 = 0"
+  },
+  "assertions": [
+    "Is_Exempt=true when Project_Run_Days=77<90",
+    "Auto_Score=100",
+    "Weighted_Score=0",
+    "Monthly_Total remains unchanged",
+    "Commission_Amount remains Commission_Base×Commission_Ratio"
+  ],
+  "result": "PASS",
+  "cleanup_readback": "Project table contains only the four formal projects after cleanup."
+}

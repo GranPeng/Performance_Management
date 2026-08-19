@@ -1,0 +1,45 @@
+{
+  "task": "T14",
+  "case_id": "T14-D010-EXEMPT-NONZERO-01",
+  "mode": "PREFLIGHT",
+  "source": "SIMULATED_T14_D010_NONZERO",
+  "actual_batch_id": "IB-T14-ACTUAL-20260817-01",
+  "calc_batch_id": "IB-T14-CALC-20260817-01",
+  "period": "2027-02",
+  "project": {
+    "project_id": "PROJ900014",
+    "start_date": "2027-01-15",
+    "expected_project_run_days_lt": 90
+  },
+  "employee": {
+    "employee_id": "EMP000032",
+    "record_id": "recvslsi1W4hLG"
+  },
+  "metric": {
+    "metric_id": "MET-V04-IE-OPS-001",
+    "record_id": "recvsgqAO9qu6Y",
+    "weight": 0.3
+  },
+  "input": {
+    "actual_value": 100.0,
+    "target_snapshot": 100.0,
+    "commission_base": 100.0,
+    "commission_ratio": 0.003,
+    "expected_commission_amount": 0.3
+  },
+  "regular_score_for_tier_selection": 30.0,
+  "tier_selection": {
+    "score_lower": 0.0,
+    "coefficient": 0.0,
+    "ratio_value": null
+  },
+  "expected": {
+    "is_exempt": true,
+    "auto_score": 100.0,
+    "weighted_score": 30.0,
+    "commission_amount_gt": 0.0,
+    "commission_rule": "D-010-R1：0.003×达成GSV，跳过梯度和考核系数"
+  },
+  "actual_id_start": 112,
+  "result_id_start": 181
+}

@@ -1,0 +1,1 @@
+{"type":"number","name":"Base_Rate","style":{"type":"plain","precision":4,"percentage":false,"thousands_separator":false},"description":"可选·运营族比例基数配置。产生：规则维护；消费：提成快照重算与豁免提成。仅运营/高级主管梯度填写；修改后重跑计算批次即可生效。D-010-R2 / CHG-T15B-001"}

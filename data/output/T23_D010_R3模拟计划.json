@@ -1,0 +1,58 @@
+{
+  "task": "T23",
+  "source": "SIMULATED_T23_D010_R3",
+  "mode": "PREFLIGHT",
+  "unit": "元（CNY）",
+  "scope": {
+    "record_id": "recvsyf5IYhkt5",
+    "id": "EXS000001",
+    "max_project_run_days": 90,
+    "max_monthly_revenue": 1000000
+  },
+  "batches": {
+    "actual": "IB-T23-ACTUAL-20260818-01",
+    "calc": "IB-T23-CALC-20260818-01"
+  },
+  "id_starts": {
+    "project": 900015,
+    "actual": 119,
+    "result": 190
+  },
+  "t14_backfill": {
+    "result_record_id": "recvsyat0oz6cL",
+    "revenue_actual_record_id": "recvsyastLpoaV"
+  },
+  "cases": [
+    {
+      "case_id": "T23-EXEMPT-AT-LIMIT",
+      "period": "2027-07",
+      "start_date": "2027-06-17",
+      "revenue": 1000000,
+      "expected_days": 44,
+      "expected_exempt": true,
+      "expected_ratio": 0.003,
+      "expected_amount": 3000
+    },
+    {
+      "case_id": "T23-REVENUE-OVER-LIMIT",
+      "period": "2027-08",
+      "start_date": "2027-07-18",
+      "revenue": 1000001,
+      "expected_days": 44,
+      "expected_exempt": false,
+      "expected_ratio": 0.0018,
+      "expected_amount": 1800.0018
+    },
+    {
+      "case_id": "T23-DAYS-AT-90",
+      "period": "2027-09",
+      "start_date": "2027-07-02",
+      "revenue": 500000,
+      "expected_days": 90,
+      "expected_exempt": false,
+      "expected_ratio": 0.0018,
+      "expected_amount": 900
+    }
+  ],
+  "rollback": "仅删除本任务来源 SIMULATED_T23_D010_R3 的 Project、Actual、Performance_Result、Import_Batch；EXS000001阈值恢复为空；T14 Revenue_Actual_ID恢复为空。"
+}

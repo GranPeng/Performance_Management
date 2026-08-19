@@ -1,0 +1,28 @@
+{
+  "task": "T14",
+  "type": "失败现场回滚",
+  "timestamp": "2026-08-17T18:47:31.048210+08:00",
+  "source": "SIMULATED_T14_D010_NONZERO",
+  "deleted": {
+    "Performance_Result": [
+      "recvsy8p1TtKge"
+    ],
+    "Actual": [
+      "recvsy8oxqlTUQ"
+    ],
+    "Import_Batch": [
+      "recvsy8o33JCIA",
+      "recvsy8o33lArs"
+    ],
+    "Project": [
+      "recvsy8nzLRiF3"
+    ]
+  },
+  "order": [
+    "Performance_Result",
+    "Actual",
+    "Import_Batch",
+    "Project"
+  ],
+  "verification": "逐表按 Source 精确筛选后删除；未触及其他来源记录。"
+}

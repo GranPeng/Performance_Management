@@ -1,0 +1,3 @@
+[
+  {"type":"number","name":"Perf_Salary_Snapshot","style":{"type":"plain","precision":2,"percentage":false,"thousands_separator":false},"description":"可选 · 直播中控计算时的绩效工资快照，取自 Employee.Perf_Salary；计算引擎随计算批次写入，供提成结算、复算审计与复核；非直播中控留空，重算整批重出。D-013 / CHG-T18-001"}
+]

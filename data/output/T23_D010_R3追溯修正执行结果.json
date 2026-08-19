@@ -1,0 +1,53 @@
+{
+  "change_id": "CHG-D010-R3-001-TRACE",
+  "task": "T23",
+  "status": "ALREADY_APPLIED_VERIFIED",
+  "verified_at": "2026-08-18T15:28:58.581067+08:00",
+  "before_record": {
+    "Exemption_Scope_ID": "EXS000001",
+    "Rule_Version": "V04+D-010-R3",
+    "Note": "D010-R3 active: revenue limit 1000000 CNY; missing revenue remains pending. R2 provenance: PO_DECISION_D010_R2, created 2026-08-17.",
+    "Max_Monthly_Revenue": 1000000
+  },
+  "before_field": {
+    "default_value": null,
+    "description": "Required rule version. Current active seed is V04+D-010-R3; R2 provenance is retained in the record Note and change log.",
+    "id": "fldizqgSuF",
+    "name": "Rule_Version",
+    "style": {
+      "type": "plain"
+    },
+    "type": "text"
+  },
+  "after_record": {
+    "Exemption_Scope_ID": "EXS000001",
+    "Rule_Version": "V04+D-010-R3",
+    "Note": "D010-R3 active: revenue limit 1000000 CNY; missing revenue remains pending. R2 provenance: PO_DECISION_D010_R2, created 2026-08-17.",
+    "Max_Monthly_Revenue": 1000000
+  },
+  "after_field": {
+    "default_value": null,
+    "description": "Required rule version. Current active seed is V04+D-010-R3; R2 provenance is retained in the record Note and change log.",
+    "id": "fldizqgSuF",
+    "name": "Rule_Version",
+    "style": {
+      "type": "plain"
+    },
+    "type": "text"
+  },
+  "rollback": {
+    "record_payload": {
+      "Rule_Version": "V04+D-010-R2",
+      "Note": "D-010-R3：阈值=1,000,000元；营收未知时结果留空待确认。"
+    },
+    "field_payload": {
+      "name": "Rule_Version",
+      "type": "text",
+      "default_value": null,
+      "style": {
+        "type": "plain"
+      },
+      "description": "必填·规则版本（当前V04+D-010-R2）。产生：规则维护；消费：审计/重算；规则变更时新增版本记录。"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[
+  {"type":"link","name":"Group_ID","link_table":"tblU6US76mSPKhCD","description":"可选 · 小组粒度主体（ID 关联→Project_Group）；采集/导入流程产生，供未来小组维度聚合与复核；至少一类主体约束扩展为 Employee/Org/Project/Channel/Group 五选一。仅建模，PO 拍板前禁止用于核算。D-015.3 / CHG-T18-002"},
+  {"type":"select","name":"Material_Type","multiple":false,"options":[{"name":"NEW_MATERIAL","hue":"Green","lightness":"Light"},{"name":"HISTORICAL_MATERIAL","hue":"Gray","lightness":"Light"}],"description":"可选 · 素材类型：NEW_MATERIAL（新素材/近90天成片）或 HISTORICAL_MATERIAL（历史素材）；平台导入按素材首投口径标注，供打分/提成双口径复核；导入后不变，非素材类留空。D-016 / CHG-T18-002"},
+  {"type":"link","name":"Owner_Employee_ID","link_table":"tblc59aB4EnSxkQv","description":"可选 · 素材主责人归因预留（ID 关联→Employee）；当前不产生值、不被消费；PO 完成90天锚点与归因规则拍板后由平台导入写入，随后不变。D-016 / CHG-T18-002"},
+  {"type":"datetime","name":"Material_First_Run_Date","style":{"format":"yyyy-MM-dd"},"description":"可选 · 素材首投日期预留，未来近90天成片锚点载体；当前不产生值、不实现判定逻辑；PO 拍板后由平台导入写入，随后不变。D-016 / CHG-T18-002"}
+]

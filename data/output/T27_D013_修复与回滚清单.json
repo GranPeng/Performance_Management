@@ -1,0 +1,19 @@
+{
+  "task": "T27 D-013 修复",
+  "purpose": "将 T21 D-013 模拟结果的中控人数口径从结果行数修正为渠道下所有在职且岗位为直播中控/运营助理的花名册人数（3人）。",
+  "base": "FCxObLU6yao5jgsciZfcWHKwnjh",
+  "table": "Performance_Result",
+  "rollback": {
+    "RST000182": {"Commission_Ratio": 0.001, "Commission_Amount": 100, "Note.middle_control_count": 1},
+    "RST000183": {"Commission_Ratio": 0.0005, "Commission_Amount": 100, "Note.middle_control_count": 2},
+    "RST000184": {"Commission_Ratio": 0.0005, "Commission_Amount": 100, "Note.middle_control_count": 2},
+    "RST000188": {"Commission_Ratio": 0.001, "Commission_Amount": 100, "Note.middle_control_count": 1}
+  },
+  "apply": {
+    "RST000182": {"Commission_Ratio": 0.0003333333333333333, "Commission_Amount": 33.333333333333336},
+    "RST000183": {"Commission_Ratio": 0.0003333333333333333, "Commission_Amount": 66.66666666666667},
+    "RST000184": {"Commission_Ratio": 0.0003333333333333333, "Commission_Amount": 66.66666666666667},
+    "RST000188": {"Commission_Ratio": 0.0003333333333333333, "Commission_Amount": 33.333333333333336}
+  },
+  "validation": "运行 scripts/verify_calculation_chain.py 和 --readonly，要求 192 行、0 差异、幂等稳定。"
+}

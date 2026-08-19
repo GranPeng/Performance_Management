@@ -1,0 +1,4 @@
+[
+  {"type":"number","name":"Perf_Salary","style":{"type":"plain","precision":2,"percentage":false,"thousands_separator":false},"description":"条件必填 · 直播中控/运营助理（POS000041）的月绩效工资固定基数；花名册/HR 维护，供直播中控收入计算与复核；月中变更留痕，历史结果由 Perf_Salary_Snapshot 保留。D-013 / CHG-T18-001"},
+  {"type":"link","name":"Responsible_Channel_IDs","link_table":"tblqOGJknsD2H3bt","description":"可选 · 负责渠道（ID 关联→Channel，多值）；花名册/HR 维护，供直播中控渠道 GSV 均分和运营/高级主管全额计提、复核；变更留痕，历史结果不改写。D-013 / D-014 / CHG-T18-001"}
+]

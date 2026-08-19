@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "sheets": [
+    "兴趣电商部",
+    "制作部",
+    "未关联部门",
+    "录入明细",
+    "输出明细（文本+计算对照）"
+  ],
+  "department_count": 3,
+  "department_employee_rows": {
+    "兴趣电商部": 20,
+    "制作部": 12,
+    "未关联部门": 4
+  },
+  "department_result_rows": {
+    "兴趣电商部": 122,
+    "制作部": 62,
+    "未关联部门": 8
+  },
+  "channel_distribution": {
+    "—": 184,
+    "抖音": 7,
+    "抖音、视频号": 1
+  },
+  "input_rows": 192,
+  "output_rows": 192,
+  "samples": [
+    {
+      "department": "兴趣电商部",
+      "employee": "刘宴莎",
+      "employee_id": "EMP000042",
+      "channel": "—",
+      "department_sheet": "兴趣电商部",
+      "result_rows": 4,
+      "monthly_total_values": [
+        "36"
+      ],
+      "weighted_sum_numeric": 36.0,
+      "commission_sum": 0.526,
+      "recalculation_consistent": true
+    },
+    {
+      "department": "制作部",
+      "employee": "古旭锋",
+      "employee_id": "EMP000057",
+      "channel": "—",
+      "department_sheet": "制作部",
+      "result_rows": 5,
+      "monthly_total_values": [
+        "50"
+      ],
+      "weighted_sum_numeric": 50.0,
+      "commission_sum": 0.0,
+      "recalculation_consistent": true
+    },
+    {
+      "department": "未关联部门",
+      "employee": "T21中控模拟1",
+      "employee_id": "EMP000083",
+      "channel": "抖音",
+      "department_sheet": "未关联部门",
+      "result_rows": 1,
+      "monthly_total_values": [
+        "80"
+      ],
+      "weighted_sum_numeric": 80.0,
+      "commission_sum": 66.6667,
+      "recalculation_consistent": true
+    }
+  ],
+  "three_department_sampling_possible": true,
+  "idempotence": "PASS：重跑前后工作簿单元格值一致"
+}

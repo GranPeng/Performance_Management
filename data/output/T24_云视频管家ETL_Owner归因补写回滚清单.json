@@ -1,0 +1,23 @@
+{
+  "task": "T24",
+  "batch_id": "IB-YSP-733DBFC9529AFBDB",
+  "change": "将既有9条合规Actual的Owner_Employee_ID补写为对应Employee_ID",
+  "evidence": {
+    "prechange_payload": "scripts/etl_yunshipin_consumption.py 在本次补写前的Actual创建载荷未包含 Owner_Employee_ID",
+    "apply_result": "2026-08-18 本次执行输出 actual_owner_updated=9；下一次幂等复跑 actual_owner_updated=0"
+  },
+  "updated_actual_record_ids": [
+    "recvsDaHiBC7Nq",
+    "recvsDaHiBCGKT",
+    "recvsDaHiBZXoD",
+    "recvsDaHiBmseB",
+    "recvsDaHiBODi4",
+    "recvsDaHiBuodu",
+    "recvsDaHiBHEBB",
+    "recvsDaHiBYg2A",
+    "recvsDaHiBPbjr"
+  ],
+  "old_owner_employee_record_id": null,
+  "rollback_method": "逐条将上述Actual的Owner_Employee_ID清空；不修改Actual_Value、Metric_ID、Employee_ID、Source_Ref或Import_Batch_ID。",
+  "status": "ACTIVE"
+}

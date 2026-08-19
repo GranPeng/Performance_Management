@@ -1,0 +1,50 @@
+{
+  "task": "T12b",
+  "rollback_scope": "仅删除本任务创建的两批次、Actual 和 Performance_Result；不修改任何既有记录或 Base 公式",
+  "execution": "T12b边界异常执行结果.json",
+  "actual_record_ids": [
+    "recvsxUH5pkAVA",
+    "recvsxUH5pZW76",
+    "recvsxUH5proJV",
+    "recvsxUH5pkhu1",
+    "recvsxUH5pogzq",
+    "recvsxUH5p9jsm",
+    "recvsxUH5pBVrm",
+    "recvsxUH5pX1Uh",
+    "recvsxUH5pt10j",
+    "recvsxUH5pZrd5",
+    "recvsxUH5pMjwA",
+    "recvsxUH5pKOeG",
+    "recvsxUH5ptCfw",
+    "recvsxUH5p3WBC",
+    "recvsxUH5plmLm",
+    "recvsxUH5pKIQd",
+    "recvsxUH5pJhjS",
+    "recvsxUH5pNIt9"
+  ],
+  "performance_result_record_ids": [
+    "recvsxUHPszDrj",
+    "recvsxUHPsuwmB",
+    "recvsxUHPsbAVi",
+    "recvsxUHPsnTxm",
+    "recvsxUHPsnhh1",
+    "recvsxUHPsZQjH",
+    "recvsxUHPswwbq",
+    "recvsxUHPsUhcv",
+    "recvsxUHPsUHY5",
+    "recvsxUHPsr5iZ",
+    "recvsxUHPsAKAC",
+    "recvsxUHPsZbjr",
+    "recvsxUHPsmr2M",
+    "recvsxUHPs8mzM",
+    "recvsxUHPsCaMt",
+    "recvsxUHPsoIHD",
+    "recvsxUHPsbuSZ",
+    "recvsxUHPspVZm",
+    "recvsxUHPsOf8N"
+  ],
+  "import_batch_record_ids": [
+    "recvsxUGnrmrba",
+    "recvsxUGnr3MDg"
+  ]
+}

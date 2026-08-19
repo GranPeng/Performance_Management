@@ -1,0 +1,1 @@
+{"type":"link","name":"Exemption_Scope_ID","link_table":"tblP6Im75vDohuPF","description":"可选·本次结果命中的豁免范围规则（规则配置关联）。产生：计算生成脚本按岗位+渠道匹配；消费：Is_Exempt公式、审计复算；随计算批次重算。D-010-R2 / CHG-T15B-001"}

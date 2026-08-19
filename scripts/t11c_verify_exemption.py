@@ -47,7 +47,7 @@ def link_id(v):
 def read_row(rid):
     rows = records(TABLES["Performance_Result"],
                    ["Result_ID", "Employee_ID", "Metric_ID", "Actual_ID", "Project_ID", "Project_Run_Days",
-                    "Is_Exempt", "Auto_Score", "Final_Score", "Weighted_Score", "Monthly_Total", "Commission_Amount"])
+                    "Is_Exempt", "Auto_Score", "Final_Score", "Weighted_Score", "Monthly_Total", "Commission_Base", "Commission_Ratio", "Commission_Amount"])
     for r in rows:
         if r["_id"] == rid:
             return r
@@ -55,7 +55,7 @@ def read_row(rid):
 
 def main():
     pr = records(TABLES["Performance_Result"],
-                 ["Result_ID", "Employee_ID", "Metric_ID", "Actual_ID", "Project_ID", "Is_Exempt", "Auto_Score", "Final_Score", "Weighted_Score", "Monthly_Total"])
+                 ["Result_ID", "Employee_ID", "Metric_ID", "Actual_ID", "Project_ID", "Is_Exempt", "Auto_Score", "Final_Score", "Weighted_Score", "Monthly_Total", "Commission_Base", "Commission_Ratio", "Commission_Amount"])
     target = None
     for r in pr:
         if link_id(r.get("Actual_ID")) == "recvswHlTB0MK1":
@@ -89,7 +89,8 @@ def main():
         print(json.dumps({"Result_ID": r.get("Result_ID"), "Project_Run_Days": r.get("Project_Run_Days"),
                           "Is_Exempt": r.get("Is_Exempt"), "Auto_Score": r.get("Auto_Score"),
                           "Final_Score": r.get("Final_Score"), "Weighted_Score": r.get("Weighted_Score"),
-                          "Monthly_Total": r.get("Monthly_Total"), "Commission_Amount": r.get("Commission_Amount")}, ensure_ascii=False))
+                          "Monthly_Total": r.get("Monthly_Total"), "Commission_Base": r.get("Commission_Base"),
+                          "Commission_Ratio": r.get("Commission_Ratio"), "Commission_Amount": r.get("Commission_Amount")}, ensure_ascii=False))
         ok = True
         if str(r.get("Is_Exempt")).lower() != "true":
             print("FAIL: Is_Exempt != true"); ok = False
@@ -107,6 +108,13 @@ def main():
             mbf = None
         if mbf is not None and mtf is not None and abs(mtf - mbf) > 1e-6:
             print(f"FAIL: Monthly_Total changed {mbf} -> {mtf}"); ok = False
+        base, ratio, amount = r.get("Commission_Base"), r.get("Commission_Ratio"), r.get("Commission_Amount")
+        if base not in (None, "") and ratio not in (None, ""):
+            expected_amount = float(base) * float(ratio)
+            if amount in (None, "") or abs(float(amount) - expected_amount) > 1e-8:
+                print(f"FAIL: Commission_Amount != Base×Ratio ({amount} != {expected_amount})"); ok = False
+        else:
+            print("FAIL: D-010 验证目标缺少 Commission_Base 或 Commission_Ratio"); ok = False
         print("EXEMPTION VERIFY:", "PASS" if ok else "FAIL")
     finally:
         cli(["+record-upsert", "--base-token", BASE, "--table-id", TABLES["Performance_Result"],

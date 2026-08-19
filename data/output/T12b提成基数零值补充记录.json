@@ -1,0 +1,29 @@
+{
+  "task": "T12b",
+  "type": "测试提成基数显式0补充",
+  "reason": "边界用例不测试金额；显式0使 Commission_Ratio/Amount 的空值语义与既有 161 条一致",
+  "updated_result_ids": [
+    "RST000162",
+    "RST000163",
+    "RST000164",
+    "RST000165",
+    "RST000166",
+    "RST000167",
+    "RST000168",
+    "RST000169",
+    "RST000170",
+    "RST000171",
+    "RST000172",
+    "RST000173",
+    "RST000174",
+    "RST000175",
+    "RST000176",
+    "RST000177",
+    "RST000178",
+    "RST000179",
+    "RST000180"
+  ],
+  "prior_value": null,
+  "new_value": 0,
+  "rollback": "将 listed Result_ID 的 Commission_Base 恢复为空后重跑独立校验"
+}

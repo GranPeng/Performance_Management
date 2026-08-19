@@ -53,3 +53,11 @@
 - **关键能力约束（实测）**：Base 公式 FILTER 条件内**不支持**链式访问 link 目标字段（`CurrentValue.[Metric_ID].[Metric_ID]` 被拒为 Bitable_Formula_InvalidReferenced），因此 Commission_Base 无法公式化，只能走「存储快照 + 脚本按 D-009 写入」；这与 data_model 生命周期「随批次固定/重算整批重出」一致。
 - **待 PO 边界**：T11C-L1 豁免行提成处理 V04 未规定（当前 Amount 公式仍按 Base×Ratio 产出）；T11C-L2 广告投放/摄影师 Commission_Base 在 T9a 模拟无对应金额指标留空；既有 T9b L1-L5 不变。
 
+## ADR-006：花名册绩效字段与制作部小组维度建模（T18 / CHG-T18-001+002，2026-08-18）
+**决策**：
+1. **CHG-T18-001**——Employee 新增 `Perf_Salary`（绩效工资，NUMBER，条件必填=直播中控/运营助理）与 `Responsible_Channel_IDs`（负责渠道，TEXT→Channel **多值**）；Performance_Result 新增 `Perf_Salary_Snapshot`（计算时快照，同 Weight/Commission_Ratio 快照语义）。
+2. **CHG-T18-002**——新增第 16 实体 `Project_Group`（制作部小组主数据，前缀 GRP：Group_ID / Group_Name / Leader_Employee_ID→编导）；Project_Member 新增 `Group_ID`（编导-小组-项目 / 剪辑-小组-项目归属）；Actual 新增 `Group_ID`（第五类主体粒度）、`Material_Type`（NEW_MATERIAL/HISTORICAL_MATERIAL，D-016 双口径行级区分）、`Owner_Employee_ID` 与 `Material_First_Run_Date`（归因/90 天锚点**预留**，取数与判定逻辑不实现）。
+**原因**：落地 D-013（直播中控收入=绩效工资×档位百分比＋渠道GSV×0.001÷中控人数）、D-014（负责渠道全额计提）、D-015.3（制作部小组平均值核算）、D-016（打分=总消耗/提成=近90天成片双口径）的模型层依赖（T17/T17b 落文标注的【待模型变更】项）。承载方案关键取舍：① 负责渠道落 Employee 多值 link 而非复用 Project_Member——D-013/D-014 明确「花名册维护」，Project_Member.Project_ID 必填且语义为「项目分摊」，复用会伪造项目归属、混淆语义；独立「员工-渠道」关系表在无生效区间需求阶段属过度设计，未来需要经 §17 升级不返工。② 小组维度用「新实体 + Project_Member.Group_ID」而非「Project_ID+小组属性派生」——小组是跨项目团队实体（一编导带一小组覆盖多项目），派生方案无法表达「编导-小组-项目」三级归属；项目组剪辑人数仍走 Project_Member Project_ID+岗位计数（D-007.2），Group_ID 不替代项目粒度聚合。
+**影响**：纯新增实体与可选字段，既有 181 条结果、全部既有字段与公式零改动（验证：verify_calculation_chain.py PASS，181 行 0 差异）；data_model.md §7 对照表 D-013~D-016 行与 §8 待确认清单第 9/10 条同步关闭；business_rules.md 仅同步字段引用、规则内容零改动。Base 侧需补建：Employee 两字段、Performance_Result 一字段、Project_Group 表、Project_Member/Actual 的 Group_ID 等关联字段（feishu-builder 后续任务）。
+**风险**：① **范围约束红线**：小组维度仅建模，聚合口径/90 天锚点/分母口径/组织变更规则为评审意见书四件搁置事项，PO 拍板前任何实现不得消费小组维度做核算（已在 data_model.md §4.6 与 business_rules.md 制作部章双侧标注）；② 摄影师工单粒度（工单数/工单任务数）本次未建模，待口径后另走 §17；③ 预留字段（Owner_Employee_ID/Material_First_Run_Date）长期空值可能误导后续开发者当作可用数据，消费前必须核对 PO 拍板状态。
+

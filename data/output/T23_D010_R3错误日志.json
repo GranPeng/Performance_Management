@@ -1,0 +1,20 @@
+{
+  "task": "T23",
+  "log_type": "exception_and_resolution",
+  "entries": [
+    {
+      "status": "FAILED",
+      "step": "traceability_fix",
+      "error": "PRECONDITION_OR_TARGET_STATE_MISMATCH",
+      "timestamp": "2026-08-18T15:07:16.165223+08:00",
+      "impact": "未发生 Base 写入；前置状态比较包含 Base 只读 field.id，导致已生效状态未被识别。"
+    },
+    {
+      "status": "RESOLVED",
+      "resolution": "比较逻辑改为仅比较可写字段定义（name/type/default_value/style/description），保留 field.id 作为读回证据。",
+      "verified_at": "2026-08-18T15:10:58.208448+08:00",
+      "verification_evidence": "data/output/T23_D010_R3追溯修正执行结果.json",
+      "result": "ALREADY_APPLIED_VERIFIED；未发生额外 Base 写入。"
+    }
+  ]
+}

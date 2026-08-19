@@ -1,0 +1,34 @@
+{
+  "task": "T21",
+  "rollback_scope": "仅删除本任务创建的Employee、Actual、Performance_Result、Import_Batch；不修改既有记录/公式",
+  "source": "SIMULATED_T21_D013_D014",
+  "status": "APPLY_PASSED",
+  "batches": [
+    "recvszT7D8vDKZ",
+    "recvszT7D8T9n3"
+  ],
+  "employee_record_ids": [
+    "recvszT8h8RrHy",
+    "recvszT8h8RiPV",
+    "recvszT8h88Onh",
+    "recvszT8h8GirT"
+  ],
+  "actual_record_ids": [
+    "recvszT8U1s4al",
+    "recvszT8U1dD5G",
+    "recvszT8U1Fudd",
+    "recvszT8U1ppaA",
+    "recvszT8U1p5Em",
+    "recvszT8U1ZiOP"
+  ],
+  "performance_result_record_ids": [
+    "recvszT9w0HsP7",
+    "recvszT9w05iYh",
+    "recvszT9w0lgcN",
+    "recvszT9w0qhwt",
+    "recvszT9w0i0p6",
+    "recvszT9w0uCIm",
+    "recvszT9w0Tcne",
+    "recvszT9w0L06z"
+  ]
+}

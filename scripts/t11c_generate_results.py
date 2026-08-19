@@ -193,7 +193,7 @@ def compute_commission_snapshots(result_rows, metric_pos_map, metric_rid_by_id, 
     Base (D-009): position type via Metric->Position; value = Actual_Value of the position's
     base metric for same Employee+Period (snapshot, not formula — Base formula can't chain link fields
     inside FILTER conditions; verified in T11c scratch).
-    Ratio: tier match on Monthly_Total (Base formula result read back). 运营族=0.003×Coefficient,
+    Ratio: tier match on Monthly_Total (Base formula result read back). 运营族=Commission_Tier.Base_Rate×Coefficient,
     others=Ratio_Value (Commission_Tier), LIVE/CS empty.
     Returns {record_id: {Commission_Base_Type, Commission_Base, Commission_Ratio}}.
     """
@@ -252,7 +252,12 @@ def compute_commission_snapshots(result_rows, metric_pos_map, metric_rid_by_id, 
                 coef = matched.get("Coefficient")
                 rv = matched.get("Ratio_Value")
                 if coef is not None:
-                    ratio = round(0.003 * float(coef), 6)  # 运营族固定基数 0.003 × 系数
+                    base_rate = matched.get("Base_Rate")
+                    if base_rate is None:
+                        raise RuntimeError(
+                            f"运营族梯度缺少 Base_Rate 配置: {matched.get('Commission_Tier_ID')}"
+                        )
+                    ratio = round(float(base_rate) * float(coef), 6)
                 elif rv is not None:
                     ratio = float(rv)
         snap[row["_record_id"]] = {"Commission_Base_Type": base_type, "Commission_Base": base_val, "Commission_Ratio": ratio}
@@ -334,7 +339,7 @@ def main():
     pr_fields = ["Result_ID", "Period", "Employee_ID", "Metric_ID", "Monthly_Total"]
     pr_rows = records("Performance_Result", pr_fields)
     actual_rows = records("Actual", ["Actual_ID", "Employee_ID", "Metric_ID", "Actual_Value", "Period", "Status"])
-    tier_rows = records("Commission_Tier", ["Commission_Tier_ID", "Position_ID", "Tier_Level", "Score_Lower", "Coefficient", "Ratio_Value", "Status"])
+    tier_rows = records("Commission_Tier", ["Commission_Tier_ID", "Position_ID", "Tier_Level", "Score_Lower", "Coefficient", "Ratio_Value", "Base_Rate", "Status"])
     snap = compute_commission_snapshots(pr_rows, metric_pos_map, metric_rid_by_id, metric_records, actual_rows, tier_rows)
     written = 0
     snap_payloads = {}

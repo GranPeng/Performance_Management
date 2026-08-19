@@ -1,0 +1,87 @@
+{
+  "task": "T23",
+  "rollback_scope": "仅删除本任务来源SIMULATED_T23_D010_R3的 Project、Actual、Performance_Result、Import_Batch；EXS000001.Max_Monthly_Revenue恢复为空；T14 Revenue_Actual_ID恢复为空。",
+  "status": "APPLY_PASSED",
+  "source": "SIMULATED_T23_D010_R3",
+  "created_at": "2026-08-18 13:31",
+  "scope_record_id": "recvsyf5IYhkt5",
+  "scope_threshold": 1000000,
+  "batches": [
+    "recvsCIgISr8Qu",
+    "recvsCIgIS15bF"
+  ],
+  "project_record_ids": [
+    "recvsCIhszigl3",
+    "recvsCIhszL9kW",
+    "recvsCIhszsFlg"
+  ],
+  "actual_record_ids": [
+    "recvsCIi9WFPv7",
+    "recvsCIi9W7oiq",
+    "recvsCIi9WAZSD"
+  ],
+  "performance_result_record_ids": [
+    "recvsCIiRbc4wD",
+    "recvsCIiRbjLBJ",
+    "recvsCIiRbrmfK"
+  ],
+  "t14_revenue_backfill": {
+    "result_record_id": "recvsyat0oz6cL",
+    "revenue_actual_record_id": "recvsyastLpoaV"
+  },
+  "traceability_correction_rollback": {
+    "change_id": "CHG-D010-R3-001-TRACE",
+    "record_id": "recvsyf5IYhkt5",
+    "restore_record_payload": {
+      "Rule_Version": "V04+D-010-R2",
+      "Note": "D-010-R3：阈值=1,000,000元；营收未知时结果留空待确认。"
+    },
+    "field_id": "fldizqgSuF",
+    "restore_field_payload": {
+      "name": "Rule_Version",
+      "type": "text",
+      "default_value": null,
+      "style": {"type": "plain"},
+      "description": "必填·规则版本（当前V04+D-010-R2）。产生：规则维护；消费：审计/重算；规则变更时新增版本记录。"
+    },
+    "evidence": "data/output/T23_D010_R3追溯修正执行结果.json"
+  },
+  "cases": [
+    {
+      "case_id": "T23-EXEMPT-AT-LIMIT",
+      "period": "2027-07",
+      "start_date": "2027-06-17",
+      "revenue": 1000000,
+      "expected_days": 44,
+      "expected_exempt": true,
+      "expected_ratio": 0.003,
+      "expected_amount": 3000,
+      "project_id": "PROJ900015",
+      "actual_id": "ACT000119"
+    },
+    {
+      "case_id": "T23-REVENUE-OVER-LIMIT",
+      "period": "2027-08",
+      "start_date": "2027-07-18",
+      "revenue": 1000001,
+      "expected_days": 44,
+      "expected_exempt": false,
+      "expected_ratio": 0.0018,
+      "expected_amount": 1800.0018,
+      "project_id": "PROJ900016",
+      "actual_id": "ACT000120"
+    },
+    {
+      "case_id": "T23-DAYS-AT-90",
+      "period": "2027-09",
+      "start_date": "2027-07-02",
+      "revenue": 500000,
+      "expected_days": 90,
+      "expected_exempt": false,
+      "expected_ratio": 0.0018,
+      "expected_amount": 900,
+      "project_id": "PROJ900017",
+      "actual_id": "ACT000121"
+    }
+  ]
+}

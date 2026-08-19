@@ -2,7 +2,7 @@
 """T11c manual commission recheck per business_rules.md §3.
 
 Rules:
-- 运营族 (OPS/SUP): Commission_Ratio = 0.003 × Commission_Tier.Coefficient (matched tier by Monthly_Total)
+- 运营族 (OPS/SUP): Commission_Ratio = Commission_Tier.Base_Rate × Commission_Tier.Coefficient（按 Monthly_Total 命中梯度）
 - 主播/内容部/广告: Commission_Ratio = Commission_Tier.Ratio_Value
 - Commission_Amount = Commission_Base × Commission_Ratio
 Base = Actual_Value of the position's base metric (D-009): GSV (OPS-001/SUP-001), 个人消耗 (DIR-003/EDIT-003),

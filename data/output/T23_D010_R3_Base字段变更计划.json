@@ -1,0 +1,22 @@
+{
+  "change_id": "CHG-D010-R3-001",
+  "task": "T23",
+  "date": "2026-08-18",
+  "owner": "Product Owner（D-010-R3 决策）/ data-engineer（实施）",
+  "reason": "D-010-R3 将新项目豁免收敛为项目运行天数与当月营收双条件，需将营收阈值参数化并在结果层保留 Actual 溯源。",
+  "impact": "Exemption_Scope 新增 Max_Monthly_Revenue；Performance_Result 新增 Revenue_Actual_ID 与 Monthly_Revenue，并更新 Is_Exempt 公式。既有业务结果不直接改写；仅本任务模拟行和已存在 T14 模拟行补写测试所需 Revenue_Actual_ID。",
+  "unit": "元（CNY）",
+  "scope_field": {
+    "table": "Exemption_Scope",
+    "name": "Max_Monthly_Revenue",
+    "type": "number",
+    "seed": {"Exemption_Scope_ID": "EXS000001", "value": 1000000}
+  },
+  "result_fields": [
+    {"name": "Revenue_Actual_ID", "type": "link", "link_table": "Actual"},
+    {"name": "Monthly_Revenue", "type": "formula", "expression": "IF(ISBLANK([Revenue_Actual_ID]),\"\",FIRST([Revenue_Actual_ID].[Actual_Value]))"}
+  ],
+  "is_exempt_formula": "IF(ISBLANK([Project_Run_Days])||ISBLANK([Exemption_Scope_ID]),\"\",IF(ISBLANK([Monthly_Revenue]),\"\",[Project_Run_Days]<FIRST([Exemption_Scope_ID].[Max_Project_Run_Days])&&[Monthly_Revenue]<=FIRST([Exemption_Scope_ID].[Max_Monthly_Revenue])))",
+  "unknown_revenue_policy": "Revenue_Actual_ID 或其 Actual_Value 为空时 Monthly_Revenue/Is_Exempt 留空，验证器输出「营收未知【待确认】」告警，不作豁免或不豁免的业务判断。",
+  "rollback": "将 EXS000001.Max_Monthly_Revenue 恢复为空；将 Is_Exempt 公式恢复为 data/output/t15b_is_exempt_formula.json 的历史表达式；本任务创建的字段仅在确认无依赖后删除（不作为常规回滚）；删除本任务 SIMULATED_T23_D010_R3 的 Project/Actual/Performance_Result/Import_Batch。"
+}

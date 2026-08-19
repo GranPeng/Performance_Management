@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""T11c: land Base formula changes for exemption branch (Q-10-01) and Commission_Amount (Q-10-02).
+"""T11c/T14: land Base scoring and Commission_Amount formulas.
 
 Changes:
-- Auto_Score: prepend exemption branch — IF(Is_Exempt=TRUE(), 100, <original>)  (Q-10-01 得分=100)
-- Weighted_Score: exemption rows weighted 0 — IF(Is_Exempt=TRUE(), 0, Weight×Final_Score)
-  (Q-10-01 不纳入月度加权; Monthly_Total=SUM(Weighted_Score) 因此自动排除豁免行)
+- D-010-R1: Is_Exempt is a commission eligibility marker only. Auto_Score and
+  Weighted_Score always calculate under the normal V04 scoring path.
 - Commission_Amount: number storage -> formula = Commission_Base × Commission_Ratio (Q-10-02)
   (Base/Ratio 为脚本写快照；Amount 由公式产出，空值留空不伪造 0)
 """
@@ -38,23 +37,21 @@ ORIG_AUTO = (
     '"扣分制",IF(ISBLANK(FIRST([Actual_ID].[Actual_Value])),"",MAX(100-FIRST([Actual_ID].[Actual_Value])*[Deduct_Per],[Score_Floor])))'
 )
 
-# 豁免分支：Is_Exempt=TRUE() → 100；否则原逻辑
-AUTO_EXEMPT = f'IF([Is_Exempt]=TRUE(),100,{ORIG_AUTO})'
-
-# Weighted_Score：豁免行 0（不参与月度加权），否则 Weight×Final_Score
-WEIGHTED_EXEMPT = 'IF([Is_Exempt]=TRUE(),0,IFBLANK([Weight],0)*IFBLANK([Final_Score],0))'
+# D-010-R1：豁免不改变绩效打分或加权，提成分支另行处理。
+AUTO_EXEMPT = ORIG_AUTO
+WEIGHTED_EXEMPT = 'IFBLANK([Weight],0)*IFBLANK([Final_Score],0)'
 
 # Commission_Amount：公式 = Base × Ratio；任一为空则留空
 AMOUNT_EXPR = 'IF(ISBLANK([Commission_Base])||ISBLANK([Commission_Ratio]),"",[Commission_Base]*[Commission_Ratio])'
 
 def main():
     results = []
-    # 1) Auto_Score: update with exemption branch
+    # 1) Auto_Score: normal V04 scoring; D-010-R1 does not override the score.
     r = cli(["+field-update", "--base-token", BASE, "--table-id", TABLE, "--field-id", "fld8Pmyvpb",
              "--json", json.dumps({"type": "formula", "name": "Auto_Score", "expression": AUTO_EXEMPT}, ensure_ascii=False),
              "--yes", "--i-have-read-guide"])
     results.append({"op": "update", "field": "Auto_Score", "ok": r.get("ok")})
-    # 2) Weighted_Score: exemption rows weighted 0
+    # 2) Weighted_Score: normal weighted score; D-010-R1 does not exclude it.
     r = cli(["+field-update", "--base-token", BASE, "--table-id", TABLE, "--field-id", "fld1pK4z70",
              "--json", json.dumps({"type": "formula", "name": "Weighted_Score", "expression": WEIGHTED_EXEMPT}, ensure_ascii=False),
              "--yes", "--i-have-read-guide"])

@@ -1,0 +1,194 @@
+{
+  "task": "T12b",
+  "status": "APPLY_PASSED",
+  "source": "SIMULATED_T12B_BOUNDARY",
+  "created_at": "2026-08-17 17:49",
+  "batches": {
+    "actual": {
+      "id": "IB-T12B-ACTUAL-20260817-01",
+      "record_id": "recvsxUGnrmrba"
+    },
+    "calc": {
+      "id": "IB-T12B-CALC-20260817-01",
+      "record_id": "recvsxUGnr3MDg"
+    }
+  },
+  "created": {
+    "actual_record_ids": [
+      "recvsxUH5pkAVA",
+      "recvsxUH5pZW76",
+      "recvsxUH5proJV",
+      "recvsxUH5pkhu1",
+      "recvsxUH5pogzq",
+      "recvsxUH5p9jsm",
+      "recvsxUH5pBVrm",
+      "recvsxUH5pX1Uh",
+      "recvsxUH5pt10j",
+      "recvsxUH5pZrd5",
+      "recvsxUH5pMjwA",
+      "recvsxUH5pKOeG",
+      "recvsxUH5ptCfw",
+      "recvsxUH5p3WBC",
+      "recvsxUH5plmLm",
+      "recvsxUH5pKIQd",
+      "recvsxUH5pJhjS",
+      "recvsxUH5pNIt9"
+    ],
+    "performance_result_record_ids": [
+      "recvsxUHPszDrj",
+      "recvsxUHPsuwmB",
+      "recvsxUHPsbAVi",
+      "recvsxUHPsnTxm",
+      "recvsxUHPsnhh1",
+      "recvsxUHPsZQjH",
+      "recvsxUHPswwbq",
+      "recvsxUHPsUhcv",
+      "recvsxUHPsUHY5",
+      "recvsxUHPsr5iZ",
+      "recvsxUHPsAKAC",
+      "recvsxUHPsZbjr",
+      "recvsxUHPsmr2M",
+      "recvsxUHPs8mzM",
+      "recvsxUHPsCaMt",
+      "recvsxUHPsoIHD",
+      "recvsxUHPsbuSZ",
+      "recvsxUHPspVZm",
+      "recvsxUHPsOf8N"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "T12B-RATE-08",
+      "actual_id": "ACT000094",
+      "result_id": "RST000162",
+      "expected_auto_score": 100.0,
+      "expected_total": null
+    },
+    {
+      "case_id": "T12B-RATE-09",
+      "actual_id": "ACT000095",
+      "result_id": "RST000163",
+      "expected_auto_score": 90.0,
+      "expected_total": null
+    },
+    {
+      "case_id": "T12B-RATE-10",
+      "actual_id": "ACT000096",
+      "result_id": "RST000164",
+      "expected_auto_score": 60.0,
+      "expected_total": null
+    },
+    {
+      "case_id": "T12B-RATE-11",
+      "actual_id": "ACT000097",
+      "result_id": "RST000165",
+      "expected_auto_score": 0.0,
+      "expected_total": null
+    },
+    {
+      "case_id": "T12B-TARGET-12",
+      "actual_id": "ACT000098",
+      "result_id": "RST000166",
+      "expected_auto_score": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "T12B-TARGET-01",
+      "actual_id": "ACT000099",
+      "result_id": "RST000167",
+      "expected_auto_score": null,
+      "expected_total": null
+    },
+    {
+      "case_id": "T12B-TIER-08-01",
+      "actual_id": "ACT000100",
+      "result_id": "RST000168",
+      "expected_auto_score": 100.0,
+      "expected_total": 60.0
+    },
+    {
+      "case_id": "T12B-TIER-08-02",
+      "actual_id": "ACT000101",
+      "result_id": "RST000169",
+      "expected_auto_score": 100.0,
+      "expected_total": 60.0
+    },
+    {
+      "case_id": "T12B-TIER-08-03",
+      "actual_id": "ACT000102",
+      "result_id": "RST000170",
+      "expected_auto_score": 100.0,
+      "expected_total": 60.0
+    },
+    {
+      "case_id": "T12B-TIER-09-01",
+      "actual_id": "ACT000103",
+      "result_id": "RST000171",
+      "expected_auto_score": 100.0,
+      "expected_total": 80.0
+    },
+    {
+      "case_id": "T12B-TIER-09-02",
+      "actual_id": "ACT000104",
+      "result_id": "RST000172",
+      "expected_auto_score": 100.0,
+      "expected_total": 80.0
+    },
+    {
+      "case_id": "T12B-TIER-09-03",
+      "actual_id": "ACT000105",
+      "result_id": "RST000173",
+      "expected_auto_score": 100.0,
+      "expected_total": 80.0
+    },
+    {
+      "case_id": "T12B-TIER-10-01",
+      "actual_id": "ACT000106",
+      "result_id": "RST000174",
+      "expected_auto_score": 100.0,
+      "expected_total": 100.0
+    },
+    {
+      "case_id": "T12B-TIER-10-02",
+      "actual_id": "ACT000107",
+      "result_id": "RST000175",
+      "expected_auto_score": 100.0,
+      "expected_total": 100.0
+    },
+    {
+      "case_id": "T12B-TIER-10-03",
+      "actual_id": "ACT000108",
+      "result_id": "RST000176",
+      "expected_auto_score": 100.0,
+      "expected_total": 100.0
+    },
+    {
+      "case_id": "T12B-TIER-11-01",
+      "actual_id": "ACT000109",
+      "result_id": "RST000177",
+      "expected_auto_score": 100.0,
+      "expected_total": 160.0
+    },
+    {
+      "case_id": "T12B-TIER-11-02",
+      "actual_id": "ACT000110",
+      "result_id": "RST000178",
+      "expected_auto_score": 100.0,
+      "expected_total": 160.0
+    },
+    {
+      "case_id": "T12B-TIER-11-03",
+      "actual_id": "ACT000111",
+      "result_id": "RST000179",
+      "expected_auto_score": 100.0,
+      "expected_total": 160.0
+    },
+    {
+      "case_id": "T12B-MANUAL-QUAL-08",
+      "actual_id": null,
+      "result_id": "RST000180",
+      "expected_auto_score": null,
+      "expected_total": null
+    }
+  ]
+}

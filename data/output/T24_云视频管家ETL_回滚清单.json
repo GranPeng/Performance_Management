@@ -1,0 +1,26 @@
+{
+  "batch_id": "IB-YSP-733DBFC9529AFBDB",
+  "batch_record_id": "recvsDaGA8TZQ3",
+  "created_actual_record_ids": [
+    "recvsDaHiBC7Nq",
+    "recvsDaHiBCGKT",
+    "recvsDaHiBZXoD",
+    "recvsDaHiBmseB",
+    "recvsDaHiBODi4",
+    "recvsDaHiBuodu",
+    "recvsDaHiBHEBB",
+    "recvsDaHiBYg2A",
+    "recvsDaHiBPbjr"
+  ],
+  "created_error_record_ids": [
+    "recvsDaN0FabgZ",
+    "recvsDaN0F5AJN",
+    "recvsDaN0Fl6Oj",
+    "recvsDaN0F7PWi"
+  ],
+  "created_project_group_record_ids": [
+    "recvsDaG3ezz9l"
+  ],
+  "project_member_group_updates": [],
+  "rollback_method": "将本批新增Actual/Error_Log/Import_Batch/Project_Group置Archived；Project_Member.Group_ID按此清单恢复原值。"
+}

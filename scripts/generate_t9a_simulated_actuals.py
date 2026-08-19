@@ -99,23 +99,33 @@ def score_achievement(metric_id: str, rate: float) -> float:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="create Import_Batch and Actual records after successful preflight")
+    ap.add_argument("--refresh-manifest", action="store_true", help="只按当前 V04 规则重建本地预期清单；不创建或更新任何 Base 记录")
     args = ap.parse_args()
+    if args.apply and args.refresh_manifest:
+        ap.error("--apply 与 --refresh-manifest 不能同时使用")
     errors = []
     employees = records("Employee", ["Employee_ID", "Position_ID", "Perf_Participate_Status", "Status"])
     metrics = records("Metric", ["Metric_ID", "Position_ID", "Metric_Name", "Scoring_Type", "Unit", "Status"])
     targets = records("Target", ["Target_ID", "V60_Source_Row", "Period", "Channel_ID", "Target_Value", "Unit", "Status"])
-    existing_actuals = records("Actual", ["Actual_ID", "Period", "Source", "Status"])
+    existing_actuals = records("Actual", ["Actual_ID", "Period", "Employee_ID", "Metric_ID", "Source", "Status"])
 
     participants = [r for r in employees if r.get("Perf_Participate_Status") == "确认参与" and r.get("Status") == "Active"]
     if len(participants) != 32:
         add_error(errors, "PARTICIPANT_COUNT_MISMATCH", {"expected": 32, "actual": len(participants)})
-    if any(r.get("Source") == SOURCE and r.get("Period") == PERIOD and r.get("Status") == "Active" for r in existing_actuals):
+    if not args.refresh_manifest and any(r.get("Source") == SOURCE and r.get("Period") == PERIOD and r.get("Status") == "Active" for r in existing_actuals):
         add_error(errors, "DUPLICATE_SIMULATION_BATCH", "Active T9a simulated Actual already exists for 2026-07; refusing non-idempotent duplicate write")
     try:
         actual_sequence = next_numeric_id(existing_actuals, "Actual_ID", "ACT")
     except RuntimeError as exc:
         add_error(errors, "ACTUAL_ID_ALLOCATION_FAILED", str(exc))
         actual_sequence = None
+    # Refresh mode is evidence-only: preserve online Actual_ID by business key rather
+    # than synthesizing new IDs in the local manifest.
+    existing_actual_by_business_key = {
+        (link_id(r.get("Employee_ID")), link_id(r.get("Metric_ID")), r.get("Period")): r.get("Actual_ID")
+        for r in existing_actuals
+        if r.get("Source") == SOURCE and r.get("Status") == "Active" and r.get("Actual_ID")
+    }
     by_position = defaultdict(list)
     for m in metrics:
         if m.get("Status") == "Active":
@@ -153,6 +163,8 @@ def main():
         emp_rid, position_rid = emp["_record_id"], link_id(emp.get("Position_ID"))
         for metric in by_position[position_rid]:
             typ, mid, unit = metric.get("Scoring_Type"), metric["Metric_ID"], metric.get("Unit") or "/"
+            existing_actual_id = existing_actual_by_business_key.get((emp_rid, metric["_record_id"], PERIOD)) if args.refresh_manifest else None
+            actual_id = existing_actual_id or f"ACT{seq:06d}"
             common = {"employee_id": emp["Employee_ID"], "employee_record_id": emp_rid, "metric_id": mid,
                       "metric_record_id": metric["_record_id"], "period": PERIOD, "scoring_type": typ,
                       "metric_name": metric["Metric_Name"], "source": SOURCE}
@@ -173,7 +185,7 @@ def main():
                     actual_value, target_ref = target_value * rate, "V60行3主营业务收入=退货后GSV（D-005）"
                 expected = score_achievement(mid, rate)
                 design = intent
-                row = {"Actual_ID": f"ACT{seq:06d}", "Metric_ID": [{"id": metric["_record_id"]}], "Period": PERIOD,
+                row = {"Actual_ID": actual_id, "Metric_ID": [{"id": metric["_record_id"]}], "Period": PERIOD,
                        "Employee_ID": [{"id": emp_rid}], "Actual_Value": round(actual_value, 4), "Unit": unit,
                        "Source_Type": "MANUAL_ENTRY", "Source_Ref": f"{SOURCE}; {target_ref}; target={target_value}; rate={rate}",
                        "Collected_By": [{"id": emp_rid}], "Collected_Time": now, "Validation_Status": "通过",
@@ -181,14 +193,18 @@ def main():
                 expected_kind = "achievement_rate"
             elif typ == "次数阈值型":
                 value, design, expected = count_cycle[kind_index[typ] % len(count_cycle)]; kind_index[typ] += 1
-                row = {"Actual_ID": f"ACT{seq:06d}", "Metric_ID": [{"id": metric["_record_id"]}], "Period": PERIOD,
+                # V04 直播中控「客户服务与答疑」明确规定：0次=100、少于3次=60、≥3次=0。
+                # 不能复用 LIVE-002 的通用中档80分预期。
+                if mid == "MET-V04-IE-LIVE-003" and 0 < value < 3:
+                    expected = 60
+                row = {"Actual_ID": actual_id, "Metric_ID": [{"id": metric["_record_id"]}], "Period": PERIOD,
                        "Employee_ID": [{"id": emp_rid}], "Actual_Value": value, "Unit": "次", "Source_Type": "MANUAL_ENTRY",
                        "Source_Ref": f"{SOURCE}; V04次数阈值场景", "Collected_By": [{"id": emp_rid}], "Collected_Time": now,
                        "Validation_Status": "通过", "Import_Batch_ID": None, "Source": SOURCE, "Create_Time": now, "Update_Time": now, "Status": "Active"}
                 rate, target_value, target_ref, expected_kind = None, None, None, "threshold_count"
             elif typ == "扣分制":
                 value, design, expected = deduction_cycle[kind_index[typ] % len(deduction_cycle)]; kind_index[typ] += 1
-                row = {"Actual_ID": f"ACT{seq:06d}", "Metric_ID": [{"id": metric["_record_id"]}], "Period": PERIOD,
+                row = {"Actual_ID": actual_id, "Metric_ID": [{"id": metric["_record_id"]}], "Period": PERIOD,
                        "Employee_ID": [{"id": emp_rid}], "Actual_Value": value, "Unit": "次", "Source_Type": "MANUAL_ENTRY",
                        "Source_Ref": f"{SOURCE}; V04单次扣5分；测试基准100分、下限0分", "Collected_By": [{"id": emp_rid}], "Collected_Time": now,
                        "Validation_Status": "通过", "Import_Batch_ID": None, "Source": SOURCE, "Create_Time": now, "Update_Time": now, "Status": "Active"}
@@ -215,7 +231,7 @@ def main():
                 "扣分制": {x[1] for x in deduction_cycle}, "定性等级型": set(manual_cycle), "奖惩制": set(reward_cycle)}
     missing = {k: sorted(v - coverage[k]) for k, v in required.items() if v - coverage[k]}
     if missing: add_error(errors, "SCENARIO_COVERAGE_GAP", missing)
-    payload = {"task": "T9a", "generated_at": now, "mode": "APPLY" if args.apply else "PREFLIGHT", "base_token": BASE,
+    payload = {"task": "T9a", "generated_at": now, "mode": "APPLY" if args.apply else ("REFRESH_MANIFEST" if args.refresh_manifest else "PREFLIGHT"), "base_token": BASE,
                "period": PERIOD, "source": SOURCE, "batch_id": batch_id, "participant_count": len(participants),
                "actual_count": len(actual_rows), "manifest_count": len(manifest), "coverage": {k: sorted(v) for k, v in coverage.items()},
                "errors": errors, "records": manifest}

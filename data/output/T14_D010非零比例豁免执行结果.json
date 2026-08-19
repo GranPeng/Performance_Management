@@ -1,0 +1,53 @@
+{
+  "task": "T14",
+  "status": "APPLY_PASSED",
+  "source": "SIMULATED_T14_D010_NONZERO",
+  "case_id": "T14-D010-EXEMPT-NONZERO-01",
+  "created_at": "2026-08-17 18:51",
+  "batches": {
+    "actual": {
+      "id": "IB-T14-ACTUAL-20260817-01",
+      "record_id": "recvsyarYfXU9R"
+    },
+    "calc": {
+      "id": "IB-T14-CALC-20260817-01",
+      "record_id": "recvsyarYfhCfL"
+    }
+  },
+  "created": {
+    "project_record_id": "recvsyarr5pjlN",
+    "actual_record_id": "recvsyastLpoaV",
+    "performance_result_record_id": "recvsyat0oz6cL"
+  },
+  "input": {
+    "actual_value": 100.0,
+    "target_snapshot": 100.0,
+    "commission_base": 100.0,
+    "commission_ratio": 0.003,
+    "expected_commission_amount": 0.3
+  },
+  "read_back": {
+    "Result_ID": "RST000181",
+    "Project_Run_Days": "44",
+    "Is_Exempt": "true",
+    "Auto_Score": "100",
+    "Final_Score": "100",
+    "Weighted_Score": "30",
+    "Monthly_Total": "30",
+    "Commission_Base": 100,
+    "Commission_Ratio": 0.003,
+    "Commission_Amount": "0.3",
+    "Status": "Active",
+    "Source": "SIMULATED_T14_D010_NONZERO",
+    "_record_id": "recvsyat0oz6cL"
+  },
+  "assertions": {
+    "project_run_days_lt_90": true,
+    "is_exempt": true,
+    "auto_score_100": true,
+    "weighted_score_normal": true,
+    "ratio_is_d010_r1_base": true,
+    "amount_equals_0_003_times_gsv": true,
+    "amount_positive": true
+  }
+}

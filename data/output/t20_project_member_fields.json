@@ -1,0 +1,3 @@
+[
+  {"type":"link","name":"Group_ID","link_table":"tblU6US76mSPKhCD","description":"可选 · 小组归属（ID 关联→Project_Group），承载编导-小组-项目及剪辑/摄影-小组-项目关系；在线维护入口同步产生，供未来小组维度聚合与复核；归属调整时更新，历史结果不改写。仅建模，PO 拍板前禁止用于核算。D-015.3 / CHG-T18-002"}
+]

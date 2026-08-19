@@ -1,0 +1,1 @@
+{"type":"formula","name":"Is_Exempt","expression":"IF(ISBLANK([Project_Run_Days]),\"\",IF(ISBLANK([Exemption_Scope_ID]),FALSE,[Project_Run_Days]<FIRST([Exemption_Scope_ID].[Max_Project_Run_Days])))","description":"新项目豁免标志（公式）· 项目运行天数小于命中的 Exemption_Scope.Max_Project_Run_Days 才为 true。适用范围由计算脚本按岗位+渠道关联，不写死岗位或90天阈值。D-010-R2 / CHG-T15B-001"}

@@ -1,0 +1,219 @@
+{
+  "task": "T24",
+  "mode": "READ_ONLY_PREFLIGHT",
+  "generated_at": "2026-08-18 19:21",
+  "batch_id": "IB-YSP-733DBFC9529AFBDB",
+  "existing_batch": {
+    "Batch_ID": "IB-YSP-733DBFC9529AFBDB",
+    "Status": "Partial",
+    "record_id": "recvsDaGA8TZQ3"
+  },
+  "source_files": [
+    {
+      "file": "生成腾讯ADQ投放报表.csv",
+      "sha256": "363d445892a385948415f3f7758dacfb266e56801ef0f7e91a8b3318f71857bc",
+      "encoding": "gbk",
+      "header_row": 1,
+      "headers": [
+        "团队",
+        "分组",
+        "账号",
+        "消耗",
+        "roi",
+        "成交金额",
+        "转化数",
+        "转化率",
+        "转化成本",
+        "展示数",
+        "点击数",
+        "点击率",
+        "平均点击单价",
+        "播放量",
+        "3秒播放"
+      ]
+    },
+    {
+      "file": "生成投放报表(新).csv",
+      "sha256": "475d6c2733fe26ad8f70c7363ecd3893fe2cb2dd95f66da31d366d6c27e192b5",
+      "encoding": "gbk",
+      "header_row": 1,
+      "headers": [
+        "团队",
+        "分组",
+        "账号",
+        "消耗",
+        "总成交金额",
+        "成交金额",
+        "智能优惠券",
+        "电商平台补贴金额",
+        "roi",
+        "转化数",
+        "转化率",
+        "转化成本",
+        "展示数",
+        "平均千次展现费用",
+        "点击数",
+        "点击率",
+        "平均点击单价",
+        "播放量",
+        "有效播放数",
+        "3秒播放数",
+        "3秒播放率",
+        "完播率",
+        "净成交金额",
+        "净成交订单数",
+        "净成交ROI",
+        "净成交订单成本"
+      ]
+    }
+  ],
+  "raw_data_rows": 13,
+  "mapped_actual_count": 9,
+  "mapped": [
+    {
+      "source": "生成腾讯ADQ投放报表.csv:3",
+      "csv_account": "褚翼玮",
+      "employee": "褚翼玮",
+      "employee_id": "EMP000053",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 64823.7
+    },
+    {
+      "source": "生成腾讯ADQ投放报表.csv:4",
+      "csv_account": "王思伟",
+      "employee": "王思伟",
+      "employee_id": "EMP000048",
+      "position": "内容主管/编导",
+      "metric": "团队产出消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 25029.12
+    },
+    {
+      "source": "生成腾讯ADQ投放报表.csv:5",
+      "csv_account": "肖思宇",
+      "employee": "肖思宇",
+      "employee_id": "EMP000055",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 9382.4
+    },
+    {
+      "source": "生成腾讯ADQ投放报表.csv:6",
+      "csv_account": "黄祖湛",
+      "employee": "黄祖湛",
+      "employee_id": "EMP000052",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 9137.08
+    },
+    {
+      "source": "生成投放报表(新).csv:3",
+      "csv_account": "谢梦欣",
+      "employee": "谢梦欣",
+      "employee_id": "EMP000058",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 82532.69
+    },
+    {
+      "source": "生成投放报表(新).csv:4",
+      "csv_account": "古旭锋",
+      "employee": "古旭锋",
+      "employee_id": "EMP000057",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 76197.38
+    },
+    {
+      "source": "生成投放报表(新).csv:6",
+      "csv_account": "高广泳",
+      "employee": "高广泳",
+      "employee_id": "EMP000056",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利高个子",
+      "channel": "【待确认】",
+      "spend": 15121.66
+    },
+    {
+      "source": "生成投放报表(新).csv:7",
+      "csv_account": "李波",
+      "employee": "李波",
+      "employee_id": "EMP000059",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利骨能",
+      "channel": "【待确认】",
+      "spend": 12254.31
+    },
+    {
+      "source": "生成投放报表(新).csv:8",
+      "csv_account": "罗卓彬",
+      "employee": "罗卓彬",
+      "employee_id": "EMP000054",
+      "position": "视频剪辑师",
+      "metric": "个人成片消耗金额",
+      "project": "伊利骨能",
+      "channel": "【待确认】",
+      "spend": 2682.03
+    }
+  ],
+  "groups_before": [
+    {
+      "Group_ID": "GRP000001",
+      "Group_Name": "施桐鑫（内容高级主管）小组",
+      "Status": "Active",
+      "record_id": "recvsD6PDtPkbe"
+    },
+    {
+      "Group_ID": "GRP000003",
+      "Group_Name": "潘剑秋（编导，骨能）小组",
+      "Status": "Active",
+      "record_id": "recvsD9uU0Fftz"
+    },
+    {
+      "Group_ID": "GRP000006",
+      "Group_Name": "王思伟（编导，高个子）小组",
+      "Status": "Active",
+      "record_id": "recvsDaG3ezz9l"
+    }
+  ],
+  "project_member_count": 23,
+  "errors": [
+    {
+      "object_id": "郭丽娜",
+      "type": "人员匹配",
+      "content": "账号未匹配 Employee；来源=生成腾讯ADQ投放报表.csv:7；未导入。"
+    },
+    {
+      "object_id": "陈乾",
+      "type": "人员匹配",
+      "content": "账号未匹配 Employee；来源=生成投放报表(新).csv:5；未导入。"
+    },
+    {
+      "object_id": "黄泽威",
+      "type": "人员匹配",
+      "content": "账号未匹配 Employee；来源=生成投放报表(新).csv:9；未导入。"
+    },
+    {
+      "object_id": "黄宏宇",
+      "type": "无效数据-运营二次编辑消耗",
+      "content": "Employee=黄宏宇，岗位=兴趣电商运营；D-019：非制作部岗位云视频管家二次编辑消耗不计入制作部绩效，跳过 Actual。"
+    }
+  ],
+  "blocking_errors": [],
+  "apply_gate": "PASS",
+  "apply_gate_reason": "D-019：仅当9条合规制作部Actual、三名花名册缺失人员日志、及一条非制作岗位无效数据日志齐全且无阻断异常时写入。"
+}

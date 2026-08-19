@@ -1,0 +1,11 @@
+{
+  "status": "IDEMPOTENT_SYNCED",
+  "batch_id": "IB-YSP-733DBFC9529AFBDB",
+  "batch_record_id": "recvsDaGA8TZQ3",
+  "actual_count_verified": 9,
+  "error_count_verified": 4,
+  "group_created": 0,
+  "member_group_updated": 0,
+  "actual_owner_updated": 0,
+  "reason": "同一源文件批次事实完整，未新增Actual/Error_Log/Import_Batch；仅补齐组织归属与Owner归因。"
+}

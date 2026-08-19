@@ -1,0 +1,24 @@
+{
+  "update_records": {
+    "recvsgr1TzEh1d": {
+      "Score_Lower": 0,
+      "Score_Upper": 60,
+      "Note": "CHG-T12A-001：按V04 I18修正LIVE梯度为[0,60)。PO已确认；影响评估见 data/output/T12a_LIVE梯度影响评估.json"
+    },
+    "recvsgr1Tzl1Q2": {
+      "Score_Lower": 60,
+      "Score_Upper": 80,
+      "Note": "CHG-T12A-001：按V04 I19修正LIVE梯度为[60,80)。PO已确认；影响评估见 data/output/T12a_LIVE梯度影响评估.json"
+    },
+    "recvsgr1TzJLaM": {
+      "Score_Lower": 80,
+      "Score_Upper": 100,
+      "Note": "CHG-T12A-001：按V04 I20修正LIVE梯度为[80,100)。PO已确认；影响评估见 data/output/T12a_LIVE梯度影响评估.json"
+    },
+    "recvsgr1TzNVzm": {
+      "Score_Lower": 100,
+      "Score_Upper": 150,
+      "Note": "CHG-T12A-001：按V04 I21修正LIVE梯度为[100,150)。PO已确认；影响评估见 data/output/T12a_LIVE梯度影响评估.json"
+    }
+  }
+}

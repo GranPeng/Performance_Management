@@ -1,0 +1,28 @@
+{
+  "task": "T12b",
+  "type": "精确边界人工补分修正",
+  "reason": "首次执行未按 LIVE-001 的实际权重0.1换算；只更新本任务四条测试结果，不改 Base 公式",
+  "updates": [
+    {
+      "result_id": "RST000168",
+      "prior_manual_score": 50.0,
+      "new_manual_score": 100.0
+    },
+    {
+      "result_id": "RST000171",
+      "prior_manual_score": 150.0,
+      "new_manual_score": 300.0
+    },
+    {
+      "result_id": "RST000174",
+      "prior_manual_score": 250.0,
+      "new_manual_score": 500.0
+    },
+    {
+      "result_id": "RST000177",
+      "prior_manual_score": 550.0,
+      "new_manual_score": 1100.0
+    }
+  ],
+  "rollback": "将四条 Manual_Score 依次恢复为 50/150/250/550 后重跑独立校验"
+}

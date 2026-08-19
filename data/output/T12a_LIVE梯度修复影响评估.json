@@ -1,0 +1,50 @@
+{
+  "task": "T12a",
+  "change_id": "CHG-T12A-LIVE-001",
+  "generated_at_utc": "2026-08-17T09:25:03.376527+00:00",
+  "change_scope": "仅更新 Base Commission_Tier 表中 4 条 ACTIVE 的 IE-LIVE 梯度边界；不修改任何 Performance_Result、Actual、Metric 或业务公式。",
+  "authority": "Product Owner 在任务评论中确认按 V04 修复：0/60/80/100 下限，60/80/100/150 上限。",
+  "baseline_source": {
+    "v04_sha256": "5342d3dda5097460cba2f4d6e2cb0628c2fbf6e22a5e111cc91369e1a4953250",
+    "independent_report": "data/output/T12a计算链独立校验报告.json",
+    "performance_result_rows": 161,
+    "baseline_difference_rows": 0,
+    "baseline_idempotence": {
+      "first_row_count": 161,
+      "second_row_count": 161,
+      "monthly_total_stable": true
+    }
+  },
+  "before": [
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-001","record_id":"recvsgr1TzEh1d","Score_Lower":60,"Score_Upper":null,"source_cell":"I18"},
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-002","record_id":"recvsgr1Tzl1Q2","Score_Lower":80,"Score_Upper":null,"source_cell":"I19"},
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-003","record_id":"recvsgr1TzJLaM","Score_Lower":100,"Score_Upper":null,"source_cell":"I20"},
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-004","record_id":"recvsgr1TzNVzm","Score_Lower":150,"Score_Upper":null,"source_cell":"I21"}
+  ],
+  "planned_after": [
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-001","Score_Lower":0,"Score_Upper":60,"source_cell":"I18"},
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-002","Score_Lower":60,"Score_Upper":80,"source_cell":"I19"},
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-003","Score_Lower":80,"Score_Upper":100,"source_cell":"I20"},
+    {"Commission_Tier_ID":"CT-V04-IE-LIVE-004","Score_Lower":100,"Score_Upper":150,"source_cell":"I21"}
+  ],
+  "impact_assessment": {
+    "affected_table_rows": 4,
+    "formula_definition_changes": 0,
+    "existing_result_rows": 161,
+    "current_monthly_total_inclusive_20_to_38": 37,
+    "note": "PO 预期为 42 条；按变更前独立校验报告的当前 161 条结果实际统计为 37 条，保留该差异供复验。修复后以独立脚本重新核验全部 161 条及读取回验为准。"
+  },
+  "rollback": "将上述 4 个 record_id 的 Score_Lower 恢复为 60/80/100/150，并将 Score_Upper 清空；随后重新运行独立校验脚本。",
+  "status": "APPLIED_AND_REVERIFIED",
+  "apply_result": {
+    "updated_record_ids": ["recvsgr1TzEh1d", "recvsgr1Tzl1Q2", "recvsgr1TzJLaM", "recvsgr1TzNVzm"],
+    "readback_verified": true,
+    "post_change_independent_recalculation": {
+      "status": "PASS",
+      "performance_result_rows": 161,
+      "difference_rows": 0,
+      "monthly_total_stable": true,
+      "live_tier_migrated_correctly": true
+    }
+  }
+}
