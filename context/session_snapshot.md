@@ -14,21 +14,21 @@
 ## 当前阶段
 - T1~T27 + T15r11：数据层收口 ACCEPTED（192 行基线 0 差异）
 - P1a/b/c（修复+清理）、P2（计算引擎）：done，已发布线上
-  - 线上：https://jv8fym591u8.feishuapp.com/app/app_17cdx8yk8pw
-  - 应用 app_17cdx8yk8pw（非专家模式，拆双库搁置）；本地开发 org-performance-app/
-- P3a 写接口代码完成（commit 3698b68，jest 59/59），原目标写 Base，按 D-023 待转向写 SQL
+- P3a 转向（t_eb766723）/ P3b 引擎落库+结果书（t_c1ce57be）：done ACCEPTED
+- **数据迁移（t_10edd9a2）：done ACCEPTED——主存储已切妙搭 SQL，db-sync 16/16 已禁用（可恢复）**
+- **拆双库完成（2026-08-20）**：专家模式开启后平台自动初始化，dev/online 双库就绪，本地可连 dev（SUDA_DATABASE_URL，5 天时效，过期重跑 env-pull）
+- 线上：https://jv8fym591u8.feishuapp.com/app/app_17cdx8yk8pw（release 7675798605589384481）
 
 ## 看板现状（default 板）
-- done：T 系列全部、P1a=t_b6cfe683、P1b=t_fe5e598d、P1c=t_a27f531b、P2=t_8a6be1aa、P3a 子卡 t_631859c9/t_0e591770/t_1187f244
-- blocked：t_a1ea45ca（写 Base 试写验证，卡凭证）→ 架构转向后待关闭作废
-- todo：P3a 父卡 t_39668d19（待改目标写 SQL）、P3b=t_896867d7（待重定义=引擎结果落 SQL+导出，原 Base 公式改造取消）
+- done：T 系列全部、P1a/P1b/P1c、P2、P3a 转向 t_eb766723、P3b t_c1ce57be、迁移 t_10edd9a2
+- 已归档（架构转向作废）：t_a1ea45ca / t_39668d19 / t_896867d7（comment 留痕）
 - 主任务 T1 = t_ce78b6e8
 
 ## 下一步（详见 docs/开发进度梳理与下一步计划_20260819_V01_架构切SQL.md）
-1. 看板调整（待 PO 确认）→ 2. P3a 改写 SQL → 3. 数据迁移+逐条比对 → 4. 本地备份 cron → 5. 结果导出 → 6. P4 节点式组织管理 → 7. P5 agent 报数
+1. ✅ 看板调整 → 2. ✅ P3a 写 SQL → 3. ✅ 数据迁移+拆双库 → 4. 本地备份 cron（优先级最低，开发完成后）→ 5. 结果书端点登录态实测+骨架生成卡 → 6. P4 节点式组织管理 → 7. P5 agent 报数
 
 ## 遗留（非阻塞）
-王思伟/潘剑秋消耗修正（282224.03/14936.34）随迁移处理；广告投放 GSV 待 HR 复核；郭丽娜/陈乾/黄泽威 3 人不入；32 人 Responsible_Channel_IDs 未维护；云视频 Channel 映射待做
+~~王思伟/潘剑秋消耗修正~~（已随迁移落库 ACT000123/ACT000131）；广告投放 GSV 待 HR 复核；郭丽娜/陈乾/黄泽威 3 人不入；32 人 Responsible_Channel_IDs 未维护；云视频 Channel 映射待做
 
 ## 重要约束（用户偏好）
 - token 额度用户自管：API 报错/额度不足阻塞时不自行切换模型，等用户充值；主模型限额绝不 fallback 到 moa（moa 是独立编排，不调用不启用，不碰）
