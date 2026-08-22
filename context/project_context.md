@@ -26,6 +26,7 @@
 - 宁可自动化慢一步，也要数据结构和业务规则先正确
 - 宁可多一道人工复核，也不能让 Agent 静默改数
 - Excel 是人看的输入层，妙搭应用是计算和展示层，Canonical Data Model（docs/data_model.md）是模型定义的唯一事实来源
+- **业务语义的实现依据 = 合同文档层**（B-DEC / C0 / C2 系列，存于 `org-performance-app-bdec-tbd/docs/`，2026-08-20 起）；合同未覆盖处不得自行发明规则
 - 任何计算结果必须能回答「为什么得到这个分数」——可解释、可追溯、可复核
 
 详见 `.hermes/PROJECT_RULES.md` §1 Core System Philosophy。
@@ -52,11 +53,12 @@
 
 注意：飞书 Base 上也有这两份数据的副本，但**飞书副本与本地文件如有差异，一律以本地文件为准**。
 
-## 6. 系统现状（2026-08-19）
+## 6. 系统现状（2026-08-20）
 
-- **妙搭应用**：「组织绩效核算平台」`app_17cdx8yk8pw`，线上 `https://jv8fym591u8.feishuapp.com/app/app_17cdx8yk8pw`（P1 修复 + P2 计算引擎已发布）；本地开发目录 `org-performance-app/`
-- **Base 正式库**「组织信息库」：`https://jv8fym591u8.feishu.cn/base/FCxObLU6yao5jgsciZfcWHKwnjh`，已按 Canonical 模型重建（14 表 + 支撑表），192 行结果基线已验收（T15r11 ACCEPTED）；按 D-023 降级为结果/导入数据存储，不再承担维护与计算
+- **妙搭应用**：「组织绩效核算平台」`app_17cdx8yk8pw`，线上 `https://jv8fym591u8.feishuapp.com/app/app_17cdx8yk8pw`（P1 修复 + P2 计算引擎已发布）；主仓库 `org-performance-app/`（主线分支 `sprint/default`），**当前活跃开发工作区为 `org-performance-app-bdec-tbd/`**
+- **Base 正式库**「组织信息库」：`https://jv8fym591u8.feishu.cn/base/FCxObLU6yao5jgsciZfcWHKwnjh`，192 行结果基线已验收（T15r11 ACCEPTED）；按 D-023 降级为结果/导入数据存储与外部校对基线，不再承担维护与计算；**主存储切换已完成（迁移 t_10edd9a2 ACCEPTED，db-sync 16/16 已禁用可恢复），dev/online 双库已拆**
+- **业务白板**（PO 维护的流程与字段语义源头）：`https://jv8fym591u8.feishu.cn/docx/F6jVdDnOLocDb3xr3rjcHow9nJh`
 
 ## 7. 当前开发阶段
 
-数据层已收口（T15r11 ACCEPTED）；妙搭应用 P1（bug 修复+清理）与 P2（计算引擎代码化）完成并上线；P3 写接口按 D-023 转向写妙搭 SQL。详见 `docs/开发进度梳理与下一步计划_20260819_V01_架构切SQL.md`。
+数据层已收口；妙搭应用 P1/P2 完成并上线，P3a/P3b 落 SQL 完成；**当前处于计算引擎重构期**（2026-08-20 起，按白板 V2 语义）：提成员工+期间唯一聚合读模型已落地（B-DEC/B1），取值来源四枚举 + 团队实时聚合 + 手工调整例外通道正在合同化（C0 V02 / C2 V3），随后进入 DDL 与服务接入。详见 `docs/_archive/session_snapshot.md`（已归档，历史状态快照）与 `docs/_archive/开发进度梳理与下一步计划_20260819_V01_架构切SQL.md`（已归档，阶段计划）。

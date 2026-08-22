@@ -1,0 +1,215 @@
+{
+  "status": "success",
+  "source_sha256": "b1c380f38e7fb642b2dba083314cc5f651edb396f9be6e767cb7fe9725045e93",
+  "sheet_count": 11,
+  "position_sheet_count": 9,
+  "rule_sheet_count": 2,
+  "metric_count": 45,
+  "checks": [
+    {
+      "sheet": "兴趣电商-运营",
+      "metric_count": 4,
+      "source_total_row": 10,
+      "weight_total_formula": "=SUM(E6:E9)",
+      "total_score_formula": "=SUM(M6:M9)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "E10",
+        "M10"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-高级主管",
+      "metric_count": 4,
+      "source_total_row": 10,
+      "weight_total_formula": "=SUM(E6:E9)",
+      "total_score_formula": "=SUM(M6:M9)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "E10",
+        "M10"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-广告投放",
+      "metric_count": 5,
+      "source_total_row": 11,
+      "weight_total_formula": "=SUM(E6:E10)",
+      "total_score_formula": "=SUM(M6:M10)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "E11",
+        "M11"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-直播中控",
+      "metric_count": 6,
+      "source_total_row": 12,
+      "weight_total_formula": "=SUM(E6:E11)",
+      "total_score_formula": "=SUM(M6:M11)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "M11",
+        "E12",
+        "M12"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-主播",
+      "metric_count": 4,
+      "source_total_row": 10,
+      "weight_total_formula": "=SUM(E6:E9)",
+      "total_score_formula": "=SUM(M6:M9)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "E10",
+        "M10"
+      ]
+    },
+    {
+      "sheet": "兴趣电商-客服",
+      "metric_count": 6,
+      "source_total_row": 12,
+      "weight_total_formula": "=SUM(E6:E11)",
+      "total_score_formula": "=SUM(L6:L11)",
+      "formula_cells": [
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10",
+        "L11",
+        "E12",
+        "L12"
+      ]
+    },
+    {
+      "sheet": "制作部-编导",
+      "metric_count": 6,
+      "source_total_row": 12,
+      "weight_total_formula": "=SUM(E6:E11)",
+      "total_score_formula": "=SUM(M6:M11)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "M11",
+        "E12",
+        "M12"
+      ]
+    },
+    {
+      "sheet": "制作部-视频剪辑",
+      "metric_count": 5,
+      "source_total_row": 11,
+      "weight_total_formula": "=SUM(E6:E10)",
+      "total_score_formula": "=SUM(M6:M10)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "E11",
+        "M11"
+      ]
+    },
+    {
+      "sheet": "制作部-摄影师",
+      "metric_count": 5,
+      "source_total_row": 11,
+      "weight_total_formula": "=SUM(E6:E10)",
+      "total_score_formula": "=SUM(M6:M10)",
+      "formula_cells": [
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "E11",
+        "M11"
+      ]
+    }
+  ],
+  "rule_sheet_checks": [
+    {
+      "sheet": "提成比例与绩效工资核算规则",
+      "row_count": 44
+    },
+    {
+      "sheet": "绩效豁免规则",
+      "row_count": 4,
+      "note_count": 2
+    }
+  ],
+  "outputs": [
+    "data/output/绩效框架结构化规则_V05.json",
+    "data/output/绩效框架提取校验日志_V05.json"
+  ],
+  "validation": [
+    "源Excel未被写入",
+    "JSON重新加载成功",
+    "岗位数与岗位工作表数一致",
+    "KPI总数与按岗位提取总数一致",
+    "工作表顺序与源文件一致",
+    "2 个新增规则 sheet 行数与源文件核对一致"
+  ],
+  "exceptions": [
+    {
+      "source": "兴趣电商-客服!B11",
+      "issue": "“邀请好评”指标存在但B列编号为空；已保留该指标，并在结构化结果中标记为“未填写（源单元格B11为空）”，未自行补号。（V04 遗留，V05 复核状态见差异报告）"
+    },
+    {
+      "source": "兴趣电商-广告投放!I7",
+      "issue": "评分标准末档原文为“90%＞达成率，0分”，与紧邻的“90%＞达成率≥80%，60分”重叠；按原文保留，需业务确认。（V04 遗留，V05 复核状态见差异报告）"
+    },
+    {
+      "source": "兴趣电商-直播中控!I18:M21",
+      "issue": "V04 提成表的列头与数据列存在视觉错位；V05 新增「提成比例与绩效工资核算规则」sheet 以规范化列结构重述了中控提成（H 列文本“0.1%/中控人数”、I 列“0.8*绩效工资”等），是否以新表为准需业务确认。"
+    },
+    {
+      "source": "兴趣电商-广告投放!I17:M20；兴趣电商-主播!I16:M19；制作部各岗位提成表",
+      "issue": "多个提成梯度最高仅至150分，未给出≥150分的处理规则；不得自行外推。（V04 遗留；V05 新增规则 sheet 同样上限至150分，未补充）"
+    },
+    {
+      "source": "各岗位“完成结果”列及高级主管测算区",
+      "issue": "源工作簿含示例完成结果/测算值；其是否为演示数据或历史业务结果未标记，本提取仅作为来源字段记录，不作为规则事实。"
+    },
+    {
+      "source": "兴趣电商-客服!F6:H11",
+      "issue": "客服表按奖励/处罚金额与分值并列描述，但未给出将金额、次数与最终得分的统一换算公式；本提取保留原文，待业务与财务确认。"
+    },
+    {
+      "source": "提成比例与绩效工资核算规则!A12:A15",
+      "issue": "V05 新增规则 sheet 出现岗位名“编导&内容主管”，V04 岗位体系中无“内容主管”岗位 sheet；该名称是合并指代还是新增岗位需业务确认。"
+    },
+    {
+      "source": "提成比例与绩效工资核算规则!H28:H31",
+      "issue": "广告投放四档“提成比例”为静态数值 0.001（非 =F*G 公式），与其他岗位公式化表达不一致；按源单元格保留。"
+    },
+    {
+      "source": "提成比例与绩效工资核算规则!E38/E45",
+      "issue": "电商运营/高级主管最高档上限为文本“♾️”，机器计算需映射为正无穷；按原文保留。"
+    }
+  ]
+}

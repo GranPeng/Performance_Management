@@ -1,0 +1,985 @@
+{
+ "code": 0,
+ "data": {
+  "to": "openapi",
+  "result": {
+   "nodes": [
+    {
+     "id": "o4:1",
+     "type": "composite_shape",
+     "x": 60,
+     "y": 26,
+     "width": 1794,
+     "height": 44,
+     "style": {
+      "border_opacity": 0,
+      "border_width": "narrow",
+      "border_style": "solid",
+      "fill_opacity": 0
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "绩效核算系统 · 前端开发路径图",
+      "font_weight": "bold",
+      "font_size": 28,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#1f2329",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:2",
+     "type": "composite_shape",
+     "x": 60,
+     "y": 76,
+     "width": 1794,
+     "height": 26,
+     "style": {
+      "border_opacity": 0,
+      "border_width": "narrow",
+      "border_style": "solid",
+      "fill_opacity": 0
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "2026-08-21 V02 ｜ P0 = 表格式全栈 MVP（测试团队核验写入 + 计算引擎）｜ 拖拽维护降为 P1 独立入口 ｜ 骨架参照 V3 画板",
+      "font_weight": "regular",
+      "font_size": 14,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#5F6368",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:3",
+     "type": "composite_shape",
+     "x": 380,
+     "y": 112,
+     "width": 150,
+     "height": 28,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#43A047",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#43A047",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "已上线",
+      "font_weight": "bold",
+      "font_size": 13,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:4",
+     "type": "composite_shape",
+     "x": 554,
+     "y": 112,
+     "width": 150,
+     "height": 28,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#1E88E5",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#1E88E5",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "下一步 P0",
+      "font_weight": "bold",
+      "font_size": 13,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:5",
+     "type": "composite_shape",
+     "x": 728,
+     "y": 112,
+     "width": 150,
+     "height": 28,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#8E24AA",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#8E24AA",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "待建 P1",
+      "font_weight": "bold",
+      "font_size": 13,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:6",
+     "type": "composite_shape",
+     "x": 902,
+     "y": 112,
+     "width": 150,
+     "height": 28,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#00897B",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#00897B",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "规划 P2",
+      "font_weight": "bold",
+      "font_size": 13,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:7",
+     "type": "composite_shape",
+     "x": 1076,
+     "y": 112,
+     "width": 150,
+     "height": 28,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#546E7A",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#546E7A",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "最后接入 P3",
+      "font_weight": "bold",
+      "font_size": 13,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:8",
+     "type": "composite_shape",
+     "x": 60,
+     "y": 150,
+     "width": 330,
+     "height": 46,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#43A047",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#43A047",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "F0 现状（已上线）",
+      "font_weight": "bold",
+      "font_size": 16,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:9",
+     "type": "composite_shape",
+     "x": 60,
+     "y": 216,
+     "width": 330,
+     "height": 440,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#43A047",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#F1F8F2",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "已上线 · P1/P2/P3\n· 7 个页面骨架已上线：\nDashboard / Employees /\nProjects / Actuals / Batches /\nPerformanceResults / Rules\n· 结果详情侧滑 + 结果书导出\n· Actual 录入 / 手工评分写接口\n· 计算 preview / run 已通\n（jest 150/150，基线 0 差异）",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:10",
+     "type": "composite_shape",
+     "x": 426,
+     "y": 150,
+     "width": 330,
+     "height": 46,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#1E88E5",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#1E88E5",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "P0 全栈 MVP",
+      "font_weight": "bold",
+      "font_size": 16,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:11",
+     "type": "composite_shape",
+     "x": 426,
+     "y": 216,
+     "width": 330,
+     "height": 440,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#1E88E5",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#EAF3FD",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "最高优先级 · 测试团队进场\n目标：完整核验「写入数据\n+ 计算引擎」，沿用表格式界面\n· 新期间「指标×员工」骨架生成\n· 数据写入全通路：Actual 录入\n/ 手工评分 / 修改留痕\n· 计算 preview → run → 锁定\n· 结果明细 + 结果书导出\n· 异常清单页：算不成逐条可见\n· 手工校准通道（留痕）\n· V05/V60 基线校对视图\n· 主数据维护：成员/渠道/规则",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "c4:12",
+     "type": "connector",
+     "x": 390,
+     "y": 173,
+     "width": 36,
+     "height": 1,
+     "connector": {
+      "shape": "polyline",
+      "specified_coordinate": true,
+      "caption_auto_direction": false,
+      "turning_points": [],
+      "start": {
+       "arrow_style": "none",
+       "attached_object": {
+        "id": "o4:8",
+        "position": {
+         "x": 1,
+         "y": 0.5
+        },
+        "snap_to": "right"
+       }
+      },
+      "end": {
+       "arrow_style": "line_arrow",
+       "attached_object": {
+        "id": "o4:10",
+        "position": {
+         "x": 0,
+         "y": 0.5
+        },
+        "snap_to": "left"
+       }
+      },
+      "start_object": {
+       "id": "o4:8",
+       "position": {
+        "x": 1,
+        "y": 0.5
+       },
+       "snap_to": "right"
+      },
+      "end_object": {
+       "id": "o4:10",
+       "position": {
+        "x": 0,
+        "y": 0.5
+       },
+       "snap_to": "left"
+      }
+     },
+     "style": {
+      "border_color": "#bbbfc4",
+      "border_color_type": 1,
+      "border_opacity": 100,
+      "border_style": "solid",
+      "border_width": "narrow"
+     }
+    },
+    {
+     "id": "o4:13",
+     "type": "composite_shape",
+     "x": 792,
+     "y": 150,
+     "width": 330,
+     "height": 46,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#8E24AA",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#8E24AA",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "P1 拖拽式组织维护",
+      "font_weight": "bold",
+      "font_size": 16,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:14",
+     "type": "composite_shape",
+     "x": 792,
+     "y": 216,
+     "width": 330,
+     "height": 440,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#8E24AA",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#F7ECFA",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "待建 · 依赖 P0 写路径稳定\n· 在表格式界面基础上\n单开独立入口\n· React Flow 节点式拖拽维护\n组织 / 岗位 / 人员 / 项目关系\n· 生效区间可视化\n· 数据层已就绪",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "c4:15",
+     "type": "connector",
+     "x": 756,
+     "y": 173,
+     "width": 36,
+     "height": 1,
+     "connector": {
+      "shape": "polyline",
+      "specified_coordinate": true,
+      "caption_auto_direction": false,
+      "turning_points": [],
+      "start": {
+       "arrow_style": "none",
+       "attached_object": {
+        "id": "o4:10",
+        "position": {
+         "x": 1,
+         "y": 0.5
+        },
+        "snap_to": "right"
+       }
+      },
+      "end": {
+       "arrow_style": "line_arrow",
+       "attached_object": {
+        "id": "o4:13",
+        "position": {
+         "x": 0,
+         "y": 0.5
+        },
+        "snap_to": "left"
+       }
+      },
+      "start_object": {
+       "id": "o4:10",
+       "position": {
+        "x": 1,
+        "y": 0.5
+       },
+       "snap_to": "right"
+      },
+      "end_object": {
+       "id": "o4:13",
+       "position": {
+        "x": 0,
+        "y": 0.5
+       },
+       "snap_to": "left"
+      }
+     },
+     "style": {
+      "border_color": "#bbbfc4",
+      "border_color_type": 1,
+      "border_opacity": 100,
+      "border_style": "solid",
+      "border_width": "narrow"
+     }
+    },
+    {
+     "id": "o4:16",
+     "type": "composite_shape",
+     "x": 1158,
+     "y": 150,
+     "width": 330,
+     "height": 46,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#00897B",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#00897B",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "P2 评价工作流",
+      "font_weight": "bold",
+      "font_size": 16,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:17",
+     "type": "composite_shape",
+     "x": 1158,
+     "y": 216,
+     "width": 330,
+     "height": 440,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#00897B",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#E9F5F3",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "规划 · 借鉴 V3 画板\n· 评价任务派发 + 到期催办\n（每月 5 日核算死线）\n· 量表行为锚点 + 打分证据\n（0-60/60-80/80-100 可审计）\n· 校准留痕 + 员工申诉\n· 依赖 P0 闭环跑通",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "c4:18",
+     "type": "connector",
+     "x": 1122,
+     "y": 173,
+     "width": 36,
+     "height": 1,
+     "connector": {
+      "shape": "polyline",
+      "specified_coordinate": true,
+      "caption_auto_direction": false,
+      "turning_points": [],
+      "start": {
+       "arrow_style": "none",
+       "attached_object": {
+        "id": "o4:13",
+        "position": {
+         "x": 1,
+         "y": 0.5
+        },
+        "snap_to": "right"
+       }
+      },
+      "end": {
+       "arrow_style": "line_arrow",
+       "attached_object": {
+        "id": "o4:16",
+        "position": {
+         "x": 0,
+         "y": 0.5
+        },
+        "snap_to": "left"
+       }
+      },
+      "start_object": {
+       "id": "o4:13",
+       "position": {
+        "x": 1,
+        "y": 0.5
+       },
+       "snap_to": "right"
+      },
+      "end_object": {
+       "id": "o4:16",
+       "position": {
+        "x": 0,
+        "y": 0.5
+       },
+       "snap_to": "left"
+      }
+     },
+     "style": {
+      "border_color": "#bbbfc4",
+      "border_color_type": 1,
+      "border_opacity": 100,
+      "border_style": "solid",
+      "border_width": "narrow"
+     }
+    },
+    {
+     "id": "o4:19",
+     "type": "composite_shape",
+     "x": 1524,
+     "y": 150,
+     "width": 330,
+     "height": 46,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#546E7A",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#546E7A",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "P3 P5 报数入口",
+      "font_weight": "bold",
+      "font_size": 16,
+      "horizontal_align": "center",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#FFFFFF",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:20",
+     "type": "composite_shape",
+     "x": 1524,
+     "y": 216,
+     "width": 330,
+     "height": 440,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#546E7A",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#EEF1F3",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "规划 · 最后接入\n· 飞书 bot 对话报数\n→ 结构化 → 写 SQL\n· 业务员免登录应用\n· 依赖 P0 + 数据通路稳定",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "c4:21",
+     "type": "connector",
+     "x": 1488,
+     "y": 173,
+     "width": 36,
+     "height": 1,
+     "connector": {
+      "shape": "polyline",
+      "specified_coordinate": true,
+      "caption_auto_direction": false,
+      "turning_points": [],
+      "start": {
+       "arrow_style": "none",
+       "attached_object": {
+        "id": "o4:16",
+        "position": {
+         "x": 1,
+         "y": 0.5
+        },
+        "snap_to": "right"
+       }
+      },
+      "end": {
+       "arrow_style": "line_arrow",
+       "attached_object": {
+        "id": "o4:19",
+        "position": {
+         "x": 0,
+         "y": 0.5
+        },
+        "snap_to": "left"
+       }
+      },
+      "start_object": {
+       "id": "o4:16",
+       "position": {
+        "x": 1,
+        "y": 0.5
+       },
+       "snap_to": "right"
+      },
+      "end_object": {
+       "id": "o4:19",
+       "position": {
+        "x": 0,
+        "y": 0.5
+       },
+       "snap_to": "left"
+      }
+     },
+     "style": {
+      "border_color": "#bbbfc4",
+      "border_color_type": 1,
+      "border_opacity": 100,
+      "border_style": "solid",
+      "border_width": "narrow"
+     }
+    },
+    {
+     "id": "o4:22",
+     "type": "composite_shape",
+     "x": 60,
+     "y": 700,
+     "width": 610,
+     "height": 175,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#1E88E5",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#FFFFFF",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "MVP 验收口径（测试团队核验清单）\n① 数据写入：录入 / 导入 / 修改全通路可用且留痕；② 计算引擎：preview / run / 锁定 / 结果书结果正确；③ 对账：V05 / V60 外部基线 0 差异；④ 异常与手工调整全部留痕可查。",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:23",
+     "type": "composite_shape",
+     "x": 690,
+     "y": 700,
+     "width": 610,
+     "height": 175,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#D32F2F",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#FFFFFF",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "协作红线（不变）\nQA 只读 · 结果锁定后禁止覆盖重算 · 权威源 = 外部独立标准答案（V05 绩效框架 / V60 预算 Excel），禁止系统自证 · 手工调整必须留痕 · 规则改配置不改公式。",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    },
+    {
+     "id": "o4:24",
+     "type": "composite_shape",
+     "x": 1320,
+     "y": 700,
+     "width": 534,
+     "height": 175,
+     "style": {
+      "border_opacity": 100,
+      "border_width": "narrow",
+      "border_color": "#546E7A",
+      "border_color_type": 1,
+      "border_style": "solid",
+      "fill_opacity": 100,
+      "fill_color": "#FFFFFF",
+      "fill_color_type": 1
+     },
+     "composite_shape": {
+      "type": "round_rect"
+     },
+     "text": {
+      "text": "备份线（PO 指示：最低优先级）\n本地 CSV 定期导出 cron + 备份 Base（D-024 禁关联表）。开发全部完成后再执行，不占用 P0~P3 资源。",
+      "font_weight": "regular",
+      "font_size": 13,
+      "horizontal_align": "left",
+      "vertical_align": "top",
+      "line_through": false,
+      "underline": false,
+      "italic": false,
+      "angle": 0,
+      "text_color": "#3C4043",
+      "text_color_type": 1,
+      "text_background_color_type": 0,
+      "theme_text_color_code": -1,
+      "theme_text_background_color_code": -1
+     }
+    }
+   ]
+  },
+  "metadata": {
+   "width": 0,
+   "height": 0,
+   "nodeCount": 24,
+   "connectorCount": 4
+  }
+ },
+ "error": ""
+}

@@ -3,6 +3,7 @@
 > 状态：**FROZEN**（2026-08-14 Product Owner 确认冻结；此后任何变更必须走规则 §17 变更流程，记录 Change ID / Date / Owner / Reason / Impact）
 > 版本：v1.0（T4 产出，对应 ADR-003）
 > 权威基准：V04 绩效框架（T1）、V60 预算模型（T2）、Base 审计报告（T3）、决策日志 D-001~D-008
+> 单一权威源：字段语义以本文件为唯一权威；各行为合同（C0/C2/B-DEC）引用字段时以『见 data_model §x.x』指代，不复制定义。
 > 最近变更：CHG-T8B-001（§4.6）、CHG-T8C-001（§1.1 Note）、CHG-T11A-001（§5.4 豁免与提成字段，2026-08-17）、CHG-T15B-001（§5.5/§5.6 提成基数与豁免范围配置化，2026-08-17）、CHG-D010-R2-001（§5.4 Exemption_Scope_ID / §5.5 Base_Rate / §5.6 Exemption_Scope，2026-08-17）、CHG-T18-001（§4.1 Employee 绩效工资/负责渠道 + §5.4 Perf_Salary_Snapshot，2026-08-18）、CHG-T18-002（§4.7 Project_Group 新实体 + §4.6 Group_ID + §5.3 小组维度/素材类型/归因预留，2026-08-18）、CHG-D010-R3-001（§5.4 营收 Actual 溯源/§5.6 营收阈值，2026-08-18）
 
 ---
